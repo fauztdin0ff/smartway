@@ -1,0 +1,96 @@
+<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+   style="display: none;"><svg fill="none" viewBox="0 0 20 20" id="icon-arrow-right" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#aa)">
+         <g clip-path="url(#ab)">
+            <g clip-path="url(#ac)">
+               <path
+                  d="M2.149 8.855c-.651 0-1.164.528-1.145 1.179.019.65.562 1.178 1.213 1.178l-.034-1.178-.034-1.179Zm16.055 2.012c.447-.46.426-1.206-.048-1.667l-7.72-7.5c-.474-.46-1.22-.46-1.667 0-.447.461-.426 1.207.048 1.667l6.862 6.667L9.203 16.7c-.447.46-.425 1.207.048 1.667.474.46 1.22.46 1.668 0l7.285-7.5Zm-16.021-.833.034 1.178h15.164l-.035-1.178-.034-1.179H2.15l.034 1.179Z"
+                  fill="currentColor" />
+            </g>
+         </g>
+      </g>
+      <defs>
+         <clipPath id="aa">
+            <path fill="currentColor" transform="rotate(45 4.95 11.95)" d="M0 0h14.001v14.001H0z" />
+         </clipPath>
+         <clipPath id="ab">
+            <path fill="currentColor" transform="rotate(45 4.95 11.95)" d="M0 0h14.001v14.001H0z" />
+         </clipPath>
+         <clipPath id="ac">
+            <path fill="currentColor" transform="rotate(45 4.95 11.95)" d="M0 0h14v14H0z" />
+         </clipPath>
+      </defs>
+   </svg><svg fill="none" viewBox="0 0 7 5" id="icon-arrow-down" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6.333 0h-6a.334.334 0 0 0-.266.533l3 4a.333.333 0 0 0 .533 0l3-4A.333.333 0 0 0 6.333 0Z"
+         fill="currentColor" />
+   </svg><svg fill="none" viewBox="0 0 32 32" id="icon-burger" xmlns="http://www.w3.org/2000/svg">
+      <path
+         d="M24.486 7.429H7.514c-.52 0-1.228.721-1.228 1.611s.708 1.612 1.228 1.612h16.972c.52 0 1.228-.722 1.228-1.612 0-.89-.708-1.611-1.228-1.611ZM24.486 14H7.514c-.52 0-1.228.722-1.228 1.611 0 .89.708 1.612 1.228 1.612h16.972c.52 0 1.228-.721 1.228-1.611S25.006 14 24.486 14ZM24.486 20.817H7.514c-.52 0-1.228.721-1.228 1.611s.708 1.612 1.228 1.612h16.972c.52 0 1.228-.722 1.228-1.612 0-.89-.708-1.611-1.228-1.611Z"
+         fill="currentColor" />
+   </svg><svg fill="none" viewBox="0 0 16 12" id="icon-check" xmlns="http://www.w3.org/2000/svg">
+      <path
+         d="M3.253 3.681A1.917 1.917 0 0 0 .58 6.431l1.336-1.375 1.336-1.375Zm3.106 5.691-1.336 1.375a1.917 1.917 0 0 0 2.672 0L6.359 9.372Zm9.009-6.08a1.917 1.917 0 0 0-2.672-2.75l1.336 1.375 1.336 1.375ZM1.917 5.056.581 6.431l4.442 4.316L6.36 9.372l1.336-1.375-4.442-4.316-1.336 1.375Zm4.442 4.316 1.336 1.375 3.836-3.728-1.336-1.374L8.86 4.27 5.023 7.997 6.36 9.372Zm3.836-3.727 1.336 1.374 3.837-3.727-1.336-1.375L12.696.542 8.859 4.27l1.336 1.375Z"
+         fill="currentColor" />
+   </svg><svg fill="none" viewBox="0 0 22 22" id="icon-login" xmlns="http://www.w3.org/2000/svg">
+      <path
+         d="M14.667 1.833h1.138c.738 0 1.347 0 1.843.041.515.042.989.132 1.433.36.69.35 1.251.912 1.603 1.602.227.444.317.918.359 1.433.04.496.04 1.105.04 1.843v7.776c0 .738 0 1.347-.04 1.843-.042.515-.132.989-.36 1.434a3.667 3.667 0 0 1-1.602 1.602c-.444.227-.918.317-1.433.36-.496.04-1.105.04-1.843.04h-1.138a.917.917 0 0 1 0-1.834h1.1c.785 0 1.319 0 1.731-.034.672-.055 1.233-.339 1.552-.966.276-.541.244-1.29.216-1.947-.008-.189-.016-.37-.016-.536v-7.7c0-.166.008-.347.016-.535.028-.657.06-1.406-.216-1.947-.32-.628-.88-.912-1.552-.967-.412-.033-.946-.034-1.731-.034h-1.1a.917.917 0 0 1 0-1.833Z"
+         fill="currentColor" />
+      <path
+         d="M8.898 5.768a.917.917 0 1 0-1.296 1.297l3.018 3.018H1.833a.917.917 0 1 0 0 1.834h8.787l-3.018 3.018a.917.917 0 1 0 1.296 1.296l4.584-4.583a.917.917 0 0 0 0-1.296L8.898 5.768Z"
+         fill="currentColor" />
+   </svg><svg fill="none" viewBox="0 0 22 19" id="icon-mail" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+         d="M16.101 0H5.71c-.798 0-1.457 0-1.993.044-.557.046-1.07.145-1.55.392a3.983 3.983 0 0 0-1.7 1.684c.041.022.081.047.12.075l9.077 6.716c.715.505.868.593 1.002.627a.98.98 0 0 0 .48 0c.135-.034.287-.122 1.002-.627l9.077-6.715a1 1 0 0 1 .12-.077A3.984 3.984 0 0 0 19.645.436c-.481-.247-.993-.346-1.55-.392C17.557 0 16.898 0 16.1 0Zm5.694 4.255-6.517 4.821 6.39 5.909c.048-.232.078-.471.099-.72.043-.541.043-1.206.043-2.012V5.764c0-.572 0-1.072-.015-1.509Zm-1.1 12.542a.932.932 0 0 1-.05-.044l-6.997-6.47c-.625.457-1.262 1.006-2.024 1.198a2.946 2.946 0 0 1-1.438 0c-.762-.192-1.398-.741-2.023-1.198l-6.998 6.47c-.016.016-.033.03-.05.044.303.316.657.582 1.05.784.481.247.994.346 1.55.392.537.044 1.196.044 1.994.044h10.392c.798 0 1.457 0 1.993-.044.558-.046 1.07-.145 1.551-.392a3.97 3.97 0 0 0 1.05-.784ZM.143 14.984l6.389-5.908-6.516-4.82C0 4.691 0 5.191 0 5.763v6.489c0 .806 0 1.47.044 2.012.02.249.05.488.099.72Z"
+         fill="currentColor" />
+   </svg><svg fill="none" viewBox="0 0 24 24" id="icon-minus" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 12h22" stroke="currentColor" stroke-width="2" stroke-linecap="square" />
+   </svg><svg fill="none" viewBox="0 0 39 32" id="icon-burger" xmlns="http://www.w3.org/2000/svg">
+      <rect x="38.0713" width="5.33241" height="38.0712" rx="2.66621" transform="rotate(90 38.0713 0)" fill="currentColor"/>
+      <rect x="38.0713" y="13.4258" width="5.33241" height="38.0712" rx="2.66621" transform="rotate(90 38.0713 13.4258)" fill="currentColor"/>
+      <rect x="38.0713" y="26.6675" width="5.33241" height="38.0712" rx="2.66621" transform="rotate(90 38.0713 26.6675)" fill="currentColor"/>
+   </svg><svg fill="none" viewBox="0 0 24 24" id="icon-plus" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 12h22M12 1v22" stroke="currentColor" stroke-width="2" stroke-linecap="square" />
+   </svg><svg fill="none" viewBox="0 0 23 23" id="icon-close" xmlns="http://www.w3.org/2000/svg">
+       <g stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd"> <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> </g>
+   </svg>
+   <svg viewBox="0 404.142 36 33.608" id="icon-vc" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M28.813 419.643c2.65 0 4.645-1.104 6.116-3.026l-1.966-1.5a5.188 5.188 0 0 1-4.15 2.052c-2.876 0-4.96-2.343-4.96-5.218s2.05-5.35 5.042-5.35c1.33 0 2.27.314 3.09.822v2.528h2.474v-3.686l-.474-.373c-1.36-1.07-3.437-1.638-5.173-1.638-4.244 0-7.696 3.452-7.696 7.696 0 4.24 3.45 7.693 7.696 7.693zm5.133 15.18-.088-3.543v-8.646h-5.16v2.475h2.554v5.866c0 2.527-1.93 4.316-3.877 4.316s-2.963-1.35-2.963-3.876v-8.782h-4.82v2.475h2.214v6.736c0 3.428 1.922 5.79 5.35 5.79 1.97 0 3.47-1.093 4.365-2.778h.04l.353 2.356h3.965v-2.386h-1.93v-.005zm-13.4-30.206h-4.3l-3.74 10.86h-.058l-3.72-10.86H4.146v2.476h2.577l4.435 12.378h2.356v-.003l4.625-12.374h2.405v-2.476zM.122 437.244H2.67v-2.547H.123v2.547zm9.84-11.74h-.028l-.16-2.87H5.226v2.256h2.42v9.934h-2.42v2.387h11.24v-2.34h-6.258v-5.995c.283-2.17 1.91-4.023 4.13-4.023h.04l-.045 2.218h2.474v-4.478h-1.956c-2.24-.006-3.902 1.206-4.89 2.912z"></path></svg>
+   <svg fill="currentColor" viewBox="0 0 15 15" id="icon-telegram" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+               d="M11.49 14.237c.201.143.46.178.692.09a.725.725 0 0 0 .453-.524c.543-2.553 1.86-9.014 2.355-11.335a.488.488 0 0 0-.163-.474.5.5 0 0 0-.498-.088c-2.62.97-10.691 3.998-13.99 5.22A.517.517 0 0 0 0 7.623a.518.518 0 0 0 .37.478c1.48.442 3.422 1.058 3.422 1.058s.908 2.74 1.38 4.134c.06.175.197.313.378.36a.542.542 0 0 0 .506-.129l1.936-1.827s2.232 1.637 3.498 2.539ZM4.61 8.814l1.05 3.461.232-2.192 6.366-5.741a.173.173 0 0 0 .02-.236.178.178 0 0 0-.234-.04L4.609 8.814Z"
+               fill="currentColor" />
+      <defs>
+         <clipPath id="ha">
+            <path fill="currentColor" d="M0 0h15v15H0z" />
+         </clipPath>
+      </defs>
+   </svg><svg fill="none" viewBox="0 0 22 22" id="icon-telephone" xmlns="http://www.w3.org/2000/svg">
+      <path
+         d="m20.871 15.917-2.941-2.444c-1.877-1.877-5.222 2.358-5.232 2.368-.26.26-2.357-1.414-4.072-3.127C6.912 11 5.24 8.904 5.5 8.644c.01-.01 4.246-3.354 2.368-5.231L5.427.473c-2.634-2.295-10.855 3.94.157 14.953l.167.166.167.168c11.008 11.01 17.248 2.792 14.953.157Z"
+         fill="currentColor" />
+   </svg><svg fill="none" viewBox="0 0 10 6" id="icon-triangle-down" xmlns="http://www.w3.org/2000/svg">
+      <mask id="jb" fill="currentColor">
+         <path d="M0 0h10v6H0V0Z" />
+      </mask>
+      <g clip-path="url(#ja)" data-figma-skip-parse="true" mask="url(#jb)">
+         <g transform="matrix(.005 0 0 .006 5 0)" fill="url(#jc)" shape-rendering="crispEdges">
+            <path d="M0 0h1200v1166.67H0zM0 0h1200v-1166.67H0zM0 0h-1200v1166.67H0zM0 0h-1200v-1166.67H0z" />
+         </g>
+      </g>
+      <path d="M0 0v-6h-5v6h5Zm10 0h5v-6h-5v6ZM0 0v6h10V-6H0v6Zm10 0H5v6h10V0h-5ZM0 6h5V0H-5v6h5Z"
+         data-figma-gradient-fill="{&quot;type&quot;:&quot;GRADIENT_DIAMOND&quot;,&quot;stops&quot;:[{&quot;color&quot;:{&quot;r&quot;:0.22745098173618317,&quot;g&quot;:0.22745098173618317,&quot;b&quot;:0.22745098173618317,&quot;a&quot;:1.0},&quot;position&quot;:0.99999988079071045},{&quot;color&quot;:{&quot;r&quot;:0.0,&quot;g&quot;:0.0,&quot;b&quot;:0.0,&quot;a&quot;:0.0},&quot;position&quot;:1.0}],&quot;stopsVar&quot;:[{&quot;color&quot;:{&quot;r&quot;:0.22745098173618317,&quot;g&quot;:0.22745098173618317,&quot;b&quot;:0.22745098173618317,&quot;a&quot;:1.0},&quot;position&quot;:0.99999988079071045},{&quot;color&quot;:{&quot;r&quot;:0.0,&quot;g&quot;:0.0,&quot;b&quot;:0.0,&quot;a&quot;:0.0},&quot;position&quot;:1.0}],&quot;transform&quot;:{&quot;m00&quot;:10.0,&quot;m01&quot;:0.0,&quot;m02&quot;:0.0,&quot;m10&quot;:0.0,&quot;m11&quot;:12.0,&quot;m12&quot;:-6.0},&quot;opacity&quot;:1.0,&quot;blendMode&quot;:&quot;NORMAL&quot;,&quot;visible&quot;:true}"
+         mask="url(#jb)" />
+      <defs>
+         <linearGradient id="jc" x1="0" y1="0" x2="500" y2="500" gradientUnits="userSpaceOnUse">
+            <stop offset="1" stop-color="#3A3A3A" />
+            <stop offset="1" stop-opacity="0" />
+         </linearGradient>
+         <clipPath id="ja">
+            <path d="M0 0v-6h-5v6h5Zm10 0h5v-6h-5v6ZM0 0v6h10V-6H0v6Zm10 0H5v6h10V0h-5ZM0 6h5V0H-5v6h5Z" />
+         </clipPath>
+      </defs>
+   </svg><svg fill="none" viewBox="0 0 20 20" id="icon-vk" xmlns="http://www.w3.org/2000/svg">
+      <path
+         d="M17.88 8.456c2.07-2.802 1.611-2.854 2.12-3.73h-3.966s-.282.98-.368 1.154c-.761 1.55-2.47 3.874-3.503 4.112-1.018.234-.883-2.17-.82-3.212.059-.966.049-1.304.02-1.47a.56.56 0 0 0-.49-.453A14.59 14.59 0 0 0 8.42 4.75l-.92.03c.363.812.608.563.741 1.501.15 1.099.092 3.772-.99 3.772-1.735 0-3.681-5.21-3.743-5.326H0l.321.803c2.587 6.477 5.824 9.477 10.251 9.727l.576.016.042-.56c.062-.863.495-2.107 1.264-2.107 1.136 0 1.464.33 2.214 1.257.72.887 1.216 1.41 2.379 1.41H20l-.421-.846c-.658-1.32-1.977-2.453-2.492-3.11-.187-.246-.37-.637-.18-1.11.155-.412.618-1.27.974-1.75Z"
+         fill="currentColor" />
+   </svg>
+</svg>
