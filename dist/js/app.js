@@ -379,6 +379,19 @@ _modules_functions_js__WEBPACK_IMPORTED_MODULE_0__.popups();
 _modules_functions_js__WEBPACK_IMPORTED_MODULE_0__.phoneMask();
 
 /*==========================================================================
+Header fx
+============================================================================*/
+const header = document.querySelector('.header');
+
+function toggleHeaderClass() {
+   header.classList.toggle('fx', window.scrollY > 0);
+}
+
+toggleHeaderClass();
+
+window.addEventListener('scroll', toggleHeaderClass);
+
+/*==========================================================================
 Phone field
 ============================================================================*/
 function initPhoneField() {
