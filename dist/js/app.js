@@ -497,6 +497,63 @@ function initFaqAccordion() {
       item.dataset.inited = 'true';
    });
 }
+
+
+/*==========================================================================
+Tabs
+============================================================================*/
+function initTabs() {
+   const tabs = document.querySelectorAll('.limitations__tab');
+   const contents = document.querySelectorAll('.limitations__content');
+
+   if (!tabs.length || !contents.length) return;
+
+   tabs.forEach(tab => tab.classList.remove('active'));
+   contents.forEach(content => {
+      content.classList.remove('active');
+      content.style.display = 'none';
+      content.style.opacity = '0';
+   });
+
+   tabs[0].classList.add('active');
+   contents[0].classList.add('active');
+   contents[0].style.display = 'flex';
+   contents[0].style.opacity = '1';
+
+   tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+         const tabId = tab.dataset.tab;
+         const nextContent = document.querySelector(
+            `.limitations__content[data-content="${tabId}"]`
+         );
+
+         const currentContent = document.querySelector('.limitations__content.active');
+
+         if (!nextContent || currentContent === nextContent) return;
+
+         tabs.forEach(item => item.classList.remove('active'));
+         tab.classList.add('active');
+
+         currentContent.style.transition = 'opacity .3s ease';
+         currentContent.style.opacity = '0';
+
+         setTimeout(() => {
+            currentContent.style.display = 'none';
+            currentContent.classList.remove('active');
+
+            nextContent.style.display = 'flex';
+            nextContent.style.opacity = '0';
+            nextContent.classList.add('active');
+
+            void nextContent.offsetWidth;
+
+            nextContent.style.transition = 'opacity .3s ease';
+            nextContent.style.opacity = '1';
+         }, 300);
+      });
+   });
+}
+
 /*==========================================================================
 Init
 ============================================================================*/
@@ -504,6 +561,7 @@ document.addEventListener('DOMContentLoaded', () => {
    initDropdowns();
    initPhoneField();
    initFaqAccordion();
+   initTabs();
 }) 
 })();
 
