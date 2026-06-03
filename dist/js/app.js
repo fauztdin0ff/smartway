@@ -554,6 +554,134 @@ function initTabs() {
    });
 }
 
+
+/*==========================================================================
+Cases slider
+============================================================================*/
+function initCasesSlider() {
+   const slider = document.querySelector('.cases__slider');
+
+   if (!slider) return;
+
+   const splide = new Splide(slider, {
+      type: 'slide',
+      perPage: 2,
+      perMove: 1,
+      gap: '15px',
+      arrows: false,
+      pagination: false,
+
+      breakpoints: {
+         999: {
+            perPage: 1,
+         },
+      },
+   });
+
+   const prevBtn = document.querySelector('.cases__prev');
+   const nextBtn = document.querySelector('.cases__next');
+
+   function updateButtons() {
+      prevBtn?.classList.toggle(
+         'disabled',
+         splide.Components.Controller.getPrev() === -1
+      );
+
+      nextBtn?.classList.toggle(
+         'disabled',
+         splide.Components.Controller.getNext() === -1
+      );
+   }
+
+   splide.on('mounted moved refreshed resized', updateButtons);
+
+   splide.mount();
+
+   prevBtn?.addEventListener('click', () => {
+      splide.go('<');
+   });
+
+   nextBtn?.addEventListener('click', () => {
+      splide.go('>');
+   });
+}
+
+
+/*==========================================================================
+Advantages slider
+============================================================================*/
+function initAdvantagesSlider() {
+   const slider = document.querySelector('.advantages__slider');
+
+   if (!slider) return;
+
+   new Splide(slider, {
+      type: 'slide',
+      autoWidth: true,
+      gap: '15px',
+      arrows: false,
+      pagination: false,
+
+      breakpoints: {
+         999: {
+            perPage: 1,
+         },
+      },
+   }).mount();
+}
+
+/*==========================================================================
+Galleries
+============================================================================*/
+document.addEventListener('DOMContentLoaded', () => {
+   if (document.querySelector('.glightbox')) {
+      GLightbox({
+         selector: '.glightbox'
+      });
+   }
+});
+
+/*==========================================================================
+Reviews slider
+============================================================================*/
+function initReviewsSlider() {
+   const slider = document.querySelector('.reviews__slider');
+
+   if (!slider) return;
+
+   const splide = new Splide(slider, {
+      type: 'slide',
+      autoWidth: true,
+      gap: '15px',
+      arrows: false,
+      pagination: false,
+   });
+
+   const prevBtn = document.querySelector('.reviews__prev');
+   const nextBtn = document.querySelector('.reviews__next');
+
+   function updateButtons() {
+      prevBtn?.classList.toggle('disabled', splide.index === 0);
+
+      nextBtn?.classList.toggle(
+         'disabled',
+         splide.index >= splide.length - 1
+      );
+   }
+
+   splide.on('mounted moved', updateButtons);
+
+   splide.mount();
+
+   prevBtn?.addEventListener('click', () => {
+      splide.go('<');
+   });
+
+   nextBtn?.addEventListener('click', () => {
+      splide.go('>');
+   });
+}
+
 /*==========================================================================
 Init
 ============================================================================*/
@@ -562,6 +690,9 @@ document.addEventListener('DOMContentLoaded', () => {
    initPhoneField();
    initFaqAccordion();
    initTabs();
+   initCasesSlider();
+   initAdvantagesSlider();
+   initReviewsSlider();
 }) 
 })();
 
