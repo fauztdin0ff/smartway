@@ -761,6 +761,28 @@ function initResultsSlider() {
 }
 
 /*==========================================================================
+Password
+============================================================================*/
+function initPasswordToggle() {
+   const buttons = document.querySelectorAll('.password-toggle');
+
+   if (!buttons.length) return;
+
+   buttons.forEach(button => {
+      button.addEventListener('click', () => {
+         const input = button.closest('.password-field')?.querySelector('.password-input');
+
+         if (!input) return;
+
+         input.type = input.type === 'password' ? 'text' : 'password';
+         button.classList.toggle('active');
+      });
+   });
+}
+
+
+
+/*==========================================================================
 Init
 ============================================================================*/
 document.addEventListener('DOMContentLoaded', () => {
@@ -773,6 +795,8 @@ document.addEventListener('DOMContentLoaded', () => {
    initReviewsSlider();
    equalizeIntegrationCards();
    initResultsSlider();
+   initPasswordToggle();
+
 })
 
 window.addEventListener('resize', () => {
