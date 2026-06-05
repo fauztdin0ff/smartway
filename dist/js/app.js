@@ -683,6 +683,84 @@ function initReviewsSlider() {
 }
 
 /*==========================================================================
+Cards height
+============================================================================*/
+function equalizeIntegrationCards() {
+   const cards = document.querySelectorAll('.integration__card-inner');
+
+   if (!cards.length) return;
+
+   let maxHeight = 0;
+
+   cards.forEach(card => {
+      card.style.height = 'auto';
+      maxHeight = Math.max(maxHeight, card.offsetHeight);
+   });
+
+   cards.forEach(card => {
+      card.style.height = `${maxHeight}px`;
+   });
+}
+
+
+/*==========================================================================
+Results slider
+============================================================================*/
+function initResultsSlider() {
+   const slider = document.querySelector('.results__slider');
+
+   if (!slider) return;
+
+   const prevBtn = document.querySelector('.results__prev');
+   const nextBtn = document.querySelector('.results__next');
+
+   const splide = new Splide(slider, {
+      type: 'slide',
+      perPage: 3,
+      gap: '15px',
+      arrows: false,
+      pagination: false,
+
+      breakpoints: {
+         1200: {
+            perPage: 2,
+         },
+         870: {
+            perPage: 1,
+         },
+      },
+   });
+
+   function updateButtons() {
+      const end = splide.Components.Controller.getEnd();
+
+      prevBtn?.classList.toggle('disabled', splide.index === 0);
+      nextBtn?.classList.toggle('disabled', splide.index >= end);
+
+      const hideButtons = end === 0;
+
+      prevBtn?.classList.toggle('hidden', hideButtons);
+      nextBtn?.classList.toggle('hidden', hideButtons);
+   }
+
+   splide.on('mounted moved resized updated', updateButtons);
+
+   splide.mount();
+
+   prevBtn?.addEventListener('click', () => {
+      if (!prevBtn.classList.contains('disabled')) {
+         splide.go('<');
+      }
+   });
+
+   nextBtn?.addEventListener('click', () => {
+      if (!nextBtn.classList.contains('disabled')) {
+         splide.go('>');
+      }
+   });
+}
+
+/*==========================================================================
 Init
 ============================================================================*/
 document.addEventListener('DOMContentLoaded', () => {
@@ -693,7 +771,14 @@ document.addEventListener('DOMContentLoaded', () => {
    initCasesSlider();
    initAdvantagesSlider();
    initReviewsSlider();
-}) 
+   equalizeIntegrationCards();
+   initResultsSlider();
+})
+
+window.addEventListener('resize', () => {
+   equalizeIntegrationCards();
+});
+
 })();
 
 /******/ })()
