@@ -5,13 +5,35 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="format-detection" content="telephone=no">
-   <!-- Styles -->
-   <link rel="stylesheet" href="css/base.min.css?_v=20260606224854">
-   
-   
-   
-   <link rel="stylesheet" href="css/home.min.css?_v=20260606224854">
+   <meta name="robots" content="noindex, nofollow">
+   <!-- favicons -->
+   <link rel="icon" type="image/svg+xml" href="img/fav/favicon.svg">
+   <link rel="icon" type="image/png" sizes="512x512" href="img/fav/android-chrome-512x512.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+   <link rel="icon" type="image/ico" href="img/fav/favicon.ico">
+   <!-- SEO -->
    <title>Главная</title>
+   <meta name="description"
+      content="Smartway — сервис организации командировок для бизнеса. Помогаем организациям в управлении командированием, оформлять служебные поездки и командировки онлайн удобно и быстро. Дешевле и проще, чем агентство деловых поездок!">
+   <meta name="author" content="Smartway">
+
+   <!-- Open Graph -->
+   <meta property="og:type" content="website">
+   <meta property="og:title" content="Главная">
+   <meta property="og:description"
+      content="Smartway — сервис организации командировок для бизнеса. Помогаем организациям в управлении командированием, оформлять служебные поездки и командировки онлайн удобно и быстро. Дешевле и проще, чем агентство деловых поездок!">
+   <meta property="og:url" content="https://smartway.today">
+   <meta property="og:image"
+      content="https://static.tildacdn.com/tild3436-6666-4061-b735-333364313035/Frame_2085655993.png">
+
+   <!-- Styles -->
+   <link rel="stylesheet" href="css/base.min.css?_v=20260607175951">
+   
+   
+   
+   <link rel="stylesheet" href="css/home.min.css?_v=20260607175951">
 </head>
 
 <body>
@@ -153,7 +175,7 @@
                   <h1 class="hero__title">Онлайн-сервис для организации командировок</h1>
                   <div class="hero__subtitle">Билеты, отели, закрывающие и интеграция с 1С в одном окне</div>
                   <div class="hero__buttons">
-                     <button class="btn btn-arrow">Попробовать бесплатно</button>
+                     <button class="btn btn-arrow open-popup" data-popup="main-popup">Попробовать бесплатно</button>
                      <button class="btn -white">Тарифы</button>
                   </div>
                </div>
@@ -207,19 +229,19 @@
 
          <section class="stats">
             <div class="stats__body container section-padding">
-               <h2 class="stats__title section-title">Smartway в цифрах</h2>
+               <h2 class="stats__title section-title">Smartway в цифрах</h2>
                <div class="stats__cards">
                   <div class="stats__card">
                      <span>7 500 +</span> клиентов
                   </div>
                   <div class="stats__card">
-                     <span>500 000 +</span> билетов и отелей <br> бронируют каждый месяц
+                     <span>500 000 +</span> билетов и отелей <br> бронируют каждый месяц
                   </div>
                   <div class="stats__card -red">
                      <span>№ 1</span> на рынке <br> бизнес-тревел*
                   </div>
                   <div class="stats__card">
-                     <span>3 млн +</span> отелей по всему <br> миру
+                     <span>3 млн +</span> отелей по всему <br> миру
                   </div>
                   <div class="stats__card">
                      <span>98,7 %</span> довольных <br> клиентов**
@@ -242,7 +264,7 @@
                      <div class="control__card-info">
                         <div class="control__card-num">1</div>
                         <div class="control__card-name">Оформляйте услуги <br>
-                           для командировок <br> в одном окне</div>
+                           для командировок <br> в одном окне</div>
                      </div>
                      <div class="control__card-image">
                         <img src="img/control-1.avif" width="432" height="196" alt="screen">
@@ -251,7 +273,7 @@
                   <div class="control__card">
                      <div class="control__card-info">
                         <div class="control__card-num">2</div>
-                        <div class="control__card-name">Согласовывайте и оплачивайте <br>
+                        <div class="control__card-name">Согласовывайте и оплачивайте <br>
                            выбранные услуги</div>
                      </div>
                      <div class="control__card-image">
@@ -262,7 +284,7 @@
                      <div class="control__card-info">
                         <div class="control__card-num">3</div>
                         <div class="control__card-name">Заполняйте авансовые <br>
-                           и получайте закрывающие онлайн</div>
+                           и получайте закрывающие онлайн</div>
                      </div>
                      <div class="control__card-image">
                         <img src="img/control-3.avif" width="432" height="196" alt="screen">
@@ -272,7 +294,7 @@
                      <div class="control__card-info">
                         <div class="control__card-num">4</div>
                         <div class="control__card-name">Контролируйте расходы <br>
-                           за счет детальной аналитики</div>
+                           за счет детальной аналитики</div>
                      </div>
                      <div class="control__card-image">
                         <img src="img/control-4.avif" width="432" height="196" alt="screen">
@@ -280,18 +302,19 @@
                   </div>
                </div>
                <div class="control__button">
-                  <a href="" class="btn btn-arrow">Попробовать бесплатно</a>
+                  <button type="button" class="btn btn-arrow open-popup" data-popup="main-popup">Попробовать
+                     бесплатно</button>
                </div>
             </div>
          </section>
 
          <section class="services">
             <div class="services__body container section-padding">
-               <h2 class="services__title section-title">Все услуги для организации <br>
+               <h2 class="services__title section-title">Все услуги для организации <br>
                   деловых поездок сотрудников</h2>
                <div class="services__grid">
                   <div class="services__item -item-1">
-                     <div class="services__item-name">Авиа и Ж/Д билеты</div>
+                     <div class="services__item-name">Авиа и Ж/Д билеты</div>
                      <div class="services__item-icon">
                         <img src="img/icons/plain.svg" width="38" height="36" alt="icon">
                      </div>
@@ -386,7 +409,7 @@
                      <h2 class="request-banner__title section-title">Сократите расходы <br> на командировки в 2 раза
                      </h2>
                      <div class="request-banner__subtitle">
-                        <b>Оставьте заявку</b> — разберем ваши процессы и покажем, где экономить уже сейчас
+                        <b>Оставьте заявку</b> — разберем ваши процессы и покажем, где экономить уже сейчас
                      </div>
                   </div>
                   <div class="request-banner__action">
@@ -394,7 +417,8 @@
                         <img src="img/icons/contacts.svg" width="190" height="84.5" alt="contacts">
                      </div>
                      <div class="request-banner__button">
-                        <button type="button" class="btn btn-arrow">Получить консультацию</button>
+                        <button type="button" class="btn btn-arrow open-popup" data-popup="consultation-popup">Получить
+                           консультацию</button>
                      </div>
                   </div>
                </div>
@@ -412,12 +436,12 @@
                            Организатору командировок
                         </div>
                         <div class="help__card-title">
-                           Бронируйте деловые поездки в одном окне за 2 минуты
+                           Бронируйте деловые поездки в одном окне за 2 минуты
                         </div>
-                        <div class="help__card-text">Создание и согласование поездок
-                           за пару кликов, с поддержкой 24/7. Сервис автоматически подставляет данные сотрудников,
+                        <div class="help__card-text">Создание и согласование поездок
+                           за пару кликов, с поддержкой 24/7. Сервис автоматически подставляет данные сотрудников,
                            контролирует лимиты
-                           и снижает риск ошибок.</div>
+                           и снижает риск ошибок.</div>
                      </div>
                      <div class="help__card-image">
                         <img src="img/team/teammate-1.avif" width="321" height="369" alt="photo">
@@ -430,10 +454,10 @@
                            Руководителю
                         </div>
                         <div class="help__card-title">
-                           Контролируйте командировки и экономьте бюджет компании
+                           Контролируйте командировки и экономьте бюджет компании
                         </div>
                         <div class="help__card-text">Детализированная аналитика
-                           по расходам и контроль отклонений. При превышении установленных лимитов бронирование возможно
+                           по расходам и контроль отклонений. При превышении установленных лимитов бронирование возможно
                            только после согласования.</div>
                      </div>
                      <div class="help__card-image">
@@ -447,11 +471,11 @@
                            Бухгалтеру
                         </div>
                         <div class="help__card-title">
-                           Учитывайте расходы по поездкам быстро и без ошибок
+                           Учитывайте расходы по поездкам быстро и без ошибок
                         </div>
                         <div class="help__card-text">Закрывающие формируются
-                           автоматически, соответствуют требованиям законодательства и хранятся в одном месте.
-                           Интеграция с «1С» и ЭДО упрощает
+                           автоматически, соответствуют требованиям законодательства и хранятся в одном месте.
+                           Интеграция с «1С» и ЭДО упрощает
                            подтверждение расходов.</div>
                      </div>
                      <div class="help__card-image">
@@ -462,16 +486,15 @@
                      <div class="help__card-info">
                         <div class="help__card-name">
                            <img src="img/icons/plain.svg" width="20" height="20" alt="icon">
-                           Кадровому специалисту и HR-менеджеру
+                           Кадровому специалисту и HR-менеджеру
                         </div>
                         <div class="help__card-title">
-                           Держите все документы в порядке
-                           и обеспечьте комфорт сотрудников
+                           Держите все документы в порядке
+                           и обеспечьте комфорт сотрудников
                         </div>
-                        <div class="help__card-text">Гибкие схемы согласования ускоряют работу, формирование приказов и
-                           служебных заданий происходит в два клика. Данные о
-                           командировках и бронированиях передаются
-                           в «1С» по бесшовной интеграции</div>
+                        <div class="help__card-text">Гибкие схемы согласования ускоряют работу, формирование приказов
+                           и служебных заданий происходит в два клика. Данные о командировках и бронированиях передаются
+                           в «1С» по бесшовной интеграции</div>
                      </div>
                      <div class="help__card-image">
                         <img src="img/team/teammate-3.avif" width="321" height="369" alt="photo">
@@ -485,18 +508,18 @@
             <div class="support-banner__body container">
                <div class="support-banner__wrapper">
                   <div class="support-banner__info">
-                     <h2 class="support-banner__title section-title">Служба поддержки <br> <span>на связи 24/7</span>
+                     <h2 class="support-banner__title section-title">Служба поддержки <br> <span>на связи 24/7</span>
                      </h2>
                      <div class="support-banner__text">
                         <ul class="arrow-list">
                            <li>
-                              <p><strong>Отвечаем за 5 минут</strong> — звоните, пишите в чат или на почту</p>
+                              <p><strong>Отвечаем за 5 минут</strong> — звоните, пишите в чат или на почту</p>
                            </li>
                            <li>
-                              <p><strong>Более 350 менеджеров</strong> службы поддержки в разных часовых поясах</p>
+                              <p><strong>Более 350 менеджеров</strong> службы поддержки в разных часовых поясах</p>
                            </li>
                            <li>
-                              <p>Вашим запросом сразу займется специалист Smartway, а не чат-бот</p>
+                              <p>Вашим запросом сразу займется специалист Smartway, а не чат-бот</p>
                            </li>
                         </ul>
                      </div>
@@ -529,7 +552,7 @@
                         </div>
                         <div class="integrations__card-descr">
                            Настройте бесшовную интеграцию с «1С:Бухгалтерией», <br>
-                           «1С:ERP» и «1С:ЗУП» в 2 клика, без переноса данных <br>
+                           «1С:ERP» и «1С:ЗУП» в 2 клика, без переноса данных <br>
                            вручную и ошибок
                         </div>
                         <div class="integrations__card-image">
@@ -542,7 +565,7 @@
                         </div>
                         <div class="integrations__card-descr">
                            Формируйте все акты, счета и закрывающие автоматически <br>
-                           и получайте их с удобной для вас частотой
+                           и получайте их с удобной для вас частотой
                         </div>
                      </div>
                   </div>
@@ -575,7 +598,8 @@
 
                </div>
                <div class="integrations__button">
-                  <button type="button" class="btn btn-arrow">Получить консультацию</button>
+                  <button type="button" class="btn btn-arrow open-popup" data-popup="consultation-popup">Получить
+                     консультацию</button>
                </div>
             </div>
          </section>
@@ -590,7 +614,7 @@
                      </h2>
                      <div class="mobile-app__text">
                         <ul class="arrow-list">
-                           <li>Выбирайте и покупайте любые услуги для командировок: <br>
+                           <li>Выбирайте и покупайте любые услуги для командировок: <br>
                               от билетов и отелей до дополнительных услуг</li>
                            <li>Контролируйте поездки, создавайте отчеты, отслеживайте <br>
                               статусы заявок и согласовывайте их</li>
@@ -599,16 +623,20 @@
                         </ul>
                      </div>
                      <div class="mobile-app__links">
-                        <a href="" class="mobile-app__link" aria-label="App Store">
+                        <a href="https://apps.apple.com/ru/app/smartway-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8/id1446267313"
+                           target="_blank" class="mobile-app__link" aria-label="App Store">
                            <img src="img/app-store.svg" width="145" height="40" alt="AppStore">
                         </a>
-                        <a href="" class="mobile-app__link" aria-label="App Store">
+                        <a href="https://play.google.com/store/apps/details?id=com.smartway&hl=ru" target="_blank"
+                           class="mobile-app__link" aria-label="Google Play">
                            <img src="img/google-play.svg" width="165" height="33" alt="Google Play">
                         </a>
-                        <a href="" class="mobile-app__link" aria-label="App Store">
+                        <a href="https://www.rustore.ru/catalog/app/com.smartway" target="_blank"
+                           class="mobile-app__link" aria-label="Ru Store">
                            <img src="img/ru-store.svg" width="127" height="32" alt="RuStore">
                         </a>
-                        <a href="" class="mobile-app__link" aria-label="App Store">
+                        <a href="https://appgallery.huawei.com/app/C107234287" target="_blank" class="mobile-app__link"
+                           aria-label="AppGallery">
                            <img src="img/app-gallery.svg" width="157" height="34" alt="AppGallery">
                         </a>
                      </div>
@@ -636,9 +664,9 @@
                         <div class="planning__subtitle">Организуем корпоративы, конференции, тимбилдинг
                            и другие форматы в России и за границей</div>
                         <div class="planning__head-action">
-                           <button type="button" class="btn">Получить консультацию</button>
-                           <button type="button" class="btn btn-arrow btn-transparent">Подробнее о MICE в
-                              Smartway</button>
+                           <button type="button" class="btn open-popup" data-popup="consultation-popup">Получить
+                              консультацию</button>
+                           <a href="mice.html" class="btn btn-arrow btn-transparent">Подробнее о MICE в Smartway</a>
                         </div>
                      </div>
                   </div>
@@ -677,7 +705,7 @@
                         <div class="planning__card-info">
                            <div class="planning__card-name">800+ событий в год</div>
                            <div class="planning__card-text">Организуем по 2 мероприятия <br>
-                              ежедневно для разных <br>
+                              ежедневно для разных <br>
                               клиентов</div>
                         </div>
                      </div>
@@ -726,7 +754,7 @@
                         <div class="clients__card-text-wrapper">
                            Доверили сотрудникам
                            оформление поездок
-                           и <span>освободили 50% времени</span> организатора командировок
+                           и <span>освободили 50% времени</span> организатора командировок
                         </div>
                         <a href="" class="clients__card-text-link">Читать кейс</a>
                      </div>
@@ -906,7 +934,7 @@
                            </label>
                         </div>
                         <div class="callback__form-submit">
-                           <button type="submit" class="btn">Попробовать бесплатно</button>
+                           <a href="success.html" class="btn">Попробовать бесплатно</a>
                         </div>
                         <div class="callback__att">
                            Нажимая на эту кнопку, Вы даете согласие на <a href="">обработку персональных данных</a> и
@@ -938,9 +966,9 @@
                      </div>
                      <div class="faq__answer">
                         <div class="faq__answer-wrapper">
-                           Зависит от способа оплаты. Если вы хотите работать по постоплате, заключаем договор. Если вы
+                           Зависит от способа оплаты. Если вы хотите работать по постоплате, заключаем договор. Если вы
                            выбираете предоплату,
-                           сотрудничаем по оферте.
+                           сотрудничаем по оферте.
                         </div>
                      </div>
                   </div>
@@ -959,16 +987,15 @@
                      </div>
                      <div class="faq__answer">
                         <div class="faq__answer-wrapper">
-                           Smartway — онлайн-сервис для полного цикла организации командировок. В нем можно сделать все
-                           от заявки на поездку до
-                           закрывающих документов и аналитики расходов. <br>
-                           Пользоваться сервисом удобнее, быстрее и выгоднее для бизнеса, чем работать
+                           Smartway — онлайн-сервис для полного цикла организации командировок. В нем можно сделать все
+                           от заявки на поездку до закрывающих документов и аналитики расходов. <br>
+                           Пользоваться сервисом удобнее, быстрее и выгоднее для бизнеса, чем работать
                            с агентством. Главная ценность
                            IT-решения — экономия до 50% бюджета и времени команды за счет
                            автоматизации. Например, Smartway
                            автоматически подгружает данные сотрудников в бронирования и отчеты, чтобы избежать
                            опечаток и ошибок
-                           из-за человеческого фактора.
+                           из-за человеческого фактора.
                         </div>
                      </div>
                   </div>
@@ -986,11 +1013,11 @@
                      </div>
                      <div class="faq__answer">
                         <div class="faq__answer-wrapper">
-                           Сервис работает по фиксированной ежемесячной абонентской плате. Точная сумма зависит от
-                           тарифа, , который вы выберете. Мы не берем комиссию или скрытые сборы, поэтому все цены на
-                           авиабилеты и отели внутри сервиса
-                           такие же, как у поставщиков. <br> Оплачивать услуги можно со счета в Smartway, который вы
-                           пополняете заранее или с отсрочкой.
+                           Сервис работает по фиксированной ежемесячной абонентской плате. Точная сумма зависит
+                           от тарифа, , который вы выберете. Мы не берем комиссию или скрытые сборы, поэтому все цены
+                           на авиабилеты и отели внутри сервиса
+                           такие же, как у поставщиков. <br> Оплачивать услуги можно со счета в Smartway, который вы
+                           пополняете заранее или с отсрочкой.
                         </div>
                      </div>
                   </div>
@@ -1009,7 +1036,7 @@
                      </div>
                      <div class="faq__answer">
                         <div class="faq__answer-wrapper">
-                           Нет. Вы платите за обслуживание, только когда бронируете поездки.
+                           Нет. Вы платите за обслуживание, только когда бронируете поездки.
                         </div>
                      </div>
                   </div>
@@ -1027,11 +1054,11 @@
                      </div>
                      <div class="faq__answer">
                         <div class="faq__answer-wrapper">
-                           Да, поддержка Smartway работает 24/7: решает форс-мажоры и отвечает на вопросы по организации
-                           командировок и деловых
-                           поездок. Обратиться к специалисту можно в личном кабинете на сайте или в мобильном
-                           приложении, а также по почте или
-                           телефону в любое время суток и без выходных.
+                           Да, поддержка Smartway работает 24/7: решает форс-мажоры и отвечает на вопросы по организации
+                           командировок и деловых
+                           поездок. Обратиться к специалисту можно в личном кабинете на сайте или в мобильном
+                           приложении, а также по почте или
+                           телефону в любое время суток и без выходных.
                         </div>
                      </div>
                   </div>
@@ -1039,8 +1066,8 @@
                   <div class="faq__item">
                      <div class="faq__question">
                         <div class="faq__question-text">
-                           В нашей группе компаний несколько <br>
-                           юридических лиц. Нужен ли отдельный личный <br>
+                           В нашей группе компаний несколько <br>
+                           юридических лиц. Нужен ли отдельный личный <br>
                            кабинет для каждого юридического лица?
                         </div>
                         <div class="faq__question-icon">
@@ -1051,10 +1078,10 @@
                      </div>
                      <div class="faq__answer">
                         <div class="faq__answer-wrapper">
-                           Нет, вы&nbsp;можете использовать один личный кабинет для организации командировок для всех
-                           юридических лиц. При этом путаницы с оплатами не будет. <br> Smartway учитывает особенности
-                           командировок для групп компаний, подробнее о возможностях сервиса для холдингов вы можете
-                           узнать у наших менеджеров.
+                           Нет, вы можете использовать один личный кабинет для организации командировок для всех
+                           юридических лиц. При этом путаницы с оплатами не будет. <br> Smartway учитывает особенности
+                           командировок для групп компаний, подробнее о возможностях сервиса для холдингов вы можете
+                           узнать у наших менеджеров.
                         </div>
                      </div>
                   </div>
@@ -1063,7 +1090,7 @@
                      <div class="faq__question">
                         <div class="faq__question-text">
                            В сервисе можно организовывать зарубежные <br>
-                           командировки для бизнеса?
+                           командировки для бизнеса?
                         </div>
                         <div class="faq__question-icon">
                            <svg>
@@ -1073,9 +1100,9 @@
                      </div>
                      <div class="faq__answer">
                         <div class="faq__answer-wrapper">
-                           Да. В сервисе большой выбор зарубежных отелей и рейсов иностранных авиакомпаний. Вы можете
+                           Да. В сервисе большой выбор зарубежных отелей и рейсов иностранных авиакомпаний. Вы можете
                            бронировать их как обычно,
-                           при этом оплачивать с российской карты или счета.
+                           при этом оплачивать с российской карты или счета.
                         </div>
                      </div>
                   </div>
@@ -1097,7 +1124,8 @@
                         <img src="img/icons/contacts-3.svg" width="190" height="84.5" alt="contacts">
                      </div>
                      <div class="request-banner__button">
-                        <button type="button" class="btn btn-arrow">Получить консультацию</button>
+                        <button type="button" class="btn btn-arrow open-popup" data-popup="consultation-popup">Получить
+                           консультацию</button>
                      </div>
                   </div>
                </div>
@@ -1112,25 +1140,25 @@
                <img src="img/logo-white.svg" width="236" height="33" alt="logo">
             </div>
             <div class="footer__member">
-               <a href="" class="footer__member-link">
+               <a href="https://smartway.today/tkp" target="_blank" class="footer__member-link">
                   <img src="img/tkp.webp" width="77" height="42.6" alt="ТКП">
                </a>
-               <a href="" class="footer__member-link">
+               <a href="https://navigator.sk.ru/orn/1122071" target="_blank" class="footer__member-link">
                   <img src="img/sk.webp" width="105" height="30.7" alt="SK участник">
                </a>
             </div>
             <div class="footer__socials">
-               <a href="" class="footer__social" aria-label="VK">
+               <a href="https://vk.com/smartway_today" target="_blank" class="footer__social" aria-label="VK">
                   <svg>
                      <use xlink:href="img/icons/icons.svg#icon-vk"></use>
                   </svg>
                </a>
-               <a href="" class="footer__social" aria-label="vc.ru">
+               <a href="https://vc.ru/u/3044351-smartway" target="_blank" class="footer__social" aria-label="vc.ru">
                   <svg>
                      <use xlink:href="img/icons/icons.svg#icon-vc"></use>
                   </svg>
                </a>
-               <a href="" class="footer__social" aria-label="telegram">
+               <a href="https://vc.ru/u/3044351-smartway" class="footer__social" aria-label="telegram">
                   <svg>
                      <use xlink:href="img/icons/icons.svg#icon-telegram"></use>
                   </svg>
@@ -1138,7 +1166,7 @@
                </a>
             </div>
             <div class="footer__button">
-               <button class="btn">Записаться на консультацию ↗</button>
+               <button class="btn open-popup" data-popup="consultation-popup">Записаться на консультацию ↗</button>
             </div>
          </div>
          <nav class="footer__nav">
@@ -1246,16 +1274,267 @@
    </div>
 </footer>
    </div>
-   <!-- popup-->
-<div id="" class=" popup" role="dialog" aria-modal="true">
-   <div class="popup__body">
-      <div class="popup__close"></div>
+   <!--main popup-->
+<div id="main-popup" class="main-popup popup" role="dialog" aria-modal="true">
+   <div class="main-popup__body popup__body">
+      <div class="main-popup__title popup__title"> Оставьте заявку <br> на доступ к сервису </div>
+      <div class="main-popup__content">
+         <form class="callback__form">
+            <div class="callback__form-area">
+               <div class="callback__form-label">Ваше имя*</div>
+               <input type="text" class="callback__form-input" required>
+            </div>
+            <div class="callback__form-area">
+               <div class="callback__form-label">Название компании*</div>
+               <input type="text" class="callback__form-input" required>
+            </div>
+            <div class="callback__form-area">
+               <div class="callback__form-label">Сколько командировок в компании в месяц*</div>
+               <div class="cb-dropdown">
+                  <button type="button" class="cb-dropdown__button">
+                     <p class="cb-dropdown__button-text">Выберите из списка</p>
+                     <div class="cb-dropdown__arrow">
+                        <svg>
+                           <use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
+                        </svg>
+                     </div>
+
+                  </button>
+                  <div class="cb-dropdown__menu">
+                     <ul class="cb-dropdown__list">
+                        <li class="cb-dropdown__item">
+                           <label class="cb-dropdown__label">
+                              <input type="radio" name="komandirovki" value="1" required>
+                              <span class="cb-dropdown__text">1 командировка</span>
+                           </label>
+                        </li>
+                        <li class="cb-dropdown__item">
+                           <label class="cb-dropdown__label">
+                              <input type="radio" name="komandirovki" value="2">
+                              <span class="cb-dropdown__text">2 командировки</span>
+                           </label>
+                        </li>
+                        <li class="cb-dropdown__item">
+                           <label class="cb-dropdown__label">
+                              <input type="radio" name="komandirovki" value="3">
+                              <span class="cb-dropdown__text">3 командировки</span>
+                           </label>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="callback__form-area">
+               <div class="callback__form-label">Корпоративная почта*</div>
+               <input type="email" class="callback__form-input" required>
+            </div>
+            <div class="callback__form-area">
+               <div class="callback__form-label">Телефон*</div>
+               <div class="phone-field">
+                  <div class="phone-field__country">
+                     <button type="button" class="phone-field__btn">
+                        <span class="phone-field__flag">
+                           <img src="img/icons/ru.svg" width="26" height="26" alt="flag">
+                        </span>
+                        <span class="phone-field__code">+7</span>
+                        <svg class="phone-field__arrow">
+                           <use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
+                        </svg>
+                     </button>
+                     <ul class="phone-field__list">
+                        <li class="phone-field__list-item">
+                           <span class="phone-field__flag">
+                              <img src="img/icons/ru.svg" width="26" height="26" alt="flag">
+                           </span>
+                           <span class="phone-field__code">+7</span>
+                        </li>
+                        <li class="phone-field__list-item">
+                           <span class="phone-field__flag">
+                              <img src="img/icons/kz.svg" width="26" height="26" alt="flag">
+                           </span>
+                           <span class="phone-field__code">+7</span>
+                        </li>
+                        <li class="phone-field__list-item">
+                           <span class="phone-field__flag">
+                              <img src="img/icons/uz.svg" width="26" height="26" alt="flag">
+                           </span>
+                           <span class="phone-field__code">+998</span>
+                        </li>
+                        <li class="phone-field__list-item">
+                           <span class="phone-field__flag">
+                              <img src="img/icons/az.svg" width="26" height="26" alt="flag">
+                           </span>
+                           <span class="phone-field__code">+994</span>
+                        </li>
+                        <li class="phone-field__list-item">
+                           <span class="phone-field__flag">
+                              <img src="img/icons/ua.svg" width="26" height="26" alt="flag">
+                           </span>
+                           <span class="phone-field__code">+380</span>
+                        </li>
+                     </ul>
+                  </div>
+                  <input type="tel" class="phone-field__input" placeholder="(000)-00-00" required>
+               </div>
+            </div>
+            <div class="callback__form-area">
+               <label class="agreement">
+                  <input type="checkbox" required>
+                  <div class="agreement__box"></div>
+                  <span class="agreement__text">Даю согласие на <a href="">получение сообщений рекламного и
+                        информационного характера</a></span>
+               </label>
+            </div>
+            <div class="callback__form-submit">
+               <a href="success.html" class="btn">Отправить</a>
+            </div>
+            <div class="callback__att">
+               Нажимая на эту кнопку, Вы даете согласие на <a href="">обработку персональных данных</a> и
+               принимаете условия
+               <a href="">Политики обработки персональных данных</a>
+            </div>
+         </form>
+      </div>
+      <button type="button" class="popup__close" aria-label="Закрыть попап">
+         <svg>
+            <use xlink:href="img/icons/icons.svg#icon-close"></use>
+         </svg>
+      </button>
+   </div>
+</div>
+
+<!--consultation popup-->
+<div id="consultation-popup" class="consultation-popup popup" role="dialog" aria-modal="true">
+   <div class="consultation-popup__body popup__body">
+      <div class="consultation-popup__title popup__title"> Оставьте заявку <br> на бесплатную консультацию </div>
+      <div class="consultation-popup__content">
+         <form class="callback__form">
+            <div class="callback__form-area">
+               <div class="callback__form-label">Ваше имя*</div>
+               <input type="text" class="callback__form-input" required>
+            </div>
+            <div class="callback__form-area">
+               <div class="callback__form-label">Название компании*</div>
+               <input type="text" class="callback__form-input" required>
+            </div>
+            <div class="callback__form-area">
+               <div class="callback__form-label">Сколько командировок в компании в месяц*</div>
+               <div class="cb-dropdown">
+                  <button type="button" class="cb-dropdown__button">
+                     <p class="cb-dropdown__button-text">Выберите из списка</p>
+                     <div class="cb-dropdown__arrow">
+                        <svg>
+                           <use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
+                        </svg>
+                     </div>
+
+                  </button>
+                  <div class="cb-dropdown__menu">
+                     <ul class="cb-dropdown__list">
+                        <li class="cb-dropdown__item">
+                           <label class="cb-dropdown__label">
+                              <input type="radio" name="komandirovki" value="1" required>
+                              <span class="cb-dropdown__text">1 командировка</span>
+                           </label>
+                        </li>
+                        <li class="cb-dropdown__item">
+                           <label class="cb-dropdown__label">
+                              <input type="radio" name="komandirovki" value="2">
+                              <span class="cb-dropdown__text">2 командировки</span>
+                           </label>
+                        </li>
+                        <li class="cb-dropdown__item">
+                           <label class="cb-dropdown__label">
+                              <input type="radio" name="komandirovki" value="3">
+                              <span class="cb-dropdown__text">3 командировки</span>
+                           </label>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="callback__form-area">
+               <div class="callback__form-label">Корпоративная почта*</div>
+               <input type="email" class="callback__form-input" required>
+            </div>
+            <div class="callback__form-area">
+               <div class="callback__form-label">Телефон*</div>
+               <div class="phone-field">
+                  <div class="phone-field__country">
+                     <button type="button" class="phone-field__btn">
+                        <span class="phone-field__flag">
+                           <img src="img/icons/ru.svg" width="26" height="26" alt="flag">
+                        </span>
+                        <span class="phone-field__code">+7</span>
+                        <svg class="phone-field__arrow">
+                           <use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
+                        </svg>
+                     </button>
+                     <ul class="phone-field__list">
+                        <li class="phone-field__list-item">
+                           <span class="phone-field__flag">
+                              <img src="img/icons/ru.svg" width="26" height="26" alt="flag">
+                           </span>
+                           <span class="phone-field__code">+7</span>
+                        </li>
+                        <li class="phone-field__list-item">
+                           <span class="phone-field__flag">
+                              <img src="img/icons/kz.svg" width="26" height="26" alt="flag">
+                           </span>
+                           <span class="phone-field__code">+7</span>
+                        </li>
+                        <li class="phone-field__list-item">
+                           <span class="phone-field__flag">
+                              <img src="img/icons/uz.svg" width="26" height="26" alt="flag">
+                           </span>
+                           <span class="phone-field__code">+998</span>
+                        </li>
+                        <li class="phone-field__list-item">
+                           <span class="phone-field__flag">
+                              <img src="img/icons/az.svg" width="26" height="26" alt="flag">
+                           </span>
+                           <span class="phone-field__code">+994</span>
+                        </li>
+                        <li class="phone-field__list-item">
+                           <span class="phone-field__flag">
+                              <img src="img/icons/ua.svg" width="26" height="26" alt="flag">
+                           </span>
+                           <span class="phone-field__code">+380</span>
+                        </li>
+                     </ul>
+                  </div>
+                  <input type="tel" class="phone-field__input" placeholder="(000)-00-00" required>
+               </div>
+            </div>
+            <div class="callback__form-area">
+               <label class="agreement">
+                  <input type="checkbox" required>
+                  <div class="agreement__box"></div>
+                  <span class="agreement__text">Даю согласие на <a href="">получение сообщений рекламного и
+                        информационного характера</a></span>
+               </label>
+            </div>
+            <div class="callback__form-submit">
+               <a href="success.html" class="btn">Отправить</a>
+            </div>
+            <div class="callback__att">
+               Нажимая на эту кнопку, Вы даете согласие на <a href="">обработку персональных данных</a> и
+               принимаете условия
+               <a href="">Политики обработки персональных данных</a>
+            </div>
+         </form>
+      </div>
+      <button type="button" class="popup__close" aria-label="Закрыть попап">
+         <svg>
+            <use xlink:href="img/icons/icons.svg#icon-close"></use>
+         </svg>
+      </button>
    </div>
 </div>
    
 
-   <!-- <script src="js/splide.min.js?_v=20260606224854"></script> -->
-   <script src="js/app.js?_v=20260606224854"></script>
+   <!-- <script src="js/splide.min.js?_v=20260607175951"></script> -->
+   <script src="js/app.js?_v=20260607175951"></script>
 </body>
 
 </html>
