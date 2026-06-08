@@ -14,14 +14,14 @@
    <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
    <link rel="icon" type="image/ico" href="img/fav/favicon.ico">
    <!-- SEO -->
-   <title>Спасибо! Заявка отправлена</title>
+   <title>1C</title>
    <meta name="description"
       content="Smartway — сервис организации командировок для бизнеса. Помогаем организациям в управлении командированием, оформлять служебные поездки и командировки онлайн удобно и быстро. Дешевле и проще, чем агентство деловых поездок!">
    <meta name="author" content="Smartway">
 
    <!-- Open Graph -->
    <meta property="og:type" content="website">
-   <meta property="og:title" content="Спасибо! Заявка отправлена">
+   <meta property="og:title" content="1C">
    <meta property="og:description"
       content="Smartway — сервис организации командировок для бизнеса. Помогаем организациям в управлении командированием, оформлять служебные поездки и командировки онлайн удобно и быстро. Дешевле и проще, чем агентство деловых поездок!">
    <meta property="og:url" content="https://smartway.today">
@@ -35,6 +35,130 @@
    
    <link rel="stylesheet" href="css/1c.min.css?_v=20260608132126">
 </head>
+
+<style>
+   .project-report {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      font-family: inherit;
+   }
+
+   .project-report h2 {
+      margin: 0 0 32px;
+      font-size: 40px;
+      line-height: 1.2;
+   }
+
+   .project-report__summary {
+      padding: 20px;
+      margin-bottom: 32px;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      background: #f8fafc;
+   }
+
+   .project-report__summary p {
+      margin: 0;
+   }
+
+   .project-report__summary p:not(:last-child) {
+      margin-bottom: 8px;
+   }
+
+   .project-report__block {
+      padding: 32px;
+      border: 1px solid #e5e7eb;
+      border-radius: 20px;
+      background: #fff;
+   }
+
+   .project-report__block:not(:last-child) {
+      margin-bottom: 24px;
+   }
+
+   .project-report__block h3 {
+      margin: 0 0 20px;
+      font-size: 24px;
+      line-height: 1.3;
+   }
+
+   .project-report__block p {
+      margin: 0 0 20px;
+      line-height: 1.6;
+   }
+
+   .project-report__block ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+   }
+
+   .grid2 {
+      display: grid;
+      grid-template-columns: 400px 400px;
+   }
+
+   .project-report__block li:not(:last-child) {
+      margin-bottom: 12px;
+   }
+
+   .project-report__block a {
+      width: 300px;
+      font-size: 14px;
+      padding: 8px 16px;
+   }
+
+   .project-report__screenshots {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+   }
+
+   .project-report__screenshots img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      object-fit: cover;
+   }
+
+   @media (width < 999px) {
+      .grid2 {
+         grid-template-columns: 1fr;
+      }
+   }
+
+   @media (max-width: 767px) {
+      .project-report {
+         padding: 24px 16px;
+      }
+
+      .project-report h2 {
+         font-size: 30px;
+         margin-bottom: 24px;
+      }
+
+      .project-report__block {
+         padding: 20px;
+      }
+
+      .project-report__block h3 {
+         font-size: 20px;
+      }
+
+      .project-report__screenshots {
+         grid-template-columns: 1fr;
+      }
+
+      .project-report__block a,
+      .project-report__block button {
+         width: 100%;
+      }
+   }
+</style>
 
 <body>
    <div class="wrapper">
@@ -169,28 +293,166 @@
    </div>
 </header>
       <main>
-         <div class="success">
-            <div class="success__body container section-padding">
-               <h2 class="success__title section-title">Спасибо! <br> Заявка отправлена</h2>
-               <div class="success__subtitle section-subtitle">Мы свяжемся с вами в ближайшее время</div>
-               <div class="success__card">
-                  <div class="success__card-icon">
-                     <svg>
-                        <use xlink:href="img/icons/icons.svg#icon-telegram"></use>
-                     </svg>
-                  </div>
-                  <div class="success__card-text">Читайте о трендах и инсайтах бизнес-тревела в Telegram -
-                     <b>Командировки.Сегодня</b>
-                  </div>
-                  <div class="success__card-button">
-                     <a href="https://t.me/+W1XSlHreIzk5YzYy" target="_blank" class="btn -white">Подписаться</a>
-                  </div>
-               </div>
-               <div class="success__button">
-                  <a href="index.html" class="btn btn-arrow">На главную</a>
+         <section class="project-report">
+            <h2>Итоги выполненной работы</h2>
+
+            <div class="project-report__block">
+               <h3>1. Выполнена вёрстка 10 страниц</h3>
+
+               <ul class="grid2">
+                  <li>
+                     <a href="index.html" target="_blank" class="btn" rel="noopener noreferrer">
+                        Главная страница
+                     </a>
+                  </li>
+                  <li>
+                     <a href="bronirovanie-oteley-dlya-yr-lic.html" class="btn" target="_blank"
+                        rel="noopener noreferrer">
+                        Бронирование отелей
+                     </a>
+                  </li>
+                  <li>
+                     <a href="1с.html" target="_blank" class="btn" rel="noopener noreferrer">
+                        1С
+                     </a>
+                  </li>
+                  <li>
+                     <a href="search-ticket-yr-litc.html" target="_blank" class="btn" rel="noopener noreferrer">
+                        Авиабилеты для командировок
+                     </a>
+                  </li>
+                  <li>
+                     <a href="taxi.html" target="_blank" class="btn" rel="noopener noreferrer">
+                        Корпоративное такси
+                     </a>
+                  </li>
+                  <li>
+                     <a href="travel-coordination.html" target="_blank" class="btn" rel="noopener noreferrer">
+                        Согласование поездок
+                     </a>
+                  </li>
+                  <li>
+                     <a href="travel-policy.html" target="_blank" class="btn" rel="noopener noreferrer">
+                        Тревел политика
+                     </a>
+                  </li>
+                  <li>
+                     <a href="mice.html" target="_blank" class="btn" rel="noopener noreferrer">
+                        MICE
+                     </a>
+                  </li>
+                  <li>
+                     <a href="accountant.html" target="_blank" class="btn" rel="noopener noreferrer">
+                        Бухгалтерам
+                     </a>
+                  </li>
+                  <li>
+                     <a href="article.html" target="_blank" class="btn" rel="noopener noreferrer">
+                        Шаблон статьи
+                     </a>
+                  </li>
+               </ul>
+            </div>
+
+            <div class="project-report__block">
+               <h3>2. Выполнена вёрстка технических страниц авторизации</h3>
+
+               <ul class="grid2">
+                  <li>
+                     <a href="login.html" target="_blank" class="btn" rel="noopener noreferrer">
+                        Страница входа
+                     </a>
+                  </li>
+                  <li>
+                     <a href="registration.html" class="btn" target="_blank" rel="noopener noreferrer">
+                        Страница регистрации
+                     </a>
+                  </li>
+                  <li>
+                     <a href="password-restore.html" target="_blank" class="btn" rel="noopener noreferrer">
+                        Восстановление пароля
+                     </a>
+                  </li>
+                  <li>
+                     <a href="password-restore.html" target="_blank" class="btn" rel="noopener noreferrer">
+                        Восстановление пароля
+                     </a>
+                  </li>
+                  <li>
+                     <a href="restore-access.html" target="_blank" class="btn" rel="noopener noreferrer">
+                        Помощь с авторизацией
+                     </a>
+                  </li>
+                  <li>
+                     <a href="success.html" target="_blank" class="btn" rel="noopener noreferrer">
+                        Техническая страница "Успешно"
+                     </a>
+                  </li>
+               </ul>
+            </div>
+
+            <div class="project-report__block">
+               <h3>3. Реализованы попапы</h3>
+
+               <ul>
+                  <li>
+                     <button type="button" class="btn -white open-popup" data-popup="main-popup">
+                        «Оставить заявку»
+                     </button>
+                  </li>
+                  <li>
+                     <button type="button" class="btn -white open-popup" data-popup="consultation-popup">
+                        «Запись на консультацию»
+                     </button>
+                  </li>
+
+               </ul>
+            </div>
+
+            <div class="project-report__block">
+               <h3>3. Проверка валидности HTML</h3>
+
+               <p>
+                  Все страницы успешно прошли проверку валидатором <a href="https://validator.w3.org/" target="_blank"
+                     style="padding: 0; text-decoration: underline;">https://validator.w3.org/</a>. Ошибок не обнаружено
+               </p>
+
+               <div class="project-report__screenshots">
+                  <img src="img/scr-1.avif" width="800" height="450">
+                  <img src="img/scr-2.avif" alt="Результат проверки валидности страницы О компании" width="800"
+                     height="450">
                </div>
             </div>
-         </div>
+
+            <div class="project-report__block">
+               <h3>4. Оптимизация производительности</h3>
+
+               <p>
+                  Все страницы прошли аудит производительности и оптимизации через <a href="https://pagespeed.web.dev/"
+                     target="_blank" style="padding: 0; text-decoration: underline;">https://pagespeed.web.dev/</a>. Все
+                  показатели в зеленой
+                  (максимальной)
+                  зоне.
+               </p>
+
+               <div class="project-report__screenshots">
+                  <img src="img/scr-3.avif" alt="Результат PageSpeed Insights для главной страницы" width="800"
+                     height="450">
+                  <img src="img/scr-4.avif" alt="Результат PageSpeed Insights для мобильной версии" width="800"
+                     height="450">
+               </div>
+            </div>
+
+            <div class="project-report__block">
+               <h3>5. Правки от заказчика</h3>
+
+               <p>
+                  Были выполнены правки от заказчика по уменьшению блоков, текстов, форм и других элементов. <br>
+                  <b>Можно выполнить повторную заключительную проверку</b>
+               </p>
+
+            </div>
+         </section>
       </main>
       <footer class="footer">
    <div class="footer__main">
