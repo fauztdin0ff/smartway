@@ -5,7 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="format-detection" content="telephone=no">
-   <meta name="robots" content="noindex, nofollow">
+   <!--<meta name="robots" content="noindex, nofollow">-->
    <!-- favicons -->
    <link rel="icon" type="image/svg+xml" href="img/fav/favicon.svg">
    <link rel="icon" type="image/png" sizes="512x512" href="img/fav/android-chrome-512x512.png">
@@ -29,11 +29,11 @@
       content="https://static.tildacdn.com/tild3436-6666-4061-b735-333364313035/Frame_2085655993.png">
 
    <!-- Styles -->
-   <link rel="stylesheet" href="css/base.min.css?_v=20260608120814">
+   <link rel="stylesheet" href="css/base.min.css?_v=20260608123931">
    
    
    
-   <link rel="stylesheet" href="css/login.min.css?_v=20260608120814">
+   <link rel="stylesheet" href="css/login.min.css?_v=20260608123931">
 </head>
 
 <body>
@@ -423,12 +423,12 @@
       <div class="main-popup__content">
          <form id="callbackForm" class="callback__form">
             <div class="callback__form-area">
-               <div class="callback__form-label">Ваше имя*</div>
-               <input type="text" class="callback__form-input" required>
+               <label for="name2" class="callback__form-label">Ваше имя*</label>
+               <input type="text" id="name2" name="name" autocomplete="name" class="callback__form-input" required>
             </div>
             <div class="callback__form-area">
-               <div class="callback__form-label">Название компании*</div>
-               <input type="text" class="callback__form-input" required>
+               <label for="company2" class="callback__form-label">Название компании*</label>
+               <input type="text" id="company2" name="company" class="callback__form-input" required>
             </div>
             <div class="callback__form-area">
                <div class="callback__form-label">Сколько командировок в компании в месяц*</div>
@@ -440,6 +440,7 @@
                            <use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
                         </svg>
                      </span>
+
                   </button>
                   <div class="cb-dropdown__menu">
                      <ul class="cb-dropdown__list">
@@ -466,11 +467,12 @@
                </div>
             </div>
             <div class="callback__form-area">
-               <div class="callback__form-label">Корпоративная почта*</div>
-               <input type="email" class="callback__form-input" required>
+               <label for="email2" class="callback__form-label">Корпоративная почта*</д>
+                  <input type="email2" id="email" name="email" autocomplete="email" class="callback__form-input"
+                     required>
             </div>
             <div class="callback__form-area">
-               <div class="callback__form-label">Телефон*</div>
+               <label for="phone2" class="callback__form-label">Телефон*</label>
                <div class="phone-field">
                   <div class="phone-field__country">
                      <button type="button" class="phone-field__btn">
@@ -515,7 +517,7 @@
                         </li>
                      </ul>
                   </div>
-                  <input type="tel" class="phone-field__input" placeholder="(000)-00-00" required>
+                  <input type="tel" id="phone2" class="phone-field__input" placeholder="(000)-00-00" required>
                </div>
             </div>
             <div class="callback__form-area">
@@ -527,7 +529,7 @@
                </label>
             </div>
             <div class="callback__form-submit">
-               <a href="success.html" class="btn">Отправить</a>
+               <a href="success.html" class="btn">Попробовать бесплатно</a>
             </div>
             <div class="callback__att">
                Нажимая на эту кнопку, Вы даете согласие на <a href="">обработку персональных данных</a> и
@@ -551,12 +553,12 @@
       <div class="consultation-popup__content">
          <form id="consultationForm" class="callback__form">
             <div class="callback__form-area">
-               <div class="callback__form-label">Ваше имя*</div>
-               <input type="text" class="callback__form-input" required>
+               <label for="name3" class="callback__form-label">Ваше имя*</label>
+               <input type="text" id="name3" name="name" autocomplete="name" class="callback__form-input" required>
             </div>
             <div class="callback__form-area">
-               <div class="callback__form-label">Название компании*</div>
-               <input type="text" class="callback__form-input" required>
+               <label for="company3" class="callback__form-label">Название компании*</label>
+               <input type="text" id="company3" name="company" class="callback__form-input" required>
             </div>
             <div class="callback__form-area">
                <div class="callback__form-label">Сколько командировок в компании в месяц*</div>
@@ -568,6 +570,7 @@
                            <use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
                         </svg>
                      </span>
+
                   </button>
                   <div class="cb-dropdown__menu">
                      <ul class="cb-dropdown__list">
@@ -594,11 +597,12 @@
                </div>
             </div>
             <div class="callback__form-area">
-               <div class="callback__form-label">Корпоративная почта*</div>
-               <input type="email" class="callback__form-input" required>
+               <label for="email3" class="callback__form-label">Корпоративная почта*</д>
+                  <input type="email" id="email3" name="email" autocomplete="email" class="callback__form-input"
+                     required>
             </div>
             <div class="callback__form-area">
-               <div class="callback__form-label">Телефон*</div>
+               <label for="phone3" class="callback__form-label">Телефон*</label>
                <div class="phone-field">
                   <div class="phone-field__country">
                      <button type="button" class="phone-field__btn">
@@ -643,7 +647,7 @@
                         </li>
                      </ul>
                   </div>
-                  <input type="tel" class="phone-field__input" placeholder="(000)-00-00" required>
+                  <input type="tel" id="phone3" class="phone-field__input" placeholder="(000)-00-00" required>
                </div>
             </div>
             <div class="callback__form-area">
@@ -655,7 +659,7 @@
                </label>
             </div>
             <div class="callback__form-submit">
-               <a href="success.html" class="btn">Отправить</a>
+               <a href="success.html" class="btn">Попробовать бесплатно</a>
             </div>
             <div class="callback__att">
                Нажимая на эту кнопку, Вы даете согласие на <a href="">обработку персональных данных</a> и
@@ -673,7 +677,7 @@
 </div>
    
 
-   <script src="js/app.js?_v=20260608120814"></script>
+   <script src="js/app.js?_v=20260608123931"></script>
 </body>
 
 </html>
