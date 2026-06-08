@@ -29,11 +29,11 @@
       content="https://static.tildacdn.com/tild3436-6666-4061-b735-333364313035/Frame_2085655993.png">
 
    <!-- Styles -->
-   <link rel="stylesheet" href="css/base.min.css?_v=20260607175951">
+   <link rel="stylesheet" href="css/base.min.css?_v=20260608115204">
    
    
    
-   <link rel="stylesheet" href="css/home.min.css?_v=20260607175951">
+   <link rel="stylesheet" href="css/home.min.css?_v=20260608115204">
 </head>
 
 <body>
@@ -52,7 +52,7 @@
          </div>
          <nav class="menu__body">
             <div class="menu__logo">
-               <img src="img/logo.svg" width="200" height="27.5" alt="logo">
+               <img src="img/logo.svg" width="200" height="27" alt="logo">
             </div>
             <ul class="menu__list">
                <li class="menu__item has-submenu">
@@ -185,8 +185,8 @@
                         alt="screen">
                      <img src="img/hero-screen-2.avif" class="hero__graphics-img -img-2" width="269" height="205"
                         alt="screen">
-                     <img src="img/hero-worker.avif" class="hero__graphics-img -img-3" width="406" height="452"
-                        alt="screen">
+                     <img src="img/hero-worker.avif" fetchpriority=high class="hero__graphics-img -img-3" width="406"
+                        height="452" alt="screen">
                   </div>
                   <div class="hero__graphics-advantages">
                      <div class="hero__graphics-advantage">
@@ -414,7 +414,7 @@
                   </div>
                   <div class="request-banner__action">
                      <div class="request-banner__icon">
-                        <img src="img/icons/contacts.svg" width="190" height="84.5" alt="contacts">
+                        <img src="img/icons/contacts.svg" width="190" height="84" alt="contacts">
                      </div>
                      <div class="request-banner__button">
                         <button type="button" class="btn btn-arrow open-popup" data-popup="consultation-popup">Получить
@@ -513,13 +513,13 @@
                      <div class="support-banner__text">
                         <ul class="arrow-list">
                            <li>
-                              <p><strong>Отвечаем за 5 минут</strong> — звоните, пишите в чат или на почту</p>
+                              <p><strong>Отвечаем за 5 минут</strong> — звоните, <br> пишите в чат или на почту</p>
                            </li>
                            <li>
-                              <p><strong>Более 350 менеджеров</strong> службы поддержки в разных часовых поясах</p>
+                              <p><strong>Более 350 менеджеров</strong> службы поддержки <br> в разных часовых поясах</p>
                            </li>
                            <li>
-                              <p>Вашим запросом сразу займется специалист Smartway, а не чат-бот</p>
+                              <p>Вашим запросом сразу займется специалист <br> Smartway, а не чат-бот</p>
                            </li>
                         </ul>
                      </div>
@@ -723,7 +723,7 @@
                <div class="clients__cards">
                   <div class="clients__card">
                      <div class="clients__card-logo">
-                        <img src="img/clients/client-1.webp" width="170" height="42.5" alt="logo">
+                        <img src="img/clients/client-1.webp" width="170" height="42" alt="logo">
                      </div>
                      <div class="clients__card-text">
                         <div class="clients__card-text-wrapper">
@@ -748,7 +748,7 @@
 
                   <div class="clients__card">
                      <div class="clients__card-logo">
-                        <img src="img/clients/client-2.webp" width="123" height="38.5" alt="logo">
+                        <img src="img/clients/client-2.webp" width="123" height="38" alt="logo">
                      </div>
                      <div class="clients__card-text">
                         <div class="clients__card-text-wrapper">
@@ -771,7 +771,7 @@
 
                   <div class="clients__card">
                      <div class="clients__card-logo">
-                        <img src="img/clients/client-3.webp" width="159" height="41.5" alt="logo">
+                        <img src="img/clients/client-3.webp" width="159" height="41" alt="logo">
                      </div>
                      <div class="clients__card-text">
                         <div class="clients__card-text-wrapper">
@@ -840,12 +840,12 @@
                            <div class="callback__form-label">Сколько командировок в компании в месяц*</div>
                            <div class="cb-dropdown">
                               <button type="button" class="cb-dropdown__button">
-                                 <p class="cb-dropdown__button-text">Выберите из списка</p>
-                                 <div class="cb-dropdown__arrow">
+                                 <span class="cb-dropdown__button-text">Выберите из списка</span>
+                                 <span class="cb-dropdown__arrow">
                                     <svg>
                                        <use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
                                     </svg>
-                                 </div>
+                                 </span>
 
                               </button>
                               <div class="cb-dropdown__menu">
@@ -928,7 +928,7 @@
                         <div class="callback__form-area">
                            <label class="agreement">
                               <input type="checkbox" required>
-                              <div class="agreement__box"></div>
+                              <span class="agreement__box"></span>
                               <span class="agreement__text">Даю согласие на <a href="">получение сообщений рекламного и
                                     информационного характера</a></span>
                            </label>
@@ -1121,7 +1121,7 @@
                   </div>
                   <div class="request-banner__action">
                      <div class="request-banner__icon">
-                        <img src="img/icons/contacts-3.svg" width="190" height="84.5" alt="contacts">
+                        <img src="img/icons/contacts-3.svg" width="190" height="84" alt="contacts">
                      </div>
                      <div class="request-banner__button">
                         <button type="button" class="btn btn-arrow open-popup" data-popup="consultation-popup">Получить
@@ -1141,10 +1141,10 @@
             </div>
             <div class="footer__member">
                <a href="https://smartway.today/tkp" target="_blank" class="footer__member-link">
-                  <img src="img/tkp.webp" width="77" height="42.6" alt="ТКП">
+                  <img src="img/tkp.webp" width="77" height="43" alt="ТКП">
                </a>
                <a href="https://navigator.sk.ru/orn/1122071" target="_blank" class="footer__member-link">
-                  <img src="img/sk.webp" width="105" height="30.7" alt="SK участник">
+                  <img src="img/sk.webp" width="105" height="30" alt="SK участник">
                </a>
             </div>
             <div class="footer__socials">
@@ -1265,7 +1265,7 @@
             Подпишитесь на рассылку полезных материалов Smartway
          </div>
          <div class="footer__subscribe-content">
-            <form action="" class="footer__subscribe-form">
+            <form id="subscribeForm" class="footer__subscribe-form">
                <input type="email" placeholder="Корпоративная почта" required>
                <button type="submit">Подписаться</button>
             </form>
@@ -1279,7 +1279,7 @@
    <div class="main-popup__body popup__body">
       <div class="main-popup__title popup__title"> Оставьте заявку <br> на доступ к сервису </div>
       <div class="main-popup__content">
-         <form class="callback__form">
+         <form id="callbackForm" class="callback__form">
             <div class="callback__form-area">
                <div class="callback__form-label">Ваше имя*</div>
                <input type="text" class="callback__form-input" required>
@@ -1292,13 +1292,12 @@
                <div class="callback__form-label">Сколько командировок в компании в месяц*</div>
                <div class="cb-dropdown">
                   <button type="button" class="cb-dropdown__button">
-                     <p class="cb-dropdown__button-text">Выберите из списка</p>
-                     <div class="cb-dropdown__arrow">
+                     <span class="cb-dropdown__button-text">Выберите из списка</span>
+                     <span class="cb-dropdown__arrow">
                         <svg>
                            <use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
                         </svg>
-                     </div>
-
+                     </span>
                   </button>
                   <div class="cb-dropdown__menu">
                      <ul class="cb-dropdown__list">
@@ -1380,7 +1379,7 @@
             <div class="callback__form-area">
                <label class="agreement">
                   <input type="checkbox" required>
-                  <div class="agreement__box"></div>
+                  <span class="agreement__box"></span>
                   <span class="agreement__text">Даю согласие на <a href="">получение сообщений рекламного и
                         информационного характера</a></span>
                </label>
@@ -1408,7 +1407,7 @@
    <div class="consultation-popup__body popup__body">
       <div class="consultation-popup__title popup__title"> Оставьте заявку <br> на бесплатную консультацию </div>
       <div class="consultation-popup__content">
-         <form class="callback__form">
+         <form id="consultationForm" class="callback__form">
             <div class="callback__form-area">
                <div class="callback__form-label">Ваше имя*</div>
                <input type="text" class="callback__form-input" required>
@@ -1421,13 +1420,12 @@
                <div class="callback__form-label">Сколько командировок в компании в месяц*</div>
                <div class="cb-dropdown">
                   <button type="button" class="cb-dropdown__button">
-                     <p class="cb-dropdown__button-text">Выберите из списка</p>
-                     <div class="cb-dropdown__arrow">
+                     <span class="cb-dropdown__button-text">Выберите из списка</span>
+                     <span class="cb-dropdown__arrow">
                         <svg>
                            <use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
                         </svg>
-                     </div>
-
+                     </span>
                   </button>
                   <div class="cb-dropdown__menu">
                      <ul class="cb-dropdown__list">
@@ -1509,7 +1507,7 @@
             <div class="callback__form-area">
                <label class="agreement">
                   <input type="checkbox" required>
-                  <div class="agreement__box"></div>
+                  <span class="agreement__box"></span>
                   <span class="agreement__text">Даю согласие на <a href="">получение сообщений рекламного и
                         информационного характера</a></span>
                </label>
@@ -1533,8 +1531,8 @@
 </div>
    
 
-   <!-- <script src="js/splide.min.js?_v=20260607175951"></script> -->
-   <script src="js/app.js?_v=20260607175951"></script>
+   <!-- <script src="js/splide.min.js?_v=20260608115204"></script> -->
+   <script src="js/app.js?_v=20260608115204"></script>
 </body>
 
 </html>

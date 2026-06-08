@@ -29,15 +29,15 @@
       content="https://static.tildacdn.com/tild3436-6666-4061-b735-333364313035/Frame_2085655993.png">
 
    <!-- Styles -->
-   <link rel="stylesheet" href="css/base.min.css?_v=20260607175951">
+   <link rel="stylesheet" href="css/base.min.css?_v=20260608115204">
    
-   <link rel="stylesheet" href="css/splide.min.css?_v=20260607175951">
-   
-   
-   <link rel="stylesheet" href="css/glightbox.min.css?_v=20260607175951">
+   <link rel="stylesheet" href="css/splide.min.css?_v=20260608115204">
    
    
-   <link rel="stylesheet" href="css/mice.min.css?_v=20260607175951">
+   <link rel="stylesheet" href="css/glightbox.min.css?_v=20260608115204">
+   
+   
+   <link rel="stylesheet" href="css/mice.min.css?_v=20260608115204">
 </head>
 
 <body>
@@ -56,7 +56,7 @@
          </div>
          <nav class="menu__body">
             <div class="menu__logo">
-               <img src="img/logo.svg" width="200" height="27.5" alt="logo">
+               <img src="img/logo.svg" width="200" height="27" alt="logo">
             </div>
             <ul class="menu__list">
                <li class="menu__item has-submenu">
@@ -424,9 +424,9 @@
                                     <img src="img/clients/logo-1.svg" width="85" height="37" alt="logo">
                                  </div>
                               </div>
-                              <div class="cases__slide-title">
+                              <h3 class="cases__slide-title">
                                  Масштабный новогодний корпоратив для холдинга «Коломенский»
-                              </div>
+                              </h3>
                               <div class="cases__slide-text">
                                  Объединили 1600+ сотрудников офиса и производственных площадок в единую команду за счет
                                  нестандартной концепции и интерактивной программы праздника
@@ -441,9 +441,9 @@
                                     <img src="img/clients/logo-2.svg" width="130" height="22" alt="logo">
                                  </div>
                               </div>
-                              <div class="cases__slide-title">
+                              <h3 class="cases__slide-title">
                                  Эффектная презентация ребрендинга компании Roomlink для партнеров
-                              </div>
+                              </h3>
                               <div class="cases__slide-text">
                                  Ярко представили обновление бренда с 30-летней историей, помогли усилить доверие
                                  клиентов и заложить основу для роста и объема сотрудников
@@ -458,9 +458,9 @@
                                     <img src="img/clients/logo-3.svg" width="107" height="28" alt="logo">
                                  </div>
                               </div>
-                              <div class="cases__slide-title">
+                              <h3 class="cases__slide-title">
                                  Новогодний корпоратив для двух подразделений в одной компании
-                              </div>
+                              </h3>
                               <div class="cases__slide-text">
                                  В высокий сезон организовали праздник, который объединил сотрудников двух брендов:
                                  с тематическими зонами и без лишних
@@ -476,9 +476,9 @@
                                     <img src="img/clients/logo-4.webp" width="116" height="50" alt="logo">
                                  </div>
                               </div>
-                              <div class="cases__slide-title">
+                              <h3 class="cases__slide-title">
                                  Иммерсивный квест и гала-ужин в Грузии
-                              </div>
+                              </h3>
                               <div class="cases__slide-text">
                                  Познакомили участников с ценностями компании-клиента в интерактивном формате
                                  на территории исторического шато и организовали гала-ужин с лучшими местными артистами
@@ -600,7 +600,7 @@
                      </div>
                   </div>
                   <div class="callback__content">
-                     <form class="callback__form">
+                     <form id="mainForm" class="callback__form">
                         <div class="callback__form-area">
                            <div class="callback__form-label">Ваше имя*</div>
                            <input type="text" class="callback__form-input" required>
@@ -613,12 +613,12 @@
                            <div class="callback__form-label">Сколько командировок в компании в месяц*</div>
                            <div class="cb-dropdown">
                               <button type="button" class="cb-dropdown__button">
-                                 <p class="cb-dropdown__button-text">Выберите из списка</p>
-                                 <div class="cb-dropdown__arrow">
+                                 <span class="cb-dropdown__button-text">Выберите из списка</span>
+                                 <span class="cb-dropdown__arrow">
                                     <svg>
                                        <use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
                                     </svg>
-                                 </div>
+                                 </span>
 
                               </button>
                               <div class="cb-dropdown__menu">
@@ -701,7 +701,7 @@
                         <div class="callback__form-area">
                            <label class="agreement">
                               <input type="checkbox" required>
-                              <div class="agreement__box"></div>
+                              <span class="agreement__box"></span>
                               <span class="agreement__text">Даю согласие на <a href="">получение сообщений рекламного и
                                     информационного характера</a></span>
                            </label>
@@ -752,7 +752,7 @@
                                  </div>
                                  <div class="reviews__slide-author">
                                     <div class="reviews__slide-author-name">Юлия Киреева</div>
-                                    <a href="img/mails/1.png" type="button" class="reviews__slide-mail glightbox">
+                                    <a href="img/mails/1.png" class="reviews__slide-mail glightbox">
                                        Благодарственное письмо
                                     </a>
                                  </div>
@@ -786,7 +786,7 @@
                                     <div class="reviews__slide-author-name">Андрей Станкевич</div>
                                     <div class="reviews__slide-author-role">Декан факультета информационных технологий
                                        и программирования</div>
-                                    <a href="img/mails/2.png" type="button" class="reviews__slide-mail glightbox">
+                                    <a href="img/mails/2.png" class="reviews__slide-mail glightbox">
                                        Благодарственное письмо
                                     </a>
                                  </div>
@@ -817,7 +817,7 @@
                                  <div class="reviews__slide-author">
                                     <div class="reviews__slide-author-name">Андрей Кононенко</div>
                                     <div class="reviews__slide-author-role">Генеральный директор</div>
-                                    <a href="img/mails/3.png" type="button" class="reviews__slide-mail glightbox">
+                                    <a href="img/mails/3.png" class="reviews__slide-mail glightbox">
                                        Благодарственное письмо
                                     </a>
                                  </div>
@@ -849,7 +849,7 @@
                                  <div class="reviews__slide-author">
                                     <div class="reviews__slide-author-name">В. С. Иванов</div>
                                     <div class="reviews__slide-author-role">Генеральный директор</div>
-                                    <a href="img/mails/4.png" type="button" class="reviews__slide-mail glightbox">
+                                    <a href="img/mails/4.png" class="reviews__slide-mail glightbox">
                                        Благодарственное письмо
                                     </a>
                                  </div>
@@ -880,7 +880,7 @@
                                  <div class="reviews__slide-author">
                                     <div class="reviews__slide-author-name">А.Ю. Седекова</div>
                                     <div class="reviews__slide-author-role">Директор по персоналу</div>
-                                    <a href="img/mails/5.png" type="button" class="reviews__slide-mail glightbox">
+                                    <a href="img/mails/5.png" class="reviews__slide-mail glightbox">
                                        Благодарственное письмо
                                     </a>
                                  </div>
@@ -912,7 +912,7 @@
                                     <div class="reviews__slide-author-name">П.А.Балабанова</div>
                                     <div class="reviews__slide-author-role">Руководитель отдела <br>
                                        по работе с персоналом</div>
-                                    <a href="img/mails/6.webp" type="button" class="reviews__slide-mail glightbox">
+                                    <a href="img/mails/6.webp" class="reviews__slide-mail glightbox">
                                        Благодарственное письмо
                                     </a>
                                  </div>
@@ -946,7 +946,7 @@
                                     <div class="reviews__slide-author-name">Екатерина Богданова</div>
                                     <div class="reviews__slide-author-role">Руководитель отдела корпоративной культуры
                                     </div>
-                                    <a href="img/mails/7.png" type="button" class="reviews__slide-mail glightbox">
+                                    <a href="img/mails/7.png" class="reviews__slide-mail glightbox">
                                        Благодарственное письмо
                                     </a>
                                  </div>
@@ -981,7 +981,7 @@
                                  <div class="reviews__slide-author">
                                     <div class="reviews__slide-author-name">Ирина Страхова</div>
                                     <div class="reviews__slide-author-role">Руководитель отдела персонала</div>
-                                    <a href="img/mails/8.jpg" type="button" class="reviews__slide-mail glightbox">
+                                    <a href="img/mails/8.jpg" class="reviews__slide-mail glightbox">
                                        Благодарственное письмо
                                     </a>
                                  </div>
@@ -1014,7 +1014,7 @@
                                  <div class="reviews__slide-author">
                                     <div class="reviews__slide-author-name">Аджен Сингх</div>
                                     <div class="reviews__slide-author-role">Исполнительный директор компании</div>
-                                    <a href="img/mails/9.jpg" type="button" class="reviews__slide-mail glightbox">
+                                    <a href="img/mails/9.jpg" class="reviews__slide-mail glightbox">
                                        Благодарственное письмо
                                     </a>
                                  </div>
@@ -1046,7 +1046,7 @@
                                  <div class="reviews__slide-author">
                                     <div class="reviews__slide-author-name">Серкан Саглам</div>
                                     <div class="reviews__slide-author-role">Генеральный директор</div>
-                                    <a href="img/mails/10.webp" type="button" class="reviews__slide-mail glightbox">
+                                    <a href="img/mails/10.webp" class="reviews__slide-mail glightbox">
                                        Благодарственное письмо
                                     </a>
                                  </div>
@@ -1072,7 +1072,7 @@
                                  <div class="reviews__slide-author">
                                     <div class="reviews__slide-author-name">София Морган</div>
                                     <div class="reviews__slide-author-role">Директор по международным связям</div>
-                                    <a href="img/mails/11.jpg" type="button" class="reviews__slide-mail glightbox">
+                                    <a href="img/mails/11.jpg" class="reviews__slide-mail glightbox">
                                        Благодарственное письмо
                                     </a>
                                  </div>
@@ -1113,10 +1113,10 @@
             </div>
             <div class="footer__member">
                <a href="https://smartway.today/tkp" target="_blank" class="footer__member-link">
-                  <img src="img/tkp.webp" width="77" height="42.6" alt="ТКП">
+                  <img src="img/tkp.webp" width="77" height="43" alt="ТКП">
                </a>
                <a href="https://navigator.sk.ru/orn/1122071" target="_blank" class="footer__member-link">
-                  <img src="img/sk.webp" width="105" height="30.7" alt="SK участник">
+                  <img src="img/sk.webp" width="105" height="30" alt="SK участник">
                </a>
             </div>
             <div class="footer__socials">
@@ -1237,7 +1237,7 @@
             Подпишитесь на рассылку полезных материалов Smartway
          </div>
          <div class="footer__subscribe-content">
-            <form action="" class="footer__subscribe-form">
+            <form id="subscribeForm" class="footer__subscribe-form">
                <input type="email" placeholder="Корпоративная почта" required>
                <button type="submit">Подписаться</button>
             </form>
@@ -1251,7 +1251,7 @@
    <div class="main-popup__body popup__body">
       <div class="main-popup__title popup__title"> Оставьте заявку <br> на доступ к сервису </div>
       <div class="main-popup__content">
-         <form class="callback__form">
+         <form id="callbackForm" class="callback__form">
             <div class="callback__form-area">
                <div class="callback__form-label">Ваше имя*</div>
                <input type="text" class="callback__form-input" required>
@@ -1264,13 +1264,12 @@
                <div class="callback__form-label">Сколько командировок в компании в месяц*</div>
                <div class="cb-dropdown">
                   <button type="button" class="cb-dropdown__button">
-                     <p class="cb-dropdown__button-text">Выберите из списка</p>
-                     <div class="cb-dropdown__arrow">
+                     <span class="cb-dropdown__button-text">Выберите из списка</span>
+                     <span class="cb-dropdown__arrow">
                         <svg>
                            <use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
                         </svg>
-                     </div>
-
+                     </span>
                   </button>
                   <div class="cb-dropdown__menu">
                      <ul class="cb-dropdown__list">
@@ -1352,7 +1351,7 @@
             <div class="callback__form-area">
                <label class="agreement">
                   <input type="checkbox" required>
-                  <div class="agreement__box"></div>
+                  <span class="agreement__box"></span>
                   <span class="agreement__text">Даю согласие на <a href="">получение сообщений рекламного и
                         информационного характера</a></span>
                </label>
@@ -1380,7 +1379,7 @@
    <div class="consultation-popup__body popup__body">
       <div class="consultation-popup__title popup__title"> Оставьте заявку <br> на бесплатную консультацию </div>
       <div class="consultation-popup__content">
-         <form class="callback__form">
+         <form id="consultationForm" class="callback__form">
             <div class="callback__form-area">
                <div class="callback__form-label">Ваше имя*</div>
                <input type="text" class="callback__form-input" required>
@@ -1393,13 +1392,12 @@
                <div class="callback__form-label">Сколько командировок в компании в месяц*</div>
                <div class="cb-dropdown">
                   <button type="button" class="cb-dropdown__button">
-                     <p class="cb-dropdown__button-text">Выберите из списка</p>
-                     <div class="cb-dropdown__arrow">
+                     <span class="cb-dropdown__button-text">Выберите из списка</span>
+                     <span class="cb-dropdown__arrow">
                         <svg>
                            <use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
                         </svg>
-                     </div>
-
+                     </span>
                   </button>
                   <div class="cb-dropdown__menu">
                      <ul class="cb-dropdown__list">
@@ -1481,7 +1479,7 @@
             <div class="callback__form-area">
                <label class="agreement">
                   <input type="checkbox" required>
-                  <div class="agreement__box"></div>
+                  <span class="agreement__box"></span>
                   <span class="agreement__text">Даю согласие на <a href="">получение сообщений рекламного и
                         информационного характера</a></span>
                </label>
@@ -1505,9 +1503,9 @@
 </div>
    
 
-   <script src="js/splide.min.js?_v=20260607175951"></script>
-   <script src="js/glightbox.min.js?_v=20260607175951"></script>
-   <script src="js/app.js?_v=20260607175951"></script>
+   <script src="js/splide.min.js?_v=20260608115204"></script>
+   <script src="js/glightbox.min.js?_v=20260608115204"></script>
+   <script src="js/app.js?_v=20260608115204"></script>
 </body>
 
 </html>

@@ -29,11 +29,11 @@
       content="https://static.tildacdn.com/tild3436-6666-4061-b735-333364313035/Frame_2085655993.png">
 
    <!-- Styles -->
-   <link rel="stylesheet" href="css/base.min.css?_v=20260607175951">
+   <link rel="stylesheet" href="css/base.min.css?_v=20260608115204">
    
    
    
-   <link rel="stylesheet" href="css/travel-coordination.min.css?_v=20260607175951">
+   <link rel="stylesheet" href="css/travel-coordination.min.css?_v=20260608115204">
 </head>
 
 <body>
@@ -52,7 +52,7 @@
          </div>
          <nav class="menu__body">
             <div class="menu__logo">
-               <img src="img/logo.svg" width="200" height="27.5" alt="logo">
+               <img src="img/logo.svg" width="200" height="27" alt="logo">
             </div>
             <ul class="menu__list">
                <li class="menu__item has-submenu">
@@ -172,7 +172,7 @@
          <section class="coordination">
             <div class="coordination__body container">
                <div class="coordination__info">
-                  <h2 class="coordination__title section-title">Согласование поездок <br> без бюрократии</h2>
+                  <h1 class="coordination__title section-title">Согласование поездок <br> без бюрократии</h1>
                   <div class="coordination__subtitle section-subtitle">
                      Не придется думать о том, к кому идти за утверждением поездки. Достаточно настроить схемы
                      согласования в личном
@@ -327,10 +327,10 @@
                   <img src="img/control.webp" width="629" height="541" alt="image">
                </div>
                <div class="control__info">
-                  <div class="control__title section-title">Контролируйте расходы <br>
+                  <h2 class="control__title section-title">Контролируйте расходы <br>
                      на поездки с помощью  <br>
                      <span>тревел-политик</span>
-                  </div>
+                  </h2>
                   <div class="control__more">
                      <div class="control__subtitle">Если сотрудник бронирует командировку,
                         которая выходит за рамки бюджета, то вместо
@@ -400,7 +400,7 @@
                   </div>
                </div>
                <div class="callback__content -shadow">
-                  <form class="callback__form">
+                  <form id="mainForm" class="callback__form">
                      <div class="callback__form-area">
                         <div class="callback__form-label">Ваше имя*</div>
                         <input type="text" class="callback__form-input" required>
@@ -413,12 +413,12 @@
                         <div class="callback__form-label">Сколько командировок в компании в месяц*</div>
                         <div class="cb-dropdown">
                            <button type="button" class="cb-dropdown__button">
-                              <p class="cb-dropdown__button-text">Выберите из списка</p>
-                              <div class="cb-dropdown__arrow">
+                              <span class="cb-dropdown__button-text">Выберите из списка</span>
+                              <span class="cb-dropdown__arrow">
                                  <svg>
                                     <use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
                                  </svg>
-                              </div>
+                              </span>
 
                            </button>
                            <div class="cb-dropdown__menu">
@@ -501,7 +501,7 @@
                      <div class="callback__form-area">
                         <label class="agreement">
                            <input type="checkbox" required>
-                           <div class="agreement__box"></div>
+                           <span class="agreement__box"></span>
                            <span class="agreement__text">Даю согласие на <a href="">получение сообщений рекламного и
                                  информационного характера</a></span>
                         </label>
@@ -547,10 +547,10 @@
             </div>
             <div class="footer__member">
                <a href="https://smartway.today/tkp" target="_blank" class="footer__member-link">
-                  <img src="img/tkp.webp" width="77" height="42.6" alt="ТКП">
+                  <img src="img/tkp.webp" width="77" height="43" alt="ТКП">
                </a>
                <a href="https://navigator.sk.ru/orn/1122071" target="_blank" class="footer__member-link">
-                  <img src="img/sk.webp" width="105" height="30.7" alt="SK участник">
+                  <img src="img/sk.webp" width="105" height="30" alt="SK участник">
                </a>
             </div>
             <div class="footer__socials">
@@ -671,7 +671,7 @@
             Подпишитесь на рассылку полезных материалов Smartway
          </div>
          <div class="footer__subscribe-content">
-            <form action="" class="footer__subscribe-form">
+            <form id="subscribeForm" class="footer__subscribe-form">
                <input type="email" placeholder="Корпоративная почта" required>
                <button type="submit">Подписаться</button>
             </form>
@@ -685,7 +685,7 @@
    <div class="main-popup__body popup__body">
       <div class="main-popup__title popup__title"> Оставьте заявку <br> на доступ к сервису </div>
       <div class="main-popup__content">
-         <form class="callback__form">
+         <form id="callbackForm" class="callback__form">
             <div class="callback__form-area">
                <div class="callback__form-label">Ваше имя*</div>
                <input type="text" class="callback__form-input" required>
@@ -698,13 +698,12 @@
                <div class="callback__form-label">Сколько командировок в компании в месяц*</div>
                <div class="cb-dropdown">
                   <button type="button" class="cb-dropdown__button">
-                     <p class="cb-dropdown__button-text">Выберите из списка</p>
-                     <div class="cb-dropdown__arrow">
+                     <span class="cb-dropdown__button-text">Выберите из списка</span>
+                     <span class="cb-dropdown__arrow">
                         <svg>
                            <use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
                         </svg>
-                     </div>
-
+                     </span>
                   </button>
                   <div class="cb-dropdown__menu">
                      <ul class="cb-dropdown__list">
@@ -786,7 +785,7 @@
             <div class="callback__form-area">
                <label class="agreement">
                   <input type="checkbox" required>
-                  <div class="agreement__box"></div>
+                  <span class="agreement__box"></span>
                   <span class="agreement__text">Даю согласие на <a href="">получение сообщений рекламного и
                         информационного характера</a></span>
                </label>
@@ -814,7 +813,7 @@
    <div class="consultation-popup__body popup__body">
       <div class="consultation-popup__title popup__title"> Оставьте заявку <br> на бесплатную консультацию </div>
       <div class="consultation-popup__content">
-         <form class="callback__form">
+         <form id="consultationForm" class="callback__form">
             <div class="callback__form-area">
                <div class="callback__form-label">Ваше имя*</div>
                <input type="text" class="callback__form-input" required>
@@ -827,13 +826,12 @@
                <div class="callback__form-label">Сколько командировок в компании в месяц*</div>
                <div class="cb-dropdown">
                   <button type="button" class="cb-dropdown__button">
-                     <p class="cb-dropdown__button-text">Выберите из списка</p>
-                     <div class="cb-dropdown__arrow">
+                     <span class="cb-dropdown__button-text">Выберите из списка</span>
+                     <span class="cb-dropdown__arrow">
                         <svg>
                            <use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
                         </svg>
-                     </div>
-
+                     </span>
                   </button>
                   <div class="cb-dropdown__menu">
                      <ul class="cb-dropdown__list">
@@ -915,7 +913,7 @@
             <div class="callback__form-area">
                <label class="agreement">
                   <input type="checkbox" required>
-                  <div class="agreement__box"></div>
+                  <span class="agreement__box"></span>
                   <span class="agreement__text">Даю согласие на <a href="">получение сообщений рекламного и
                         информационного характера</a></span>
                </label>
@@ -939,7 +937,7 @@
 </div>
    
 
-   <script src="js/app.js?_v=20260607175951"></script>
+   <script src="js/app.js?_v=20260608115204"></script>
 </body>
 
 </html>

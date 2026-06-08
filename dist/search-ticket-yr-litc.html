@@ -29,11 +29,11 @@
       content="https://static.tildacdn.com/tild3436-6666-4061-b735-333364313035/Frame_2085655993.png">
 
    <!-- Styles -->
-   <link rel="stylesheet" href="css/base.min.css?_v=20260607175951">
+   <link rel="stylesheet" href="css/base.min.css?_v=20260608115204">
    
    
    
-   <link rel="stylesheet" href="css/search-ticket.min.css?_v=20260607175951">
+   <link rel="stylesheet" href="css/search-ticket.min.css?_v=20260608115204">
 </head>
 
 <body>
@@ -52,7 +52,7 @@
          </div>
          <nav class="menu__body">
             <div class="menu__logo">
-               <img src="img/logo.svg" width="200" height="27.5" alt="logo">
+               <img src="img/logo.svg" width="200" height="27" alt="logo">
             </div>
             <ul class="menu__list">
                <li class="menu__item has-submenu">
@@ -173,7 +173,7 @@
             <div class="st-hero__body container">
                <div class="st-hero__wrapper">
                   <div class="st-hero__info">
-                     <h2 class="st-hero__title section-title">Авиабилеты <br> для командировок</h2>
+                     <h1 class="st-hero__title section-title">Авиабилеты <br> для командировок</h1>
                      <div class="st-hero__subtitle">
                         Оформляйте авиабилеты для юридических лиц выгодно и экономьте до 30% на перелетах
                         для командировок
@@ -190,7 +190,7 @@
             </div>
          </section>
 
-         <section class="st-stats">
+         <div class="st-stats">
             <div class="st-stats__body container section-padding">
                <div class="st-stats__cards">
                   <div class="st-stats__card">
@@ -210,7 +210,7 @@
                   </div>
                </div>
             </div>
-         </section>
+         </div>
 
          <section class="st-about">
             <div class="st-about__body container section-padding">
@@ -407,8 +407,8 @@
                         </li>
                         <li>
                            <p>В зависимости от тарифа оформляйте  <br>
-                              <b>сотрудничество по оферте или договору
-                           </p></b>
+                              сотрудничество по оферте или договору
+                           </p>
                         </li>
                      </ul>
                   </div>
@@ -576,12 +576,11 @@
                      <div class="reviews__card-body">
                         <div class="reviews__card-text">
                            <p>«В компании настроили Travel-политику: сотрудники сами покупают билеты, но теперь делают
-                              это
-                              через Smartway, с лимитами.</p>
+                              это через Smartway, с лимитами.
+                           </p>
                            <p>
                               Если расходы выходят за рамки, система отправляет запрос на согласование. Теперь
-                              мы обсуждаем
-                              поездки в одном личном кабинете.
+                              мы обсуждаем поездки в одном личном кабинете.
                            </p>
                            <p>
                               Никто ни за кем не следит, но сотрудники не выходят за пределы
@@ -606,15 +605,12 @@
                         <div class="reviews__card-text">
                            <p>
                               «Раньше покупка одного билета могла занимать несколько часов и иногда мы не успевали взять
-                              последний билет на самолет.
-                              Теперь процесс выглядит так: диспетчер подает заявку, согласовывает детали с сотрудником,
-                              заказывает билет в Smartway
-                              за 20−30 секунд.
+                              последний билет на самолет. Теперь процесс выглядит так: диспетчер подает заявку,
+                              согласовывает детали с сотрудником, заказывает билет в Smartway за 20−30 секунд.
                            </p>
                            <p>
                               А авансовые отчеты и закрывающие документы формируются автоматически и приходят в личный
-                              кабинет,
-                              оригиналы через ЭДО»
+                              кабинет, оригиналы через ЭДО»
                            </p>
                         </div>
                      </div>
@@ -657,13 +653,11 @@
             <div class="callback__body container">
                <div class="callback__wrapper">
                   <div class="callback__info">
-                     <h2 class="callback__title section-title">Сделайте <br>
-                        организацию деловых
-                        поездок удобной
-                        и выгодной</h2>
+                     <h2 class="callback__title section-title">
+                        Сделайте <br> организацию деловых поездок удобной и выгодной
+                     </h2>
                      <div class="callback__subtitle">Получите бесплатный доступ к Smartway: <br> оставьте контакты,
-                        менеджер
-                        свяжется <br> с вами в течение 30 минут</div>
+                        менеджер свяжется <br> с вами в течение 30 минут</div>
                      <div class="callback__image">
                         <div class="mngrs">
                            <div class="mngrs__photo">
@@ -679,7 +673,7 @@
                      </div>
                   </div>
                   <div class="callback__content">
-                     <form class="callback__form">
+                     <form id="mainForm" class="callback__form">
                         <div class="callback__form-area">
                            <div class="callback__form-label">Ваше имя*</div>
                            <input type="text" class="callback__form-input" required>
@@ -692,12 +686,12 @@
                            <div class="callback__form-label">Сколько командировок в компании в месяц*</div>
                            <div class="cb-dropdown">
                               <button type="button" class="cb-dropdown__button">
-                                 <p class="cb-dropdown__button-text">Выберите из списка</p>
-                                 <div class="cb-dropdown__arrow">
+                                 <span class="cb-dropdown__button-text">Выберите из списка</span>
+                                 <span class="cb-dropdown__arrow">
                                     <svg>
                                        <use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
                                     </svg>
-                                 </div>
+                                 </span>
 
                               </button>
                               <div class="cb-dropdown__menu">
@@ -780,7 +774,7 @@
                         <div class="callback__form-area">
                            <label class="agreement">
                               <input type="checkbox" required>
-                              <div class="agreement__box"></div>
+                              <span class="agreement__box"></span>
                               <span class="agreement__text">Даю согласие на <a href="">получение сообщений рекламного и
                                     информационного характера</a></span>
                            </label>
@@ -817,15 +811,20 @@
                      </div>
                      <div class="faq__answer">
                         <div class="faq__answer-wrapper">
-                           После подключения к Smartway вам станет доступен личный кабинет, в котором можно подбирать
-                           и оформлять авиабилеты
-                           российских и зарубежных авиакомпаний. Для покупок нужно пополнить баланс — с расчетного счета
-                           компании или банковской
-                           карты.
-                           <br><br>
-                           Smartway сам рассчитывается с поставщиками, чтобы упростить документооборот для клиентов. Вы
-                           можете выбрать подходящий
-                           формат оплаты — предоплату или отсрочку платежа.
+                           <p>
+                              После подключения к Smartway вам станет доступен личный кабинет, в котором можно подбирать
+                              и оформлять авиабилеты
+                              российских и зарубежных авиакомпаний. Для покупок нужно пополнить баланс — с расчетного
+                              счета
+                              компании или банковской
+                              карты.
+                           </p>
+                           <p>
+                              Smartway сам рассчитывается с поставщиками, чтобы упростить документооборот для клиентов.
+                              Вы
+                              можете выбрать подходящий
+                              формат оплаты — предоплату или отсрочку платежа.
+                           </p>
                         </div>
                      </div>
                   </div>
@@ -924,19 +923,21 @@
                      </div>
                      <div class="faq__answer">
                         <div class="faq__answer-wrapper">
-                           Есть два варианта, как учитывать расходы на проезд:
-                           <br><br>
-                           1. Как оплату денежных документов. Например, когда оплатили с расчетного счета и получили
-                           маршрут-квитанцию. Ее
-                           приравнивают к денежным документам. В этом случае маршрут-квитанции нужно распечатать
-                           и хранить в кассе. Эти расходы
-                           учитывают на счете 50 субсчет 3 в день покупки.
-                           <br><br>
-                           2. Принять оплаченные билеты на счет прочих расчетов с контрагентами. В новых версиях
-                           программы «1С» есть для этого
-                           отдельный субсчет 14. Поэтому билет не нужно учитывать как денежный документ и хранить его
-                           в кассе. Билеты можно
-                           учитывать на счете 76 как «прочие расчеты».
+                           <p>Есть два варианта, как учитывать расходы на проезд:</p>
+                           <p>
+                              1. Как оплату денежных документов. Например, когда оплатили с расчетного счета и получили
+                              маршрут-квитанцию. Ее
+                              приравнивают к денежным документам. В этом случае маршрут-квитанции нужно распечатать
+                              и хранить в кассе. Эти расходы
+                              учитывают на счете 50 субсчет 3 в день покупки.
+                           </p>
+                           <p>
+                              2. Принять оплаченные билеты на счет прочих расчетов с контрагентами. В новых версиях
+                              программы «1С» есть для этого
+                              отдельный субсчет 14. Поэтому билет не нужно учитывать как денежный документ и хранить его
+                              в кассе. Билеты можно
+                              учитывать на счете 76 как «прочие расчеты».
+                           </p>
                         </div>
                      </div>
                   </div>
@@ -975,20 +976,24 @@
                      </div>
                      <div class="faq__answer">
                         <div class="faq__answer-wrapper">
-                           В такой ситуации компания теряет стоимость билета целиком. Если же билет подлежит возврату
-                           со штрафом, этот расход нужно
-                           правильно отразить в учете. Когда сотрудник сам организует командировку и покупает билеты
-                           за счет аванса, у него
-                           необходимо получить чек на сумму штрафа и учесть его как внереализационный расход через
-                           авансовый отчет. Если же поездка
-                           оформлялась через агентство или онлайн-сервис, штраф будет указан в закрывающих документах
-                           от агента и также относится к внереализационным расходам.
-                           <br><br>
-                           Если есть риск отмены командировки, выгоднее выбирать возвратные тарифы — так компания
-                           не потеряет всю стоимость билета.
-                           В Smartway также можно зафиксировать цену билета на время согласования и оформить покупку
-                           позже, когда поездка будет
-                           точно подтверждена.
+                           <p>
+                              В такой ситуации компания теряет стоимость билета целиком. Если же билет подлежит возврату
+                              со штрафом, этот расход нужно
+                              правильно отразить в учете. Когда сотрудник сам организует командировку и покупает билеты
+                              за счет аванса, у него
+                              необходимо получить чек на сумму штрафа и учесть его как внереализационный расход через
+                              авансовый отчет. Если же поездка
+                              оформлялась через агентство или онлайн-сервис, штраф будет указан в закрывающих документах
+                              от агента и также относится к внереализационным расходам.
+                           </p>
+
+                           <p>
+                              Если есть риск отмены командировки, выгоднее выбирать возвратные тарифы — так компания
+                              не потеряет всю стоимость билета.
+                              В Smartway также можно зафиксировать цену билета на время согласования и оформить покупку
+                              позже, когда поездка будет
+                              точно подтверждена.
+                           </p>
                         </div>
                      </div>
                   </div>
@@ -1025,10 +1030,10 @@
             </div>
             <div class="footer__member">
                <a href="https://smartway.today/tkp" target="_blank" class="footer__member-link">
-                  <img src="img/tkp.webp" width="77" height="42.6" alt="ТКП">
+                  <img src="img/tkp.webp" width="77" height="43" alt="ТКП">
                </a>
                <a href="https://navigator.sk.ru/orn/1122071" target="_blank" class="footer__member-link">
-                  <img src="img/sk.webp" width="105" height="30.7" alt="SK участник">
+                  <img src="img/sk.webp" width="105" height="30" alt="SK участник">
                </a>
             </div>
             <div class="footer__socials">
@@ -1149,7 +1154,7 @@
             Подпишитесь на рассылку полезных материалов Smartway
          </div>
          <div class="footer__subscribe-content">
-            <form action="" class="footer__subscribe-form">
+            <form id="subscribeForm" class="footer__subscribe-form">
                <input type="email" placeholder="Корпоративная почта" required>
                <button type="submit">Подписаться</button>
             </form>
@@ -1163,7 +1168,7 @@
    <div class="main-popup__body popup__body">
       <div class="main-popup__title popup__title"> Оставьте заявку <br> на доступ к сервису </div>
       <div class="main-popup__content">
-         <form class="callback__form">
+         <form id="callbackForm" class="callback__form">
             <div class="callback__form-area">
                <div class="callback__form-label">Ваше имя*</div>
                <input type="text" class="callback__form-input" required>
@@ -1176,13 +1181,12 @@
                <div class="callback__form-label">Сколько командировок в компании в месяц*</div>
                <div class="cb-dropdown">
                   <button type="button" class="cb-dropdown__button">
-                     <p class="cb-dropdown__button-text">Выберите из списка</p>
-                     <div class="cb-dropdown__arrow">
+                     <span class="cb-dropdown__button-text">Выберите из списка</span>
+                     <span class="cb-dropdown__arrow">
                         <svg>
                            <use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
                         </svg>
-                     </div>
-
+                     </span>
                   </button>
                   <div class="cb-dropdown__menu">
                      <ul class="cb-dropdown__list">
@@ -1264,7 +1268,7 @@
             <div class="callback__form-area">
                <label class="agreement">
                   <input type="checkbox" required>
-                  <div class="agreement__box"></div>
+                  <span class="agreement__box"></span>
                   <span class="agreement__text">Даю согласие на <a href="">получение сообщений рекламного и
                         информационного характера</a></span>
                </label>
@@ -1292,7 +1296,7 @@
    <div class="consultation-popup__body popup__body">
       <div class="consultation-popup__title popup__title"> Оставьте заявку <br> на бесплатную консультацию </div>
       <div class="consultation-popup__content">
-         <form class="callback__form">
+         <form id="consultationForm" class="callback__form">
             <div class="callback__form-area">
                <div class="callback__form-label">Ваше имя*</div>
                <input type="text" class="callback__form-input" required>
@@ -1305,13 +1309,12 @@
                <div class="callback__form-label">Сколько командировок в компании в месяц*</div>
                <div class="cb-dropdown">
                   <button type="button" class="cb-dropdown__button">
-                     <p class="cb-dropdown__button-text">Выберите из списка</p>
-                     <div class="cb-dropdown__arrow">
+                     <span class="cb-dropdown__button-text">Выберите из списка</span>
+                     <span class="cb-dropdown__arrow">
                         <svg>
                            <use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
                         </svg>
-                     </div>
-
+                     </span>
                   </button>
                   <div class="cb-dropdown__menu">
                      <ul class="cb-dropdown__list">
@@ -1393,7 +1396,7 @@
             <div class="callback__form-area">
                <label class="agreement">
                   <input type="checkbox" required>
-                  <div class="agreement__box"></div>
+                  <span class="agreement__box"></span>
                   <span class="agreement__text">Даю согласие на <a href="">получение сообщений рекламного и
                         информационного характера</a></span>
                </label>
@@ -1417,7 +1420,7 @@
 </div>
    
 
-   <script src="js/app.js?_v=20260607175951"></script>
+   <script src="js/app.js?_v=20260608115204"></script>
 </body>
 
 </html>
