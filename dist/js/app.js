@@ -781,6 +781,78 @@ function initPasswordToggle() {
 }
 
 
+/*==========================================================================
+Nav menu in case page
+============================================================================*/
+function initCaseMenu() {
+   const article = document.querySelector('.case__text');
+   const menu = document.querySelector('.case__article-menu ul');
+
+   if (!article || !menu) return;
+
+   const headings = article.querySelectorAll('h2');
+
+   menu.innerHTML = '';
+
+   headings.forEach((heading, index) => {
+      const id = `case-section-${index + 1}`;
+
+      heading.id = id;
+
+      const li = document.createElement('li');
+      li.innerHTML = `
+         <a href="#${id}">
+            ${index + 1}. ${heading.textContent.trim()}
+         </a>
+      `;
+
+      menu.append(li);
+   });
+
+   const links = menu.querySelectorAll('a');
+
+   links.forEach(link => {
+      link.addEventListener('click', e => {
+         e.preventDefault();
+
+         const target = document.querySelector(link.getAttribute('href'));
+
+         if (!target) return;
+
+         target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+         });
+
+         links.forEach(item => item.classList.remove('active'));
+         link.classList.add('active');
+      });
+   });
+
+   const observer = new IntersectionObserver(
+      entries => {
+         entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+
+            const id = entry.target.id;
+
+            links.forEach(link => {
+               link.classList.toggle(
+                  'active',
+                  link.getAttribute('href') === `#${id}`
+               );
+            });
+         });
+      },
+      {
+         rootMargin: '-30% 0px -60% 0px',
+         threshold: 0
+      }
+   );
+
+   headings.forEach(heading => observer.observe(heading));
+}
+
 
 /*==========================================================================
 Init
@@ -796,6 +868,7 @@ document.addEventListener('DOMContentLoaded', () => {
    equalizeIntegrationCards();
    initResultsSlider();
    initPasswordToggle();
+   initCaseMenu();
 
 })
 
