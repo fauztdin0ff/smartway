@@ -785,7 +785,7 @@ function initPasswordToggle() {
 Nav menu in case page
 ============================================================================*/
 function initCaseMenu() {
-   const article = document.querySelector('.case__text');
+   const article = document.querySelector('.case__text, .smart-case__text');
    const menu = document.querySelector('.case__article-menu ul');
 
    if (!article || !menu) return;
@@ -823,9 +823,6 @@ function initCaseMenu() {
             behavior: 'smooth',
             block: 'start'
          });
-
-         links.forEach(item => item.classList.remove('active'));
-         link.classList.add('active');
       });
    });
 
