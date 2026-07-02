@@ -381,15 +381,56 @@ _modules_functions_js__WEBPACK_IMPORTED_MODULE_0__.phoneMask();
 /*==========================================================================
 Header fx
 ============================================================================*/
-const header = document.querySelector('.header');
+function initFixedHeader() {
+   const header = document.querySelector(".header");
 
-function toggleHeaderClass() {
-   header.classList.toggle('fx', window.scrollY > 0);
+   if (!header) return;
+
+   let triggerPoint = window.innerHeight;
+
+   const showHeader = () => {
+      if (header.classList.contains("show")) return;
+
+      header.classList.remove("hide");
+      header.classList.add("fixed", "show");
+   };
+
+   const hideHeader = () => {
+      if (!header.classList.contains("fixed")) return;
+
+      header.classList.remove("show");
+      header.classList.add("hide");
+
+      const onEnd = () => {
+         header.classList.remove("fixed", "hide");
+         header.removeEventListener("animationend", onEnd);
+      };
+
+      header.addEventListener("animationend", onEnd);
+   };
+
+   const toggleHeader = (scroll) => {
+      if (scroll >= triggerPoint) {
+         showHeader();
+      } else {
+         hideHeader();
+      }
+   };
+
+   toggleHeader(window.scrollY);
+
+   window.addEventListener(
+      "scroll",
+      () => toggleHeader(window.scrollY),
+      { passive: true }
+   );
+
+   window.addEventListener("resize", () => {
+      triggerPoint = window.innerHeight;
+      toggleHeader(window.scrollY);
+   });
 }
 
-toggleHeaderClass();
-
-window.addEventListener('scroll', toggleHeaderClass);
 
 /*==========================================================================
 Phone field
@@ -855,6 +896,7 @@ function initCaseMenu() {
 Init
 ============================================================================*/
 document.addEventListener('DOMContentLoaded', () => {
+   initFixedHeader();
    initDropdowns();
    initPhoneField();
    initFaqAccordion();
