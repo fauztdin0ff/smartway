@@ -29,11 +29,11 @@
       content="https://static.tildacdn.com/tild3436-6666-4061-b735-333364313035/Frame_2085655993.png">
 
    <!-- Styles -->
-   <link rel="stylesheet" href="css/base.min.css?_v=20260708215924">
+   <link rel="stylesheet" href="css/base.min.css?_v=20260714113957">
    
    
    
-   <link rel="stylesheet" href="css/1c.min.css?_v=20260708215924">
+   <link rel="stylesheet" href="css/1c.min.css?_v=20260714113957">
 </head>
 
 <style>
@@ -83,6 +83,13 @@
       line-height: 1.3;
    }
 
+   .project-report__block h4 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 18px;
+      line-height: 1.3;
+   }
+
    .project-report__block p {
       margin: 0 0 20px;
       line-height: 1.6;
@@ -100,7 +107,7 @@
       grid-template-columns: 400px 400px;
    }
 
-   .project-report__block li:not(:last-child) {
+   .project-report__block li {
       margin-bottom: 12px;
    }
 
@@ -184,7 +191,8 @@
                   <div class="submenu">
                      <ul class="submenu__list">
                         <li class="submenu__item"><a href="" class="submenu__link">Руководителю</a></li>
-                        <li class="submenu__item"><a href="" class="submenu__link">Организатору командировок</a></li>
+                        <li class="submenu__item"><a href="travel-manager.html" class="submenu__link">Организатору
+                              командировок</a></li>
                         <li class="submenu__item"><a href="accountant.html" class="submenu__link">Бухгалтеру</a></li>
                         <li class="submenu__item"><a href="" class="submenu__link">HR-менеджеру</a></li>
                      </ul>
@@ -297,28 +305,37 @@
             <h2>Итоги выполненной работы</h2>
 
             <div class="project-report__block">
-               <h3>1. Выполнена вёрстка 18 страниц</h3>
+               <h3>1. Выполнена вёрстка 19 страниц</h3>
 
+               <h4>Главная</h4>
                <ul class="grid2">
                   <li>
                      <a href="index.html" target="_blank" class="btn" rel="noopener noreferrer">
                         Главная страница
                      </a>
                   </li>
+               </ul>
+
+
+               <h4>Для кого</h4>
+               <ul class="grid2">
                   <li>
-                     <a href="bronirovanie-oteley-dlya-yr-lic.html" class="btn" target="_blank"
-                        rel="noopener noreferrer">
-                        Бронирование отелей
+                     <a href="travel-manager.html" target="_blank" class="btn" rel="noopener noreferrer">
+                        Организатору командировок
                      </a>
                   </li>
                   <li>
-                     <a href="1с.html" target="_blank" class="btn" rel="noopener noreferrer">
-                        1С
+                     <a href="accountant.html" target="_blank" class="btn" rel="noopener noreferrer">
+                        Бухгалтерам
                      </a>
                   </li>
+               </ul>
+
+               <h4>Возможности</h4>
+               <ul class="grid2">
                   <li>
                      <a href="search-ticket-yr-litc.html" target="_blank" class="btn" rel="noopener noreferrer">
-                        Авиабилеты для командировок
+                        Поиск авиабилетов
                      </a>
                   </li>
                   <li>
@@ -327,13 +344,24 @@
                      </a>
                   </li>
                   <li>
+                     <a href="bronirovanie-oteley-dlya-yr-lic.html" class="btn" target="_blank"
+                        rel="noopener noreferrer">
+                        Поиск отелей
+                     </a>
+                  </li>
+                  <li>
                      <a href="taxi.html" target="_blank" class="btn" rel="noopener noreferrer">
-                        Корпоративное такси
+                        Такси
+                     </a>
+                  </li>
+                  <li>
+                     <a href="1с.html" target="_blank" class="btn" rel="noopener noreferrer">
+                        Интеграция с 1С
                      </a>
                   </li>
                   <li>
                      <a href="travel-coordination.html" target="_blank" class="btn" rel="noopener noreferrer">
-                        Согласование поездок
+                        Согласование
                      </a>
                   </li>
                   <li>
@@ -341,16 +369,10 @@
                         Тревел политика
                      </a>
                   </li>
-                  <li>
-                     <a href="mice.html" target="_blank" class="btn" rel="noopener noreferrer">
-                        MICE
-                     </a>
-                  </li>
-                  <li>
-                     <a href="accountant.html" target="_blank" class="btn" rel="noopener noreferrer">
-                        Бухгалтерам
-                     </a>
-                  </li>
+               </ul>
+
+               <h4>Полезное</h4>
+               <ul class="grid2">
                   <li>
                      <a href="blog.html" target="_blank" class="btn" rel="noopener noreferrer">
                         Блог
@@ -376,14 +398,14 @@
                         Шаблон кейса (2 вар)
                      </a>
                   </li>
+               </ul>
+
+
+               <h4>Другое</h4>
+               <ul class="grid2">
                   <li>
-                     <a href="offer.html" target="_blank" class="btn" rel="noopener noreferrer">
-                        Оферта
-                     </a>
-                  </li>
-                  <li>
-                     <a href="user-agreement.html" target="_blank" class="btn" rel="noopener noreferrer">
-                        Пользовательское соглашение
+                     <a href="mice.html" target="_blank" class="btn" rel="noopener noreferrer">
+                        MICE
                      </a>
                   </li>
                   <li>
@@ -426,6 +448,16 @@
                   <li>
                      <a href="404.html" target="_blank" class="btn" rel="noopener noreferrer">
                         Страница 404
+                     </a>
+                  </li>
+                  <li>
+                     <a href="offer.html" target="_blank" class="btn" rel="noopener noreferrer">
+                        Оферта
+                     </a>
+                  </li>
+                  <li>
+                     <a href="user-agreement.html" target="_blank" class="btn" rel="noopener noreferrer">
+                        Пользовательское соглашение
                      </a>
                   </li>
                </ul>
@@ -912,7 +944,7 @@
 </div>
    
 
-   <script src="js/app.js?_v=20260708215924"></script>
+   <script src="js/app.js?_v=20260714113957"></script>
 </body>
 
 </html>

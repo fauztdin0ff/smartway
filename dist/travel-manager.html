@@ -33,10 +33,17 @@
    
    
    
-   <link rel="stylesheet" href="css/travel-coordination.min.css?_v=20260714113957">
+   <link rel="stylesheet" href="css/travel-manager.min.css?_v=20260714113957">
 </head>
 
 <body>
+   <div class="promo">
+      <div class="promo__body container">
+         <img src="img/promo.webp" width="93" height="33" alt="promo">
+         Бесплатная консультация по командировкам за 15 минут
+         <button type="button" class="btn btn-arrow open-popup" data-popup="consultation-popup">Записаться</button>
+      </div>
+   </div>
    <div class="wrapper">
       <header class="header">
    <div class="header__body container">
@@ -170,375 +177,444 @@
    </div>
 </header>
       <main>
-         <section class="coordination">
-            <div class="coordination__body container">
-               <div class="coordination__info">
-                  <h1 class="coordination__title section-title">Согласование поездок <br> без бюрократии</h1>
-                  <div class="coordination__subtitle section-subtitle">
-                     Не придется думать о том, к кому идти за утверждением поездки. Достаточно настроить схемы
-                     согласования в личном
-                     кабинете.
+         <section class="wh-hero">
+            <div class="wh-hero__body container">
+               <div class="wh-hero__info">
+                  <div class="wh-hero__label">Онлайн-сервис для организатора командировок</div>
+                  <h1 class="wh-hero__title section-title">Оформляйте<br> поездки компании<br> в одном окне</h1>
+                  <div class="wh-hero__subtitle section-subtitle">
+                     Билеты, отели, закрывающие и поддержка 24/7
                   </div>
-                  <div class="coordination__button">
-                     <a href="#cta" class="btn btn-arrow">Получить доступ к демо-кабинету</a>
+                  <div class="wh-hero__button">
+                     <button type="button" class="btn btn-arrow open-popup" data-popup="main-popup">Оставить
+                        заявку</button>
                   </div>
                </div>
-               <div class="coordination__image">
-                  <img src="img/coordination.webp" width="870" height="702" alt="coordination">
-               </div>
-            </div>
-         </section>
-
-         <section class="compare">
-            <div class="compare__body container section-padding">
-               <h2 class="compare__title section-title">Согласовывайте <br> поездки за пару минут</h2>
-               <div class="compare__cards">
-                  <div class="compare__card">
-                     <div class="compare__card-icon">
-                        <img src="img/icons/dislike.svg" width="50" height="50" alt="icon">
-                     </div>
-                     <div class="compare__card-name">Личное общение</div>
-                     <div class="compare__card-text">
-                        Договариваться по почте, телефону или встречаться лично с каждым ответственным. Вести отчеты
-                        вручную в Excel или
-                        фиксировать каждое согласование
-                        на бумаге.
-                     </div>
-                     <div class="compare__card-images -images-1">
-                        <div class="compare__card-dislikes">
-                           <div class="compare__card-dislike -dislike-1">
-                              <img src="img/icons/like-fill.svg" width="20" height="20" alt="icon">
-                           </div>
-                           <div class="compare__card-dislike -dislike-2">
-                              <img src="img/icons/like-fill.svg" width="20" height="20" alt="icon">
-                           </div>
-                           <div class="compare__card-dislike -dislike-3">
-                              <img src="img/icons/like-fill.svg" width="20" height="20" alt="icon">
-                           </div>
-                        </div>
-                        <div class="compare__card-image">
-                           <img src="img/comp-1.avif" alt="">
-                        </div>
-                     </div>
-                  </div>
-                  <div class="compare__card">
-                     <div class="compare__card-icon">
-                        <img src="img/icons/like.svg" width="50" height="50" alt="icon">
-                     </div>
-                     <div class="compare__card-name">Smartway</div>
-                     <div class="compare__card-text">
-                        Все согласования в единой системе. Один раз настраиваете схемы согласований на разные случаи,
-                        а потом они продолжают
-                        работать. История согласований доступна в личном кабинете.
-                     </div>
-                     <div class="compare__card-images -images-2">
-                        <div class="compare__card-image">
-                           <img src="img/comp-2.avif" alt="">
-                        </div>
-                        <div class="compare__card-likes">
-                           <div class="compare__card-like -like-1">
-                              <img src="img/icons/like-fill.svg" width="20" height="20" alt="icon">
-                           </div>
-                           <div class="compare__card-like -like-2">
-                              <img src="img/icons/like-fill.svg" width="20" height="20" alt="icon">
-                           </div>
-                           <div class="compare__card-like -like-3">
-                              <img src="img/icons/like-fill.svg" width="20" height="20" alt="icon">
-                           </div>
-                        </div>
-                     </div>
-                  </div>
+               <div class="wh-hero__image">
+                  <picture>
+                     <source media="(max-width:767px )" srcset="img/manager-hero-mob.avif">
+                     <img src="img/manager-hero.avif" width="870" height="702" alt="wh-hero">
+                  </picture>
                </div>
             </div>
          </section>
 
-         <section class="how-work">
-            <div class="how-work__body container section-padding">
-               <h2 class="how-work__title section-title">Как это работает</h2>
-               <div class="how-work__steps">
-                  <div class="how-work__step">
-                     <div class="how-work__step-icon">
-                        <img src="img/icons/how-5.svg" width="44" height="44" alt="icon">
-                     </div>
-                     <div class="how-work__step-body">
-                        <div class="how-work__step-num">1</div>
-                        <div class="how-work__step-text">
-                           Сотрудник добавляет билеты и отель в корзину и отправляет
-                           на согласование
-                        </div>
-                     </div>
-                  </div>
-                  <div class="how-work__step">
-                     <div class="how-work__step-icon">
-                        <img src="img/icons/how-6.svg" width="44" height="44" alt="icon">
-                     </div>
-                     <div class="how-work__step-body">
-                        <div class="how-work__step-num">2</div>
-                        <div class="how-work__step-text">
-                           Ответственный <br> подтверждает <br> поездку
-                        </div>
+         <section class="organization">
+            <div class="organization__body container section-padding">
+               <h2 class="organization__title section-title">Организация командировки займет
+                  всего 2 минуты</h2>
+               <div class="organization__cards">
+                  <div class="organization__card">
+                     <div class="organization__card-num">1</div>
+                     <div class="organization__card-name">Бронируйте билеты и отели</div>
+                     <div class="organization__card-text">
+                        Система сравнит цены
+                        у разных поставщиков
+                        и покажет самые
+                        выгодные варианты
                      </div>
                   </div>
-                  <div class="how-work__step">
-                     <div class="how-work__step-icon">
-                        <img src="img/icons/how-7.svg" width="44" height="44" alt="icon">
+                  <div class="organization__card">
+                     <div class="organization__card-num">2</div>
+                     <div class="organization__card-name">Фиксируйте цену на время<br> согласования</div>
+                     <div class="organization__card-text">
+                        Используйте «заморозку»
+                        цены, чтобы билет
+                        не подорожал
                      </div>
-                     <div class="how-work__step-body">
-                        <div class="how-work__step-num">3</div>
-                        <div class="how-work__step-text">
-                           После согласования сотрудник оплачивает билеты и бронирует гостиницу
-                        </div>
+                  </div>
+                  <div class="organization__card">
+                     <div class="organization__card-num">3</div>
+                     <div class="organization__card-name">Оплачивайте<br> услуги</div>
+                     <div class="organization__card-text">
+                        Платите со счета
+                        в Smartway, который
+                        вы пополняете заранее
+                        или с отсрочкой
                      </div>
+                  </div>
+                  <div class="organization__card">
+                     <div class="organization__card-num">4</div>
+                     <div class="organization__card-name">Получайте <br> документы</div>
+                     <div class="organization__card-text">
+                        Закрывающие появятся в личном кабинете сразу после
+                        поездки. Оригиналы пришлем
+                        на почту или по ЭДО
+                     </div>
+                  </div>
+               </div>
+               <div class="organization__footer">
+                  <div class="organization__descr">
+                     <img src="img/managers-photos.webp" width="135" height="52" alt="managers">
+                     <p><span>93% наших клиентов внедрили Smartway за один день</span>
+                        без дополнительного обучения сотрудников</p>
+                  </div>
+                  <div class="organization__button">
+                     <button type="button" class="btn btn-arrow open-popup" data-popup="main-popup">Попробовать
+                        бесплатно</button>
                   </div>
                </div>
             </div>
          </section>
 
-         <section class="scheme">
-            <div class="scheme__body container section-padding">
-               <h2 class="scheme__title section-title">Определяйте, кто и в каком случае будет согласовывать поездки
+         <section class="wh-advantages">
+            <div class="wh-advantages__body container section-padding">
+               <h2 class="wh-advantages__title section-title">Деловые поездки под контролем</h2>
+               <div class="wh-advantages__cards">
+                  <div class="wh-advantages__card">
+                     <div class="wh-advantages__card-head">
+                        <div class="wh-advantages__card-icon">
+                           <img src="img/icons/circle-comm.svg" width="50" height="50" alt="icon">
+                        </div>
+                        <div class="wh-advantages__card-name">Уладим форс-мажор <br> в поездке за вас</div>
+                     </div>
+                     <div class="wh-advantages__card-text">Мы на связи 24/7. Отвечаем в чате и по телефону за 5
+                        минут. Свяжемся с поставщиками и решим проблему</div>
+                  </div>
+                  <div class="wh-advantages__card">
+                     <div class="wh-advantages__card-head">
+                        <div class="wh-advantages__card-icon">
+                           <img src="img/icons/circle-check.svg" width="50" height="50" alt="icon">
+                        </div>
+                        <div class="wh-advantages__card-name">Вся информация <br> в одном месте</div>
+                     </div>
+                     <div class="wh-advantages__card-text">Больше не придется переключаться между вкладками,
+                        мессенджерами и почтой</div>
+                  </div>
+                  <div class="wh-advantages__card">
+                     <div class="wh-advantages__card-head">
+                        <div class="wh-advantages__card-icon">
+                           <img src="img/icons/circle-blank-list.svg" width="50" height="50" alt="icon">
+                        </div>
+                        <div class="wh-advantages__card-name">Отчеты уже готовы</div>
+                     </div>
+                     <div class="wh-advantages__card-text">Документы по поездкам формируются автоматически.
+                        Не нужно собирать чеки, вручную сканировать отчеты
+                        и передавать в бухгалтерию</div>
+                  </div>
+                  <div class="wh-advantages__card">
+                     <div class="wh-advantages__card-head">
+                        <div class="wh-advantages__card-icon">
+                           <img src="img/icons/circle-refresh.svg" width="50" height="50" alt="icon">
+                        </div>
+                        <div class="wh-advantages__card-name">Автозаполнение данных</div>
+                     </div>
+                     <div class="wh-advantages__card-text">Введите данные сотрудников один раз — и они
+                        сохранятся в сервисе. Это снижает риск
+                        опечаток и экономит время</div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="wh-benefits">
+            <div class="wh-benefits__body container section-padding">
+               <h2 class="wh-benefits__title section-title">Управляйте командировками на ходу</h2>
+               <div class="wh-benefits__cards">
+                  <div class="wh-benefits__card">
+                     <div class="wh-benefits__card-name">Мобильное приложение</div>
+                     <div class="wh-benefits__card-text">Организуйте поездки даже
+                        без ноутбука под рукой</div>
+                     <div class="wh-benefits__card-icon">
+                        <img src="img/stores.webp" width="154" height="57" alt="store">
+                     </div>
+                  </div>
+                  <div class="wh-benefits__card">
+                     <div class="wh-benefits__card-name">Интеграция с Яндекс Go</div>
+                     <div class="wh-benefits__card-text">Вызывайте такси
+                        в приложении и оплачивайте
+                        со счета в Smartway</div>
+                     <div class="wh-benefits__card-icon">
+                        <img src="img/yago-bg.svg" width="136" height="48" alt="store">
+                     </div>
+                  </div>
+                  <div class="wh-benefits__card">
+                     <div class="wh-benefits__card-info">
+                        <div class="wh-benefits__card-name">Моментальные уведомления</div>
+                        <div class="wh-benefits__card-text">В телеграм-боте или по электронной
+                           почте. Вы не пропустите ни одной
+                           важной детали: от согласования
+                           до изменений в бронировании</div>
+                     </div>
+                     <div class="wh-benefits__card-image">
+                        <img src="img/mob-screen.svg" width="162" height="228" alt="image">
+                     </div>
+                     <div class="wh-benefits__card-tg">
+                        <img src="img/icons/circle-tg.svg" width="47" height="47" alt="tg">
+                     </div>
+                  </div>
+               </div>
+               <div class="wh-benefits__poster">
+                  <div class="wh-benefits__poster-title">Как Smartway поможет <br>
+                     вашей компании</div>
+                  <div class="wh-benefits__poster-subtitle">Оставьте заявку — менеджер
+                     проведёт бесплатную консультацию
+                     и откроет демо-доступ к сервису</div>
+                  <div class="wh-benefits__poster-btn">
+                     <button type="button" class="btn btn-arrow open-popup" data-popup="consultation-popup">Получить
+                        консультацию</button>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <div class="marquee">
+            <div class="marquee__track">
+               <img src="img/partners/bck.svg" alt="partner logo">
+               <img src="img/partners/omk.svg" alt="partner logo">
+               <img src="img/partners/sokolov.svg" alt="partner logo">
+               <img src="img/partners/cck.svg" alt="partner logo">
+               <img src="img/partners/citydrive.svg" alt="partner logo">
+               <img src="img/partners/belayadacha.svg" alt="partner logo">
+               <img src="img/partners/sisley.svg" alt="partner logo">
+               <img src="img/partners/sech.svg" alt="partner logo">
+
+               <img src="img/partners/bck.svg" alt="partner logo">
+               <img src="img/partners/omk.svg" alt="partner logo">
+               <img src="img/partners/sokolov.svg" alt="partner logo">
+               <img src="img/partners/cck.svg" alt="partner logo">
+               <img src="img/partners/citydrive.svg" alt="partner logo">
+               <img src="img/partners/belayadacha.svg" alt="partner logo">
+               <img src="img/partners/sisley.svg" alt="partner logo">
+               <img src="img/partners/sech.svg" alt="partner logo">
+
+            </div>
+         </div>
+
+         <section class="companies">
+            <div class="companies__body container section-padding">
+               <h2 class="companies__title">
+                  <span>7 600 +</span> компаний бронируют <br> командировки в Smartway
                </h2>
-               <div class="scheme__content">
-                  <div class="scheme__info">
-                     <div class="scheme__subtitle">Гибко настраивайте схемы согласования</div>
-                     <ol class="scheme__list">
-                        <li>
-                           Решайте, при каких условиях нужно согласовывать поездку: например, если сотрудник превысил
-                           бюджет.
-                        </li>
-                        <li>
-                           Определяйте количество участников согласования.
-                        </li>
-                        <li>
-                           Назначайте ответственных для разных категорий сотрудников
-                        </li>
-                     </ol>
+               <div class="companies__cards">
+                  <div class="companies__card">
+                     <div class="companies__card-name">
+                        <span>в 2 раза</span> быстрее организуют <br> командировки
+                     </div>
+                     <div class="companies__card-text">
+                        Как Dodo Brands доверили
+                        сотрудникам самостоятельно
+                        бронировать поездки и освободили
+                        50% тревел-менеджера
+                     </div>
+                     <div class="companies__card-footer">
+                        <div class="companies__card-logo">
+                           <img src="img/dodo-black.webp" width="137" height="47" alt="logo">
+                        </div>
+                        <a href="" class="companies__card-link">Читать кейс</a>
+                     </div>
                   </div>
-                  <div class="scheme__image">
-                     <img src="img/scheme.webp" width="1122" height="570" alt="screen">
+                  <div class="companies__card">
+                     <div class="companies__card-name">
+                        <span>в 4 раза</span> сократили расходы <br> на вахты
+                     </div>
+                     <div class="companies__card-text">
+                        Как в ООО «ССК» перестали
+                        платить комиссию агентству
+                        за каждую операцию
+                        и сэкономили в 4 раза
+                     </div>
+                     <div class="companies__card-footer">
+                        <div class="companies__card-logo">
+                           <img src="img/ssk-dark.webp" width="138" height="59" alt="logo">
+                        </div>
+                        <a href="" class="companies__card-link">Читать кейс</a>
+                     </div>
                   </div>
-
-               </div>
-            </div>
-         </section>
-
-         <section class="control">
-            <div class="control__body container section-padding">
-               <div class="control__image">
-                  <img src="img/control.webp" width="629" height="541" alt="image">
-               </div>
-               <div class="control__info">
-                  <h2 class="control__title section-title">Контролируйте расходы <br>
-                     на поездки с помощью  <br>
-                     <span>тревел-политик</span>
-                  </h2>
-                  <div class="control__more">
-                     <div class="control__subtitle">Если сотрудник бронирует командировку,
-                        которая выходит за рамки бюджета, то вместо
-                        кнопки «Положить в корзину», он увидит кнопку
-                        «Отправить на согласование». Согласующий
-                        сможет одобрить или не одобрить покупку.</div>
-                     <div class="control__button">
-                        <a href="#cta" class="btn">Получить доступ</a>
+                  <div class="companies__card">
+                     <div class="companies__card-name">
+                        <span>4 000+</span> сотрудников сами <br>
+                        бронируют командировки
+                     </div>
+                     <div class="companies__card-text">
+                        Как «Точка» разгрузила
+                        команду и сократила расходы
+                        на командировки с помощью
+                        аналитики
+                     </div>
+                     <div class="companies__card-footer">
+                        <div class="companies__card-logo">
+                           <img src="img/tochka-dark.webp" width="101" height="26" alt="logo">
+                        </div>
+                        <a href="" class="companies__card-link">Читать кейс</a>
                      </div>
                   </div>
                </div>
             </div>
-         </section>
 
-         <section class="redcard">
-            <div class="redcard__body container">
-               <div class="redcard__wrapper">
-                  <div class="redcard__info">
-                     <h2 class="redcard__title section-title">Тревел-политики</h2>
-                     <div class="redcard__subtitle section-subtitle">
-                        Гибкая система доступов Smartway не позволит потратить на поездки больше, чем задумано
-                        в организации. Выделите несколько
-                        категорий сотрудников и настройте свои лимиты для каждой из них. Количество тревел-политик
-                        не ограничено.
-                     </div>
-                  </div>
-                  <div class="redcard__image">
-                     <img src="img/limit-pr.avif" style="border-radius: 30px;" width="743" height="322" alt="image">
-                  </div>
-               </div>
-            </div>
-         </section>
-
-         <section class="pretrip">
-            <div class="pretrip__body container section-padding">
-               <h2 class="pretrip__title section-title">Предкомандировочное согласование</h2>
-               <div class="pretrip__subtitle section-subtitle">Согласовывайте бюджет на командировку прямо в системе.
-                  Приказ и Служебное
-                  задание формируются автоматически</div>
-               <div class="pretrip__image">
-                  <img src="img/coord-screen.webp" width="1060" height="577" alt="image">
-               </div>
-               <div class="pretrip__button">
-                  <a href="#cta" class="btn btn-arrow">Получить доступ</a>
-               </div>
-            </div>
          </section>
 
          <section class="cta" id="cta">
             <div class="cta__body container section-padding">
-               <div class="cta__info">
-                  <h2 class="cta__title section-title"><span>Начните экономить</span>  <br>
-                     на командировках <br> уже сегодня</h2>
-                  <div class="mobile-app__links">
-                     <a href="https://apps.apple.com/ru/app/smartway-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8/id1446267313"
-                        target="_blank" class="mobile-app__link" aria-label="App Store">
-                        <img src="img/app-store.svg" width="145" height="40" alt="AppStore">
-                     </a>
-                     <a href="https://play.google.com/store/apps/details?id=com.smartway&hl=ru" target="_blank"
-                        class="mobile-app__link" aria-label="Google Play">
-                        <img src="img/google-play.svg" width="165" height="33" alt="Google Play">
-                     </a>
-                     <a href="https://www.rustore.ru/catalog/app/com.smartway" target="_blank" class="mobile-app__link"
-                        aria-label="Ru Store">
-                        <img src="img/ru-store.svg" width="127" height="32" alt="RuStore">
-                     </a>
-                     <a href="https://appgallery.huawei.com/app/C107234287" target="_blank" class="mobile-app__link"
-                        aria-label="AppGallery">
-                        <img src="img/app-gallery.svg" width="157" height="34" alt="AppGallery">
-                     </a>
+               <div class="cta__wrapper">
+                  <div class="cta__info">
+                     <h2 class="cta__title section-title">Попробуйте <br>
+                        Smartway бесплатно</h2>
+                     <div class="cta__subtitle section-subtitle">Организуйте командировки быстро, <br>
+                        без хаоса и ошибок</div>
+                     <div class="cta__image">
+                        <img src="img/cta-red-bg.svg" width="701" height="438" alt="image">
+                     </div>
                   </div>
-               </div>
-               <div class="callback__content -shadow">
-                  <form id="mainForm" class="callback__form">
-                     <div class="callback__form-area">
-                        <div class="callback__form-label">Ваше имя*</div>
-                        <input type="text" class="callback__form-input" required>
-                     </div>
-                     <div class="callback__form-area">
-                        <div class="callback__form-label">Название компании*</div>
-                        <input type="text" class="callback__form-input" required>
-                     </div>
-                     <div class="callback__form-area">
-                        <div class="callback__form-label">Сколько командировок в компании в месяц*</div>
-                        <div class="cb-dropdown">
-                           <button type="button" class="cb-dropdown__button">
-                              <span class="cb-dropdown__button-text">Выберите из списка</span>
-                              <span class="cb-dropdown__arrow">
-                                 <svg>
-                                    <use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
-                                 </svg>
-                              </span>
+                  <div class="callback__content -shadow">
+                     <form id="callbackForm2" class="callback__form">
+                        <div class="callback__form-area">
+                           <label for="name" class="callback__form-label">Ваше имя*</label>
+                           <input type="text" id="name" name="name" autocomplete="name" class="callback__form-input"
+                              required>
+                        </div>
+                        <div class="callback__form-area">
+                           <label for="company" class="callback__form-label">Название компании*</label>
+                           <input type="text" id="company" name="company" class="callback__form-input" required>
+                        </div>
+                        <div class="callback__form-area">
+                           <div class="callback__form-label">Сколько командировок в компании в месяц*</div>
+                           <div class="cb-dropdown">
+                              <button type="button" class="cb-dropdown__button">
+                                 <span class="cb-dropdown__button-text">Выберите из списка</span>
+                                 <span class="cb-dropdown__arrow">
+                                    <svg>
+                                       <use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
+                                    </svg>
+                                 </span>
 
-                           </button>
-                           <div class="cb-dropdown__menu">
-                              <ul class="cb-dropdown__list">
-                                 <li class="cb-dropdown__item">
-                                    <label class="cb-dropdown__label">
-                                       <input type="radio" name="komandirovki" value="1" required>
-                                       <span class="cb-dropdown__text">1 командировка</span>
-                                    </label>
-                                 </li>
-                                 <li class="cb-dropdown__item">
-                                    <label class="cb-dropdown__label">
-                                       <input type="radio" name="komandirovki" value="2">
-                                       <span class="cb-dropdown__text">2 командировки</span>
-                                    </label>
-                                 </li>
-                                 <li class="cb-dropdown__item">
-                                    <label class="cb-dropdown__label">
-                                       <input type="radio" name="komandirovki" value="3">
-                                       <span class="cb-dropdown__text">3 командировки</span>
-                                    </label>
-                                 </li>
-                              </ul>
+                              </button>
+                              <div class="cb-dropdown__menu">
+                                 <ul class="cb-dropdown__list">
+                                    <li class="cb-dropdown__item">
+                                       <label class="cb-dropdown__label">
+                                          <input type="radio" name="komandirovki" value="1" required>
+                                          <span class="cb-dropdown__text">1 командировка</span>
+                                       </label>
+                                    </li>
+                                    <li class="cb-dropdown__item">
+                                       <label class="cb-dropdown__label">
+                                          <input type="radio" name="komandirovki" value="2">
+                                          <span class="cb-dropdown__text">2 командировки</span>
+                                       </label>
+                                    </li>
+                                    <li class="cb-dropdown__item">
+                                       <label class="cb-dropdown__label">
+                                          <input type="radio" name="komandirovki" value="3">
+                                          <span class="cb-dropdown__text">3 командировки</span>
+                                       </label>
+                                    </li>
+                                 </ul>
+                              </div>
                            </div>
                         </div>
-                     </div>
-                     <div class="callback__form-area">
-                        <div class="callback__form-label">Корпоративная почта*</div>
-                        <input type="email" class="callback__form-input" required>
-                     </div>
-                     <div class="callback__form-area">
-                        <div class="callback__form-label">Телефон*</div>
-                        <div class="phone-field">
-                           <div class="phone-field__country">
-                              <button type="button" class="phone-field__btn">
-                                 <span class="phone-field__flag">
-                                    <img src="img/icons/ru.svg" width="26" height="26" alt="flag">
-                                 </span>
-                                 <span class="phone-field__code">+7</span>
-                                 <svg class="phone-field__arrow">
-                                    <use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
-                                 </svg>
-                              </button>
-                              <ul class="phone-field__list">
-                                 <li class="phone-field__list-item">
+                        <div class="callback__form-area">
+                           <label for="email" class="callback__form-label">Корпоративная почта*</label>
+                           <input type="email" id="email" name="email" autocomplete="email" class="callback__form-input"
+                              required>
+                        </div>
+                        <div class="callback__form-area">
+                           <label for="phone" class="callback__form-label">Телефон*</label>
+                           <div class="phone-field">
+                              <div class="phone-field__country">
+                                 <button type="button" class="phone-field__btn">
                                     <span class="phone-field__flag">
                                        <img src="img/icons/ru.svg" width="26" height="26" alt="flag">
                                     </span>
                                     <span class="phone-field__code">+7</span>
-                                 </li>
-                                 <li class="phone-field__list-item">
-                                    <span class="phone-field__flag">
-                                       <img src="img/icons/kz.svg" width="26" height="26" alt="flag">
-                                    </span>
-                                    <span class="phone-field__code">+7</span>
-                                 </li>
-                                 <li class="phone-field__list-item">
-                                    <span class="phone-field__flag">
-                                       <img src="img/icons/uz.svg" width="26" height="26" alt="flag">
-                                    </span>
-                                    <span class="phone-field__code">+998</span>
-                                 </li>
-                                 <li class="phone-field__list-item">
-                                    <span class="phone-field__flag">
-                                       <img src="img/icons/az.svg" width="26" height="26" alt="flag">
-                                    </span>
-                                    <span class="phone-field__code">+994</span>
-                                 </li>
-                                 <li class="phone-field__list-item">
-                                    <span class="phone-field__flag">
-                                       <img src="img/icons/ua.svg" width="26" height="26" alt="flag">
-                                    </span>
-                                    <span class="phone-field__code">+380</span>
-                                 </li>
-                              </ul>
+                                    <svg class="phone-field__arrow">
+                                       <use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
+                                    </svg>
+                                 </button>
+                                 <ul class="phone-field__list">
+                                    <li class="phone-field__list-item">
+                                       <span class="phone-field__flag">
+                                          <img src="img/icons/ru.svg" width="26" height="26" alt="flag">
+                                       </span>
+                                       <span class="phone-field__code">+7</span>
+                                    </li>
+                                    <li class="phone-field__list-item">
+                                       <span class="phone-field__flag">
+                                          <img src="img/icons/kz.svg" width="26" height="26" alt="flag">
+                                       </span>
+                                       <span class="phone-field__code">+7</span>
+                                    </li>
+                                    <li class="phone-field__list-item">
+                                       <span class="phone-field__flag">
+                                          <img src="img/icons/uz.svg" width="26" height="26" alt="flag">
+                                       </span>
+                                       <span class="phone-field__code">+998</span>
+                                    </li>
+                                    <li class="phone-field__list-item">
+                                       <span class="phone-field__flag">
+                                          <img src="img/icons/az.svg" width="26" height="26" alt="flag">
+                                       </span>
+                                       <span class="phone-field__code">+994</span>
+                                    </li>
+                                    <li class="phone-field__list-item">
+                                       <span class="phone-field__flag">
+                                          <img src="img/icons/ua.svg" width="26" height="26" alt="flag">
+                                       </span>
+                                       <span class="phone-field__code">+380</span>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <input type="tel" id="phone" class="phone-field__input" placeholder="(000)-00-00"
+                                 required>
                            </div>
-                           <input type="tel" class="phone-field__input" placeholder="(000)-00-00" required>
                         </div>
-                     </div>
-                     <div class="callback__form-area">
-                        <label class="agreement">
-                           <input type="checkbox" required>
-                           <span class="agreement__box"></span>
-                           <span class="agreement__text">Даю согласие на <a href="">получение сообщений рекламного и
-                                 информационного характера</a></span>
-                        </label>
-                     </div>
-                     <div class="callback__form-submit">
-                        <button type="submit" class="btn">Попробовать бесплатно</button>
-                     </div>
-                     <div class="callback__att">
-                        Нажимая на эту кнопку, Вы даете согласие на <a href="">обработку персональных данных</a> и
-                        принимаете условия
-                        <a href="">Политики обработки персональных данных</a>
-                     </div>
-                  </form>
+                        <div class="callback__form-area">
+                           <label class="agreement">
+                              <input type="checkbox" required>
+                              <span class="agreement__box"></span>
+                              <span class="agreement__text">Даю согласие на <a href="">получение сообщений рекламного и
+                                    информационного характера</a></span>
+                           </label>
+                        </div>
+                        <div class="callback__form-submit">
+                           <a href="success.html" class="btn">Попробовать бесплатно</a>
+                        </div>
+                        <div class="callback__att">
+                           Нажимая на эту кнопку, Вы даете согласие на <a href="">обработку персональных данных</a> и
+                           принимаете условия
+                           <a href="">Политики обработки персональных данных</a>
+                        </div>
+                     </form>
+                  </div>
                </div>
             </div>
          </section>
 
-         <section class="redcard">
-            <div class="redcard__body container section-padding">
-               <div class="redcard__wrapper">
-                  <div class="redcard__info">
-                     <div class="redcard__logo">
-                        <img src="img/clients/logo-2-white.webp" width="319" height="78" alt="logo">
+         <section class="articles">
+            <div class="articles__body container section-padding">
+               <h2 class="articles__title section-title">Интересные материалы по теме</h2>
+               <div class="articles__cards">
+                  <a href="" class="articles__card">
+                     <div class="articles__card-image">
+                        <img src="img/blog/blog-1.avif" width="416" height="238" alt="article image">
                      </div>
-                     <h2 class="redcard__title section-title">согласовывают траты на поездки в 2 клика</h2>
-                     <div class="redcard__button">
-                        <button type="button" class="btn">Подробнее</button>
+                     <div class="articles__card-text">Руководство
+                        «Нюансы налогового учета командировок 2025»</div>
+                  </a>
+                  <a href="" class="articles__card">
+                     <div class="articles__card-image">
+                        <img src="img/blog/blog-2.avif" width="416" height="238" alt="article image">
                      </div>
-                  </div>
-                  <div class="redcard__image">
-                     <img src="img/clients/ctom.webp" width="726" height="444" alt="image">
-                  </div>
+                     <div class="articles__card-text">Гайд для бухгалтеров
+                        «Как корректно оплачивать
+                        и учитывать командировки в 2025»</div>
+                  </a>
+                  <a href="" class="articles__card">
+                     <div class="articles__card-image">
+                        <img src="img/blog/blog-3.avif" width="416" height="238" alt="article image">
+                     </div>
+                     <div class="articles__card-text">Две книги для учета
+                        командировок 2025
+                        без штрафов и ошибок</div>
+                  </a>
+                  <a href="" class="articles__card">
+                     <div class="articles__card-image">
+                        <img src="img/blog/blog-4.avif" width="416" height="238" alt="article image">
+                     </div>
+                     <div class="articles__card-text">Командировочные расходы
+                        и суточные в 2026: возмещение, что входит, нормы, налог
+                        на прибыль</div>
+                  </a>
                </div>
             </div>
          </section>
