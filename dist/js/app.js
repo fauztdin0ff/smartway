@@ -891,7 +891,59 @@ function initCaseMenu() {
    headings.forEach(heading => observer.observe(heading));
 }
 
+/*==========================================================================
+Testimonials slider
+============================================================================*/
+function initTestimonialsSlider() {
+   const slider = document.querySelector('.testimonials__slider');
 
+   if (!slider) return;
+
+   const splide = new Splide(slider, {
+      type: 'slide',
+      perPage: 3,
+      perMove: 1,
+      gap: '8px',
+      arrows: false,
+      pagination: false,
+
+      breakpoints: {
+         1200: {
+            perPage: 2,
+         },
+         767: {
+            perPage: 1,
+         },
+      },
+   });
+
+   const prevBtn = document.querySelector('.testimonials__prev');
+   const nextBtn = document.querySelector('.testimonials__next');
+
+   function updateButtons() {
+      prevBtn?.classList.toggle(
+         'disabled',
+         splide.Components.Controller.getPrev() === -1
+      );
+
+      nextBtn?.classList.toggle(
+         'disabled',
+         splide.Components.Controller.getNext() === -1
+      );
+   }
+
+   splide.on('mounted moved refreshed resized', updateButtons);
+
+   splide.mount();
+
+   prevBtn?.addEventListener('click', () => {
+      splide.go('<');
+   });
+
+   nextBtn?.addEventListener('click', () => {
+      splide.go('>');
+   });
+}
 /*==========================================================================
 Init
 ============================================================================*/
@@ -908,7 +960,7 @@ document.addEventListener('DOMContentLoaded', () => {
    initResultsSlider();
    initPasswordToggle();
    initCaseMenu();
-
+   initTestimonialsSlider();
 })
 
 window.addEventListener('resize', () => {

@@ -14,14 +14,14 @@
    <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
    <link rel="icon" type="image/ico" href="img/fav/favicon.ico">
    <!-- SEO -->
-   <title>Тревел-политика</title>
+   <title>Реферальная программа</title>
    <meta name="description"
       content="Smartway — сервис организации командировок для бизнеса. Помогаем организациям в управлении командированием, оформлять служебные поездки и командировки онлайн удобно и быстро. Дешевле и проще, чем агентство деловых поездок!">
    <meta name="author" content="Smartway">
 
    <!-- Open Graph -->
    <meta property="og:type" content="website">
-   <meta property="og:title" content="Тревел-политика">
+   <meta property="og:title" content="Реферальная программа">
    <meta property="og:description"
       content="Smartway — сервис организации командировок для бизнеса. Помогаем организациям в управлении командированием, оформлять служебные поездки и командировки онлайн удобно и быстро. Дешевле и проще, чем агентство деловых поездок!">
    <meta property="og:url" content="https://smartway.today">
@@ -31,12 +31,21 @@
    <!-- Styles -->
    <link rel="stylesheet" href="css/base.min.css?_v=20260715213631">
    
+   <link rel="stylesheet" href="css/splide.min.css?_v=20260715213631">
    
    
-   <link rel="stylesheet" href="css/travel-policy.min.css?_v=20260715213631">
+   
+   <link rel="stylesheet" href="css/referral-program.min.css?_v=20260715213631">
 </head>
 
 <body>
+   <div class="promo">
+      <div class="promo__body container">
+         <img src="img/promo.webp" width="93" height="33" alt="promo">
+         Бесплатная консультация по командировкам за 15 минут
+         <button type="button" class="btn btn-arrow open-popup" data-popup="consultation-popup">Записаться</button>
+      </div>
+   </div>
    <div class="wrapper">
       <header class="header">
    <div class="header__body container">
@@ -167,167 +176,354 @@
    </div>
 </header>
       <main>
-         <section class="st-hero">
-            <div class="st-hero__body container">
-               <div class="st-hero__wrapper">
-                  <div class="st-hero__info">
-                     <h1 class="st-hero__title section-title">Командировки — без лишних трат и ручного контроля
-                        благодаря
-                        тревел-политикам</h1>
-                     <div class="st-hero__subtitle">
-                        Задайте лимиты и правила для разных сотрудников
-                     </div>
-                     <div class="st-hero__button">
-                        <button type="button" class="btn btn-arrow -black open-popup" data-popup="main-popup">Записаться
-                           на презентацию</button>
+         <section class="ref-hero">
+            <div class="ref-hero__body container">
+               <div class="ref-hero__poster">
+                  <div class="ref-hero__info">
+                     <h1 class="ref-hero__title">Рекомендуйте <br>
+                        Smartway</h1>
+                     <div class="ref-hero__subtitle section-subtitle">И зарабатывайте до 50 000 ₽ за каждое
+                        подключение к сервису</div>
+                     <div class="ref-hero__button">
+                        <a href="" class="btn btn-arrow -black">Стать партнером</a>
                      </div>
                   </div>
-                  <div class="st-hero__image">
-                     <img src="img/travel-policy-hero.avif" width="820" height="594" alt="image">
+                  <div class="ref-hero__image">
+                     <img src="img/ref-hero.avif" width="441" height="464" alt="image">
+                  </div>
+                  <div class="ref-hero__label">
+                     <span>300+</span>
+                     партнеров <br>
+                     уже в программе
+                  </div>
+                  <div class="ref-hero__bg">
+                     <img src="img/red-banner.webp" alt="">
+                  </div>
+               </div>
+               <div class="ref-hero__advs">
+                  <div class="ref-hero__adv">
+                     <div class="ref-hero__adv-icon">
+                        <img src="img/icons/sq-rouble.svg" width="52" height="52" alt="icon">
+                     </div>
+                     <div class="ref-hero__adv-text">Официальные выплаты без скрытых условий</div>
+                  </div>
+                  <div class="ref-hero__adv">
+                     <div class="ref-hero__adv-icon">
+                        <img src="img/icons/sq-check.svg" width="52" height="52" alt="icon">
+                     </div>
+                     <div class="ref-hero__adv-text">Подключение берем на себя</div>
+                  </div>
+                  <div class="ref-hero__adv">
+                     <div class="ref-hero__adv-icon">
+                        <img src="img/icons/sq-user.svg" width="52" height="52" alt="icon">
+                     </div>
+                     <div class="ref-hero__adv-text">Все статусы по клиентам — в личном кабинете</div>
                   </div>
                </div>
             </div>
          </section>
 
-         <section class="infoblock">
-            <div class="infoblock__body container section-padding">
-               <div class="infoblock__info">
-                  <h2 class="infoblock__title section-title">Расходы <span>под контролем</span></h2>
-                  <div class="infoblock__subtitle">
-                     <p>
-                        Гибкая система лимитов и правил в Smartway не позволит сотрудникам превысить установленные
-                        ограничения:
-                        система предупредит о нарушении и направит покупку на согласование.
-                     </p>
-                     <p>
-                        Создавайте неограниченное количество тревел-политик
-                        для разных категорий сотрудников и исключайте
-                        перерасходы ещё до оформления поездки.
-                     </p>
+         <section class="reviews">
+            <h2 class="reviews__title section-title">Нам доверяют <span>7600+ компаний</span></h2>
+            <div class="reviews__track">
+               <img src="img/partners/bck.svg" alt="partner logo">
+               <img src="img/partners/omk.svg" alt="partner logo">
+               <img src="img/partners/sokolov.svg" alt="partner logo">
+               <img src="img/partners/cck.svg" alt="partner logo">
+               <img src="img/partners/citydrive.svg" alt="partner logo">
+               <img src="img/partners/belayadacha.svg" alt="partner logo">
+               <img src="img/partners/sisley.svg" alt="partner logo">
+               <img src="img/partners/sech.svg" alt="partner logo">
+
+               <img src="img/partners/bck.svg" alt="partner logo">
+               <img src="img/partners/omk.svg" alt="partner logo">
+               <img src="img/partners/sokolov.svg" alt="partner logo">
+               <img src="img/partners/cck.svg" alt="partner logo">
+               <img src="img/partners/citydrive.svg" alt="partner logo">
+               <img src="img/partners/belayadacha.svg" alt="partner logo">
+               <img src="img/partners/sisley.svg" alt="partner logo">
+               <img src="img/partners/sech.svg" alt="partner logo">
+
+            </div>
+         </section>
+
+         <section class="control">
+            <div class="control__body container section-padding">
+               <h2 class="control__title section-title">Как получить выплаты <br>
+                  от Smartway</h2>
+               <div class="control__cards">
+                  <div class="control__card">
+                     <div class="control__card-info">
+                        <div class="control__card-num">1</div>
+                        <div class="control__card-name">Оставьте заявку
+                           и получите доступ
+                           к личному кабинету
+                           партнера</div>
+                     </div>
+                     <div class="control__card-image">
+                        <img src="img/refitem-1.svg" width="432" height="196" alt="screen">
+                     </div>
+                  </div>
+                  <div class="control__card">
+                     <div class="control__card-info">
+                        <div class="control__card-num">2</div>
+                        <div class="control__card-name">Скопируйте ссылку
+                           и отправляйте
+                           ее компаниям
+                           с регулярными поездками</div>
+                     </div>
+                     <div class="control__card-image">
+                        <img src="img/refitem-2.avif" width="432" height="196" alt="screen">
+                     </div>
+                  </div>
+                  <div class="control__card">
+                     <div class="control__card-info">
+                        <div class="control__card-num">3</div>
+                        <div class="control__card-name">Отслеживайте
+                           статусы
+                           по рекомендациям
+                           и начислениям</div>
+                     </div>
+                     <div class="control__card-image">
+                        <img src="img/refitem-3.avif" width="432" height="196" alt="screen">
+                     </div>
+                  </div>
+                  <div class="control__card">
+                     <div class="control__card-info">
+                        <div class="control__card-num">4</div>
+                        <div class="control__card-name">Получайте
+                           вознаграждение
+                           на личный счет после
+                           подключения клиента</div>
+                     </div>
+                     <div class="control__card-image">
+                        <img src="img/refitem-4.avif" width="432" height="196" alt="screen">
+                     </div>
                   </div>
                </div>
-               <div class="infoblock__image">
-                  <img src="img/cntr.webp" width="455" height="451" alt="image">
+               <div class="control__button">
+                  <button type="button" class="btn btn-arrow open-popup" data-popup="main-popup">Оставить
+                     заявку</button>
                </div>
             </div>
          </section>
 
-         <section class="limitations">
-            <div class="limitations__body container section-padding">
-               <h2 class="limitations__title section-title">На что можно установить <br> ограничения:</h2>
-               <div class="limitations__tabs">
-                  <div class="limitations__tabs-wrapper">
-                     <button type="button" class="limitations__tab active" data-tab="1">Авиабилеты</button>
-                     <button type="button" class="limitations__tab" data-tab="2">ЖД-билеты</button>
-                     <button type="button" class="limitations__tab" data-tab="3">Гостиницы</button>
-                     <button type="button" class="limitations__tab" data-tab="4">Такси</button>
-                     <button type="button" class="limitations__tab" data-tab="5">Аэроэкспрессы</button>
+         <section class="stab">
+            <div class="stab__body container">
+               <div class="stab__item section-padding">
+                  <div class="stab__wrapper">
+                     <h2 class="stab__title section-title">Платим 50 000 ₽ за каждую <br>
+                        рекомендацию</h2>
+                     <div class="stab__cards">
+                        <div class="stab__card">
+                           <div class="stab__card-title">20 000 ₽</div>
+                           <div class="stab__card-text">Если компания подключится к Smartway
+                              по вашей рекомендации в течение 3 месяцев</div>
+                        </div>
+                        <div class="stab__card">
+                           <div class="stab__card-title">+ 30 000 ₽</div>
+                           <div class="stab__card-text">Если компания продолжит пользоваться
+                              сервисом более 3 месяцев</div>
+                        </div>
+                     </div>
+                     <div class="stab__att">
+                        <div class="stab__att-title">Больше подключений = больше выплат</div>
+                        <div class="stab__att-text">Количество рекомендаций не ограничено</div>
+                     </div>
+                     <div class="stab__button">
+                        <a href="" class="btn btn-arrow">Присоединиться</a>
+                     </div>
                   </div>
                </div>
-               <div class="limitations__contents">
-                  <div class="limitations__content active" data-content="1">
-                     <div class="limitations__image">
-                        <img src="img/lim-avia.avif" width="928" height="545" alt="image">
-                     </div>
-                     <div class="limitations__info">
-                        <h3 class="limitations__info-title section-title">Авиабилеты</h3>
-                        <div class="limitations__subtitle section-subtitle">
-                           Устанавливайте ограничения <br>
-                           по стоимости, классу, дням вылета<br>
-                           или направлению полета
+
+               <div class="stab__item section-padding">
+                  <div class="stab__wrapper">
+                     <h2 class="stab__title section-title">Кому рекомендовать Smartway</h2>
+                     <div class="stab__subtitle">Компаниям, в которых:</div>
+
+                     <div class="stab__cards">
+                        <div class="stab__card">
+                           <div class="stab__card-icon">
+                              <img src="img/icons/prtf.svg" alt="">
+                           </div>
+                           <div class="stab__card-text">Сотрудники регулярно
+                              ездят в командировки</div>
+                        </div>
+                        <div class="stab__card">
+                           <div class="stab__card-icon">
+                              <img src="img/icons/lst.svg" alt="">
+                           </div>
+                           <div class="stab__card-text">Хотят упростить отчетность
+                              и оптимизировать расходы</div>
+                        </div>
+                        <div class="stab__card">
+                           <div class="stab__card-icon">
+                              <img src="img/icons/clck.svg" alt="">
+                           </div>
+                           <div class="stab__card-text">Организация поездок
+                              отнимает много времени</div>
                         </div>
                      </div>
-                  </div>
-                  <div class="limitations__content" data-content="2">
-                     <div class="limitations__image">
-                        <img src="img/lim-zhd.avif" width="929" height="612" alt="image">
-                     </div>
-                     <div class="limitations__info">
-                        <h3 class="limitations__info-title section-title">Ж/Д билеты</h3>
-                        <div class="limitations__subtitle section-subtitle">
-                           Контролируйте стоимость, типы вагонов, дни поездки и направления поездов
-                        </div>
-                     </div>
-                  </div>
-                  <div class="limitations__content" data-content="3">
-                     <div class="limitations__image">
-                        <img src="img/lim-hotels.avif" width="929" height="489" alt="image">
-                     </div>
-                     <div class="limitations__info">
-                        <h3 class="limitations__info-title section-title">Гостиницы</h3>
-                        <div class="limitations__subtitle section-subtitle">
-                           Добавьте ограничения по району, стоимости проживания за ночь и классу отеля
-                        </div>
-                     </div>
-                  </div>
-                  <div class="limitations__content" data-content="4">
-                     <div class="limitations__image">
-                        <img src="img/lim-taxi.avif" width="929" height="454" alt="image">
-                     </div>
-                     <div class="limitations__info">
-                        <h3 class="limitations__info-title section-title">Такси</h3>
-                        <div class="limitations__subtitle section-subtitle">
-                           Задайте ограничения по классам автомобиля, дням использования
-                           и кто имеет право оформлять <br>
-                           ваучеры
-                        </div>
-                     </div>
-                  </div>
-                  <div class="limitations__content" data-content="5">
-                     <div class="limitations__image">
-                        <img src="img/lim-express.avif" width="929" height="402" alt="image">
-                     </div>
-                     <div class="limitations__info">
-                        <h3 class="limitations__info-title section-title">Аэроэкспрессы</h3>
-                        <div class="limitations__subtitle section-subtitle">
-                           Настраивайте допустимый класс билетов или включайте
-                           согласование для всех покупок — <br>
-                           даже если они соответствуют <br>
-                           политике компании
-                        </div>
+                     <div class="stab__att">
+                        <div class="stab__att-text"><b>Не уверены, подходит ли компания?</b> Передайте ссылку — мы
+                           уточним
+                           детали</div>
                      </div>
                   </div>
                </div>
             </div>
          </section>
 
-         <section class="how-work">
-            <div class="how-work__body container section-padding">
-               <h2 class="how-work__title section-title">Как это работает</h2>
-               <div class="how-work__subtitle section-subtitle">
-                  Если сотрудник выбирает билет, который нарушает тревел-политику, система сразу обозначит это
-                  в результатах поиска. <br> При оформлении такого билета вместо кнопки «Перейти к оплате» появится
-                  кнопка «Отправить на согласование».
-                  Сотрудник
-                  с правами согласования сможет одобрить или отклонить покупку.
+         <section class="recomm">
+            <div class="recomm__body container section-padding">
+               <h2 class="recomm__title section-title">Что получит компания <br>
+                  по вашей рекомендации</h2>
+               <div class="recomm__card">
+                  <div class="recomm__card-info">
+                     <div class="recomm__card-title section-title">3 месяца Smartway <br> по цене 1</div>
+                     <div class="recomm__card-subtitle section-subtitle">Только по партнерской ссылке. Можно <br>
+                        протестировать сервис с минимальными затратами</div>
+                  </div>
+                  <div class="recomm__card-details">
+                     <div class="recomm__card-icon">
+                        <img src="img/icons/circle-check-white.svg" width="25" height="25" alt="icon">
+                     </div>
+                     <div class="recomm__card-descr">
+                        Все услуги для организации <br>
+                        поездок в одном окне
+                     </div>
+                     <div class="recomm__card-text">
+                        <b>От заявки до отчетности</b>. Сокращение расходов <br>
+                        в 2 раза и полный контроль бюджета
+                     </div>
+                  </div>
                </div>
-               <div class="how-work__image">
-                  <img src="img/pct12.avif" width="1672" height="376" alt="screen">
+               <div class="recomm__button">
+                  <a href="" class="btn btn-arrow -black">Рекомендовать сервис</a>
                </div>
             </div>
          </section>
 
-         <section class="cta" id="cta">
-            <div class="cta__body container section-padding">
-               <div class="cta__wrapper">
-                  <div class="cta__info">
-                     <h2 class="cta__title section-title">Запишитесь <br> на <span>персональную презентацию
-                           сервиса</span>
+         <section class="testimonials">
+            <div class="testimonials__body container section-padding">
+               <h2 class="testimonials__title section-title">Отзывы партнеров</h2>
+               <div class="testimonials__content">
+                  <div class="testimonials__slider splide">
+                     <div class="splide__track">
+                        <div class="splide__list">
+                           <div class="testimonials__slide splide__slide">
+                              <div class="testimonials__slide-text">«Участвовать в программе оказалось
+                                 проще, чем ожидал. Передал ссылку
+                                 знакомым — дальше Smartway все взяли
+                                 на себя. Выплаты пришли без задержек»</div>
+                              <div class="testimonials__slide-author">
+                                 <div class="testimonials__slide-author-ava">
+                                    <img src="img/reviews/1.webp" width="50" height="50" alt="ava">
+                                 </div>
+                                 <div class="testimonials__slide-author-name">
+                                    <b>Алексей,</b> партнер Smartway
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="testimonials__slide splide__slide">
+                              <div class="testimonials__slide-text">«Знакомая работает главным
+                                 бухгалтером. Отправила ей ссылку,
+                                 они сами подключились, а я получила
+                                 вознаграждение в срок»</div>
+                              <div class="testimonials__slide-author">
+                                 <div class="testimonials__slide-author-ava">
+                                    <img src="img/reviews/2.webp" width="50" height="50" alt="ava">
+                                 </div>
+                                 <div class="testimonials__slide-author-name">
+                                    <b>Ирина,</b> партнер Smartway
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="testimonials__slide splide__slide">
+                              <div class="testimonials__slide-text">«Понравилось, что все прозрачно:
+                                 заранее понятно, какие условия
+                                 нужно выполнить и когда
+                                 приходит выплата»</div>
+                              <div class="testimonials__slide-author">
+                                 <div class="testimonials__slide-author-ava">
+                                    <img src="img/reviews/3.webp" width="50" height="50" alt="ava">
+                                 </div>
+                                 <div class="testimonials__slide-author-name">
+                                    <b>Виктор,</b> партнер Smartway
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="testimonials__slide splide__slide">
+                              <div class="testimonials__slide-text">«Для меня программа стала
+                                 дополнительным доходом без особых
+                                 усилий. Порекомендовал сервис двум
+                                 знакомым и за месяц получил 40 000
+                                 рублей»</div>
+                              <div class="testimonials__slide-author">
+                                 <div class="testimonials__slide-author-ava">
+                                    <img src="img/reviews/4.webp" width="50" height="50" alt="ava">
+                                 </div>
+                                 <div class="testimonials__slide-author-name">
+                                    <b>Сергей,</b> партнер Smartway
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="testimonials__buttons slider-buttons">
+                     <button type="button" class="testimonials__prev slider-button slider-button-prev"
+                        aria-label="Предыдущий слайд">
+                        <svg>
+                           <use xlink:href="img/icons/icons.svg#icon-arrow-right"></use>
+                        </svg>
+                     </button>
+                     <button type="button" class="testimonials__next slider-button slider-button-next"
+                        aria-label="Следующий слайд">
+                        <svg>
+                           <use xlink:href="img/icons/icons.svg#icon-arrow-right"></use>
+                        </svg>
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="callback">
+            <div class="callback__body container">
+               <div class="callback__wrapper">
+                  <div class="callback__info">
+                     <h2 class="callback__title section-title">
+                        Присоединяйтесь
+                        к реферальной
+                        программе Smartway
                      </h2>
-                     <div class="cta__subtitle section-subtitle">чтобы сократить до 50% расходов на командировки</div>
-                     <div class="cta__image">
-                        <img src="img/cta-image.avif" width="663" height="403" alt="image">
+                     <div class="callback__subtitle">Оставьте заявку и получите <br>
+                        персональную ссылку</div>
+                     <div class="callback__image">
+                        <div class="mngrs">
+                           <div class="mngrs__photo">
+                              <img src="img/ava-1.webp" width="46" height="46" alt="ava">
+                           </div>
+                           <div class="mngrs__photo">
+                              <img src="img/ava-2.webp" width="46" height="46" alt="ava">
+                           </div>
+                           <div class="mngrs__photo">
+                              <img src="img/ava-3.webp" width="46" height="46" alt="ava">
+                           </div>
+                        </div>
                      </div>
                   </div>
-                  <div class="callback__content -shadow">
-                     <form id="mainForm" class="callback__form">
+                  <div class="callback__content">
+                     <form id="callbackForm2" class="callback__form">
                         <div class="callback__form-area">
-                           <div class="callback__form-label">Ваше имя*</div>
-                           <input type="text" class="callback__form-input" required>
+                           <label for="name" class="callback__form-label">Ваше имя*</label>
+                           <input type="text" id="name" name="name" autocomplete="name" class="callback__form-input"
+                              required>
                         </div>
                         <div class="callback__form-area">
-                           <div class="callback__form-label">Название компании*</div>
-                           <input type="text" class="callback__form-input" required>
+                           <label for="company" class="callback__form-label">Название компании*</label>
+                           <input type="text" id="company" name="company" class="callback__form-input" required>
                         </div>
                         <div class="callback__form-area">
                            <div class="callback__form-label">Сколько командировок в компании в месяц*</div>
@@ -366,11 +562,12 @@
                            </div>
                         </div>
                         <div class="callback__form-area">
-                           <div class="callback__form-label">Корпоративная почта*</div>
-                           <input type="email" class="callback__form-input" required>
+                           <label for="email" class="callback__form-label">Корпоративная почта*</label>
+                           <input type="email" id="email" name="email" autocomplete="email" class="callback__form-input"
+                              required>
                         </div>
                         <div class="callback__form-area">
-                           <div class="callback__form-label">Телефон*</div>
+                           <label for="phone" class="callback__form-label">Телефон*</label>
                            <div class="phone-field">
                               <div class="phone-field__country">
                                  <button type="button" class="phone-field__btn">
@@ -415,7 +612,8 @@
                                     </li>
                                  </ul>
                               </div>
-                              <input type="tel" class="phone-field__input" placeholder="(000)-00-00" required>
+                              <input type="tel" id="phone" class="phone-field__input" placeholder="(000)-00-00"
+                                 required>
                            </div>
                         </div>
                         <div class="callback__form-area">
@@ -427,7 +625,7 @@
                            </label>
                         </div>
                         <div class="callback__form-submit">
-                           <button type="submit" class="btn">Попробовать бесплатно</button>
+                           <a href="success.html" class="btn">Попробовать бесплатно</a>
                         </div>
                         <div class="callback__att">
                            Нажимая на эту кнопку, Вы даете согласие на <a href="">обработку персональных данных</a> и
@@ -436,25 +634,180 @@
                         </div>
                      </form>
                   </div>
+
                </div>
             </div>
          </section>
 
-         <section class="redcard">
-            <div class="redcard__body container section-padding">
-               <div class="redcard__wrapper">
-                  <div class="redcard__info">
-                     <div class="redcard__logo">
-                        <img src="img/clients/logo-2-white.webp" width="319" height="78" alt="logo">
+         <section class="faq">
+            <div class="faq__body container">
+               <h2 class="faq__title section-title">Ответы на основные вопросы</h2>
+               <div class="faq__items">
+                  <div class="faq__item">
+                     <div class="faq__question">
+                        <div class="faq__question-text">
+                           Кто может рекомендовать Smartway? 
+                        </div>
+                        <div class="faq__question-icon">
+                           <svg>
+                              <use xlink:href="img/icons/icons.svg#icon-plus"></use>
+                           </svg>
+                        </div>
                      </div>
-                     <h2 class="redcard__title section-title">согласовывают траты на поездки в 2 клика</h2>
-                     <div class="redcard__button">
-                        <button type="button" class="btn">Подробнее</button>
+                     <div class="faq__answer">
+                        <div class="faq__answer-wrapper">
+                           В реферальной программе могут участвовать физические лица. Пользоваться Smartway самому
+                           необязательно.
+                        </div>
                      </div>
                   </div>
-                  <div class="redcard__image">
-                     <img src="img/clients/ctom.webp" width="726" height="444" alt="image">
+
+                  <div class="faq__item">
+                     <div class="faq__question">
+                        <div class="faq__question-text">
+                           Когда и как я получу выплату?
+                        </div>
+                        <div class="faq__question-icon">
+                           <svg>
+                              <use xlink:href="img/icons/icons.svg#icon-plus"></use>
+                           </svg>
+                        </div>
+                     </div>
+                     <div class="faq__answer">
+                        <div class="faq__answer-wrapper">
+                           <p>Вознаграждение выплачивается в два этапа:</p>
+
+                           <p>
+                              1. 20 000 ₽ — после того, как компания по вашей ссылке подключится к Smartway и оплатит
+                              первую абонентскую плату. <br>
+                              2. +30 000 ₽ — если компания продолжит пользоваться сервисом более 3 месяцев. <br>
+                              Выплаты производятся физическому лицу после закрытия месяца, в течение 10 дней после
+                              подписания акта.
+                           </p>
+                        </div>
+                     </div>
                   </div>
+
+                  <div class="faq__item">
+                     <div class="faq__question">
+                        <div class="faq__question-text">
+                           Как я узнаю, что клиент подключился?
+                        </div>
+                        <div class="faq__question-icon">
+                           <svg>
+                              <use xlink:href="img/icons/icons.svg#icon-plus"></use>
+                           </svg>
+                        </div>
+                     </div>
+                     <div class="faq__answer">
+                        <div class="faq__answer-wrapper">
+                           Статусы по подключению клиентов доступны в личном кабинете партнера. По любым вопросам можно
+                           написать на почту
+                           referral@smartway.today.
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="faq__item">
+                     <div class="faq__question">
+                        <div class="faq__question-text">
+                           Сколько компаний я могу рекомендовать?
+                        </div>
+                        <div class="faq__question-icon">
+                           <svg>
+                              <use xlink:href="img/icons/icons.svg#icon-plus"></use>
+                           </svg>
+                        </div>
+                     </div>
+                     <div class="faq__answer">
+                        <div class="faq__answer-wrapper">
+                           Количество рекомендаций не ограничено. Вы получаете вознаграждение за каждую подключенную
+                           компанию.
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="faq__item">
+                     <div class="faq__question">
+                        <div class="faq__question-text">
+                           А если компания не подключится?
+                        </div>
+                        <div class="faq__question-icon">
+                           <svg>
+                              <use xlink:href="img/icons/icons.svg#icon-plus"></use>
+                           </svg>
+                        </div>
+                     </div>
+                     <div class="faq__answer">
+                        <div class="faq__answer-wrapper">
+                           Если компания не откроет личный кабинет или не оплатит первую абонентскую плату,
+                           вознаграждение не начисляется. Мы
+                           выплачиваем бонус только за фактически подключенных клиентов.
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="faq__item">
+                     <div class="faq__question">
+                        <div class="faq__question-text">
+                           Я могу привести компанию без реферальной ссылки?
+                        </div>
+                        <div class="faq__question-icon">
+                           <svg>
+                              <use xlink:href="img/icons/icons.svg#icon-plus"></use>
+                           </svg>
+                        </div>
+                     </div>
+                     <div class="faq__answer">
+                        <div class="faq__answer-wrapper">
+                           Вы можете передать нам контакт без ссылки, но участие в реферальной программе фиксируется и
+                           отслеживается только при
+                           регистрации, а вознаграждение начисляется только по реферальной ссылке.
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="faq__item">
+                     <div class="faq__question">
+                        <div class="faq__question-text">
+                           Можно рекомендовать свою компанию?
+                        </div>
+                        <div class="faq__question-icon">
+                           <svg>
+                              <use xlink:href="img/icons/icons.svg#icon-plus"></use>
+                           </svg>
+                        </div>
+                     </div>
+                     <div class="faq__answer">
+                        <div class="faq__answer-wrapper">
+                           Нет. В программе участвуют только новые компании, ранее не зарегистрированные в Smartway и не
+                           связанные с партнером
+                           напрямую.
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="faq__item">
+                     <div class="faq__question">
+                        <div class="faq__question-text">
+                           Нужно подписывать договор?
+                        </div>
+                        <div class="faq__question-icon">
+                           <svg>
+                              <use xlink:href="img/icons/icons.svg#icon-plus"></use>
+                           </svg>
+                        </div>
+                     </div>
+                     <div class="faq__answer">
+                        <div class="faq__answer-wrapper">
+                           Отдельный договор не требуется. Вы участвуете в программе на основании публичных правил, с
+                           которыми соглашаетесь при
+                           регистрации.
+                        </div>
+                     </div>
+                  </div>
+
+
                </div>
             </div>
          </section>
@@ -867,6 +1220,7 @@
 </div>
    
 
+   <script src="js/splide.min.js?_v=20260715213631"></script>
    <script src="js/app.js?_v=20260715213631"></script>
 </body>
 
