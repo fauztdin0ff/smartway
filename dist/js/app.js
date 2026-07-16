@@ -944,6 +944,87 @@ function initTestimonialsSlider() {
       splide.go('>');
    });
 }
+
+/*==========================================================================
+Map
+============================================================================*/
+function initLazyMap() {
+   const mapEl = document.getElementById('map');
+
+   if (!mapEl) return;
+
+   let mapLoaded = false;
+
+   const observer = new IntersectionObserver(
+      (entries) => {
+         const entry = entries[0];
+
+         if (!entry.isIntersecting || mapLoaded) return;
+
+         mapLoaded = true;
+         observer.disconnect();
+
+         loadYandexMap();
+      },
+      {
+         rootMargin: '300px'
+      }
+   );
+
+   observer.observe(mapEl);
+
+   function loadYandexMap() {
+      const script = document.createElement('script');
+
+      script.src = 'https://api-maps.yandex.ru/2.1/?lang=ru_RU';
+
+      script.onload = () => {
+         ymaps.ready(() => {
+            initMap(mapEl);
+
+            mapEl.classList.remove('map-skeleton');
+            mapEl.classList.add('map-loaded');
+         });
+      };
+
+      document.body.append(script);
+   }
+}
+
+function initMap(mapEl) {
+   const lat = parseFloat(mapEl.dataset.lat);
+   const lng = parseFloat(mapEl.dataset.lng);
+   const balloon = mapEl.dataset.balloon || '';
+
+   if (isNaN(lat) || isNaN(lng)) return;
+
+   const center = [lat, lng];
+
+   const myMap = new ymaps.Map('map', {
+      center,
+      zoom: 16,
+      controls: ['zoomControl']
+   });
+
+   myMap.behaviors.disable('scrollZoom');
+
+   const placemark = new ymaps.Placemark(
+      center,
+      {
+         hintContent: balloon,
+         balloonContent: balloon
+      },
+      {
+         iconLayout: 'default#image',
+         iconImageHref: 'img/icons/map-loc.png',
+         iconImageSize: [35, 48],
+         iconImageOffset: [-17, -48]
+      }
+   );
+
+   myMap.geoObjects.add(placemark);
+}
+
 /*==========================================================================
 Init
 ============================================================================*/
@@ -961,6 +1042,7 @@ document.addEventListener('DOMContentLoaded', () => {
    initPasswordToggle();
    initCaseMenu();
    initTestimonialsSlider();
+   initLazyMap();
 })
 
 window.addEventListener('resize', () => {
