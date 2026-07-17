@@ -14,14 +14,14 @@
    <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
    <link rel="icon" type="image/ico" href="img/fav/favicon.ico">
    <!-- SEO -->
-   <title>Войти</title>
+   <title>Страница автора</title>
    <meta name="description"
       content="Smartway — сервис организации командировок для бизнеса. Помогаем организациям в управлении командированием, оформлять служебные поездки и командировки онлайн удобно и быстро. Дешевле и проще, чем агентство деловых поездок!">
    <meta name="author" content="Smartway">
 
    <!-- Open Graph -->
    <meta property="og:type" content="website">
-   <meta property="og:title" content="Войти">
+   <meta property="og:title" content="Страница автора">
    <meta property="og:description"
       content="Smartway — сервис организации командировок для бизнеса. Помогаем организациям в управлении командированием, оформлять служебные поездки и командировки онлайн удобно и быстро. Дешевле и проще, чем агентство деловых поездок!">
    <meta property="og:url" content="https://smartway.today">
@@ -33,10 +33,17 @@
    
    
    
-   <link rel="stylesheet" href="css/login.min.css?_v=20260717183707">
+   <link rel="stylesheet" href="css/blog.min.css?_v=20260717183707">
 </head>
 
 <body>
+   <div class="promo">
+      <div class="promo__body container">
+         <img src="img/promo.webp" width="93" height="33" alt="promo">
+         Бесплатная консультация по командировкам за 15 минут
+         <button type="button" class="btn btn-arrow open-popup" data-popup="consultation-popup">Записаться</button>
+      </div>
+   </div>
    <div class="wrapper">
       <header class="header">
    <div class="header__body container">
@@ -167,108 +174,116 @@
    </div>
 </header>
       <main>
-         <section class="registration">
-            <div class="registration__body container">
-               <div class="registration__wrapper">
-                  <div class="registration__wrapper-bg -bg-1">
-                     <img src="img/reg-line-1.svg" alt="">
-                  </div>
-                  <div class="registration__wrapper-bg -bg-2">
-                     <img src="img/reg-line-1.svg" alt="">
-                  </div>
-               </div>
-               <div class="registration__info">
-                  <h1 class="registration__title section-title">Попробовать <br> бесплатно</h1>
-                  <div class="registration__log">
-                     <a href="login.html">Наша компания уже работает с Smartway</a>
+         <section class="author">
+            <div class="author__body container section-padding">
+               <div class="author__info">
+                  <h1 class="author__name">Ирина Титова</h1>
+                  <div class="author__role">Главный бухгалтер Smartway</div>
+                  <hr>
+                  <div class="author__text">
                      <p>
-                        Обратитесь за доступом к администратору — это сотрудник вашей компании. <br>
-                        <b>Пожалуйста, не оставляйте заявку в этом окне.</b>
+                        Бухгалтер-эксперт c 18-летним
+                        опытом работы. Имеет аттестаты
+                        президентского совета Института
+                        профессиональных бухгалтеров
+                        и аудиторов и Международной
+                        федерации бухгалтеров.
+                     </p>
+                     <p>
+                        Диплом МФЮА: экономист
+                        по специальности «Финансы
+                        и кредит»
+                     </p>
+                     <p>
+                        Есть квалифицированный диплом
+                        Главного бухгалтера от 25.05.2010
+                        года и квалифицированный диплом
+                        аудитора от 16.12.2010 г.
                      </p>
                   </div>
                </div>
-               <div class="registration__content">
-                  <form class="registration__form">
-                     <div class="registration__form-area">
-                        <div class="registration__form-label">Ваше имя*</div>
-                        <input type="text" class="registration__form-input" required>
-                     </div>
-                     <div class="registration__form-area">
-                        <div class="registration__form-label">Название компании*</div>
-                        <input type="text" class="registration__form-input" required>
-                     </div>
-                     <div class="registration__form-area">
-                        <div class="registration__form-label">Электронная почта*</div>
-                        <input type="email" class="registration__form-input" required>
-                     </div>
-                     <div class="registration__form-area">
-                        <div class="registration__form-label">Телефон*</div>
-                        <div class="phone-field">
-                           <div class="phone-field__country">
-                              <button type="button" class="phone-field__btn">
-                                 <span class="phone-field__flag">
-                                    <img src="img/icons/ru.svg" width="26" height="26" alt="flag">
-                                 </span>
-                                 <span class="phone-field__code">+7</span>
-                                 <svg class="phone-field__arrow">
-                                    <use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
-                                 </svg>
-                              </button>
-                              <ul class="phone-field__list">
-                                 <li class="phone-field__list-item">
-                                    <span class="phone-field__flag">
-                                       <img src="img/icons/ru.svg" width="26" height="26" alt="flag">
-                                    </span>
-                                    <span class="phone-field__code">+7</span>
-                                 </li>
-                                 <li class="phone-field__list-item">
-                                    <span class="phone-field__flag">
-                                       <img src="img/icons/kz.svg" width="26" height="26" alt="flag">
-                                    </span>
-                                    <span class="phone-field__code">+7</span>
-                                 </li>
-                                 <li class="phone-field__list-item">
-                                    <span class="phone-field__flag">
-                                       <img src="img/icons/uz.svg" width="26" height="26" alt="flag">
-                                    </span>
-                                    <span class="phone-field__code">+998</span>
-                                 </li>
-                                 <li class="phone-field__list-item">
-                                    <span class="phone-field__flag">
-                                       <img src="img/icons/az.svg" width="26" height="26" alt="flag">
-                                    </span>
-                                    <span class="phone-field__code">+994</span>
-                                 </li>
-                                 <li class="phone-field__list-item">
-                                    <span class="phone-field__flag">
-                                       <img src="img/icons/ua.svg" width="26" height="26" alt="flag">
-                                    </span>
-                                    <span class="phone-field__code">+380</span>
-                                 </li>
-                              </ul>
-                           </div>
-                           <input type="tel" class="phone-field__input" placeholder="(000)-00-00" required>
+               <div class="author__photo">
+                  <img src="img/blog/author.webp" width="560" height="720" alt="author">
+               </div>
+            </div>
+         </section>
+
+         <section class="posts">
+            <div class="posts__body container section-padding">
+               <h2 class="posts__title section-title">Публикации</h2>
+               <div class="posts__items">
+                  <div class="posts__item">
+                     <a href="" class="posts__item-image">
+                        <img src="img/blog/blog-1.avif" alt="">
+                     </a>
+                     <div class="posts__item-info">
+                        <a href="" class="posts__item-name">
+                           Надбавка за вахтовый метод
+                           работы: основные
+                           принципы и примеры
+                           расчета
+                        </a>
+                        <div class="posts__item-descr">
+                           Вахтовая надбавка компенсирует особые
+                           условия работы и начисляется сверх
+                           оклада. В статье разбираем, как установить
+                           размер вахтовой надбавки и правильно ее
+                           выплатить.
                         </div>
                      </div>
-                     <div class="registration__form-area">
-                        <label class="agreement">
-                           <input type="checkbox" required>
-                           <div class="agreement__box"></div>
-                           <span class="agreement__text">Даю согласие на <a href="">получение сообщений рекламного и
-                                 информационного характера</a></span>
-                        </label>
+                  </div>
+                  <div class="posts__item">
+                     <a href="" class="posts__item-image">
+                        <img src="img/blog/blog-2.avif" alt="">
+                     </a>
+                     <div class="posts__item-info">
+                        <a href="" class="posts__item-name">
+                           Расчет дней среднего
+                           заработка для командировки в 2026 году
+                        </a>
+                        <div class="posts__item-descr">
+                           Как рассчитывается средний заработок для командировки в 2026 году – расчет дней
+                           среднего заработка в ЗУП. Подробно с примерами о том, как рассчитать
+                           командировку по среднему заработку.
+                        </div>
                      </div>
-                     <div class="registration__form-submit">
-                        <button type="submit" class="btn">Оставить заявку</button>
+                  </div>
+                  <div class="posts__item">
+                     <a href="" class="posts__item-image">
+                        <img src="img/blog/blog-3.avif" alt="">
+                     </a>
+                     <div class="posts__item-info">
+                        <a href="" class="posts__item-name">
+                           Оплата
+                           командировки в 2026 году: изменения в законах, нюансы
+                           расчётов
+                        </a>
+                        <div class="posts__item-descr">
+                           Как рассчитывается командировка, какой
+                           средний заработок для командировки в 2026 году. Подробно о том, как оплатить
+                           командировку.
+                        </div>
                      </div>
-                     <div class="registration__att">
-                        Нажимая на эту кнопку, Вы даете согласие на <a href="">обработку персональных данных</a> и
-                        принимаете условия
-                        <a href="">Политики обработки персональных данных</a>
+                  </div>
+                  <div class="posts__item">
+                     <a href="" class="posts__item-image">
+                        <img src="img/blog/blog-4.avif" alt="">
+                     </a>
+                     <div class="posts__item-info">
+                        <a href="" class="posts__item-name">
+                           Продление
+                           командировки
+                           сотруднику в 1С 8.3
+                           ЗУП
+                        </a>
+                        <div class="posts__item-descr">
+                           Как продлить командировку сотруднику в 1С ЗУП 8.3, как оформить продление
+                           командировки - подробная инструкция и образец приказа о продлении
+                           командировки.
+                        </div>
                      </div>
-                  </form>
+                  </div>
                </div>
-
             </div>
          </section>
       </main>
@@ -678,8 +693,8 @@
       </button>
    </div>
 </div>
-   
 
+   <script src="js/glightbox.min.js?_v=20260717183707"></script>
    <script src="js/app.js?_v=20260717183707"></script>
 </body>
 
