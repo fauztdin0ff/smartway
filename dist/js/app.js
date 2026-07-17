@@ -1025,6 +1025,105 @@ function initMap(mapEl) {
    myMap.geoObjects.add(placemark);
 }
 
+
+/*==========================================================================
+Video
+============================================================================*/
+function initVideoPopup() {
+   const videos = document.querySelectorAll('.work__video');
+   const popup = document.querySelector('.work__video-popup');
+   const body = popup?.querySelector('.work__video-body');
+   const close = popup?.querySelector('.work__video-close');
+
+   if (!videos.length || !popup || !body || !close) return;
+
+   const openPopup = (url) => {
+      body.innerHTML = `
+         <iframe
+            src="${url}&autoplay=1"
+            title="YouTube video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+         ></iframe>
+      `;
+      popup.classList.add('show');
+      document.body.classList.add('lock');
+   };
+
+   const closePopup = () => {
+      popup.classList.remove('show');
+      body.innerHTML = '';
+      document.body.classList.remove('lock');
+   };
+
+   videos.forEach(video => {
+      video.addEventListener('click', () => {
+         openPopup(video.dataset.video);
+      });
+   });
+
+   close.addEventListener('click', closePopup);
+
+   popup.addEventListener('click', (e) => {
+      if (e.target === popup) {
+         closePopup();
+      }
+   });
+
+   document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && popup.classList.contains('show')) {
+         closePopup();
+      }
+   });
+}
+
+
+/*==========================================================================
+Vacansies
+============================================================================*/
+function initVacanciesPopup() {
+   const popup = document.querySelector('.vacs-popup');
+
+   if (!popup) return;
+
+   const popupTitle = popup.querySelector('.vacs-popup__title');
+   const popupText = popup.querySelector('.vacs-popup__text');
+
+   document.querySelectorAll('.vacs__item').forEach(item => {
+      item.addEventListener('click', () => {
+         const title = item.querySelector('.vacs__item-name');
+         const text = item.querySelector('.vacs__item-text');
+
+         popupTitle.textContent = title.textContent;
+         popupText.innerHTML = text.innerHTML;
+         popup.scrollTop = 0;
+         popup.classList.add('show');
+         document.body.classList.add('lock');
+      });
+   });
+
+   function closePopup() {
+      popup.classList.remove('show');
+      document.body.classList.remove('lock');
+   }
+
+   popup.querySelector('.btn')?.addEventListener('click', closePopup);
+   popup.querySelector('.vacs-popup__close')?.addEventListener('click', closePopup);
+
+   popup.addEventListener('click', e => {
+      if (e.target === popup) {
+         closePopup();
+      }
+   });
+
+   document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && popup.classList.contains('show')) {
+         closePopup();
+      }
+   });
+}
+
+
 /*==========================================================================
 Init
 ============================================================================*/
@@ -1043,6 +1142,9 @@ document.addEventListener('DOMContentLoaded', () => {
    initCaseMenu();
    initTestimonialsSlider();
    initLazyMap();
+   initVideoPopup();
+   initVacanciesPopup();
+
 })
 
 window.addEventListener('resize', () => {
