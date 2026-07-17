@@ -1125,6 +1125,57 @@ function initVacanciesPopup() {
 
 
 /*==========================================================================
+FAQ
+============================================================================*/
+/*==========================================================================
+Smart FAQ Popup
+============================================================================*/
+function initSmartFaqPopup() {
+   const popup = document.querySelector('.smart-faq__popup');
+
+   if (!popup) return;
+
+   const popupBody = popup.querySelector('.smart-faq__popup-body');
+   const popupTitle = popup.querySelector('.smart-faq__popup-title');
+   const popupText = popup.querySelector('.smart-faq__popup-text');
+   const popupClose = popup.querySelector('.smart-faq__popup-close');
+
+   document.querySelectorAll('.smart-faq__item').forEach(item => {
+      item.addEventListener('click', () => {
+         const question = item.querySelector('.smart-faq__item-question');
+         const answer = item.querySelector('.smart-faq__item-text');
+
+         popupTitle.innerHTML = question ? question.innerHTML : '';
+         popupText.innerHTML = answer ? answer.innerHTML : '';
+
+         popup.classList.add('show');
+
+         popup.scrollTop = 0;
+         popupBody.scrollTop = 0;
+      });
+   });
+
+   function closePopup() {
+      popup.classList.remove('show');
+   }
+
+   popupClose.addEventListener('click', closePopup);
+
+   popup.addEventListener('click', (e) => {
+      if (!popupBody.contains(e.target)) {
+         closePopup();
+      }
+   });
+
+   document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && popup.classList.contains('show')) {
+         closePopup();
+      }
+   });
+}
+
+
+/*==========================================================================
 Init
 ============================================================================*/
 document.addEventListener('DOMContentLoaded', () => {
@@ -1144,6 +1195,7 @@ document.addEventListener('DOMContentLoaded', () => {
    initLazyMap();
    initVideoPopup();
    initVacanciesPopup();
+   initSmartFaqPopup();
 
 })
 
