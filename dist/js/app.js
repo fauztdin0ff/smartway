@@ -433,6 +433,85 @@ function initFixedHeader() {
 
 
 /*==========================================================================
+Marque
+============================================================================*/
+function marquee(selector = '.marquee', speed = 80) {
+
+   document.querySelectorAll(selector).forEach(root => {
+
+      const track = root.querySelector('.marquee__track');
+      const group = track?.querySelector('.marquee__group');
+
+      if (!track || !group) return;
+
+      track.append(
+         group.cloneNode(true),
+         group.cloneNode(true)
+      );
+
+      let position = 0;
+      let groupWidth = 0;
+      let gap = 0;
+      let cycleWidth = 0;
+      let lastTime = performance.now();
+
+      function calculate() {
+
+         groupWidth = group.getBoundingClientRect().width;
+
+         gap = parseFloat(
+            getComputedStyle(track).columnGap
+         ) || 0;
+
+         cycleWidth = groupWidth + gap;
+      }
+
+      calculate();
+
+      const resizeObserver = new ResizeObserver(() => {
+         calculate();
+      });
+
+      resizeObserver.observe(group);
+
+      function handleVisibilityChange() {
+
+         if (!document.hidden) {
+            lastTime = performance.now();
+         }
+
+      }
+
+      document.addEventListener(
+         'visibilitychange',
+         handleVisibilityChange
+      );
+
+      function animate(time) {
+
+         const delta = (time - lastTime) / 1000;
+
+         lastTime = time;
+
+         position -= speed * delta;
+
+         if (-position >= cycleWidth) {
+            position += cycleWidth;
+         }
+
+         track.style.transform =
+            `translate3d(${position}px, 0, 0)`;
+
+         requestAnimationFrame(animate);
+      }
+
+      requestAnimationFrame(animate);
+
+   });
+
+}
+
+/*==========================================================================
 Phone field
 ============================================================================*/
 function initPhoneField() {
@@ -1180,6 +1259,7 @@ Init
 ============================================================================*/
 document.addEventListener('DOMContentLoaded', () => {
    initFixedHeader();
+   marquee('.marquee', 100);
    initDropdowns();
    initPhoneField();
    initFaqAccordion();
